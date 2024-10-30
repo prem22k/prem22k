@@ -1,5 +1,17 @@
 # 💫 About Me:
-🔭 I’m currently working on:<br>Building cool web projects using HTML, CSS, and JavaScript, and improving my DSA skills in C++.<br><br>👯 I’m looking to collaborate on:<br>Hackathons, web development projects, or any exciting tech challenges that push me to learn more.<br><br>🤝 I’m looking for help with:<br>Mastering JavaScript, Linux, and Git, and exploring backend technologies.<br><br>🌱 I’m currently learning:<br>Data structures and algorithms, Git, Linux, and JavaScript.<br><br>💬 Ask me about:<br>Gaming, hackathons, web development, and how I balance coding with my passion for gaming.<br><br>⚡ Fun fact:<br>I once played PUBG Mobile for over 12 hours a day for a week and reached the top 36 in the North American server!
+🔭 I’m currently working on:<br>Building web projects using HTML, CSS, and JavaScript, enhancing my Git and GitHub skills, and preparing to dive back into DSA after an upcoming hackathon.<br><br>
+
+👯 I’m looking to collaborate on:<br>Hackathons, creative web development projects, or any tech challenges that help me grow as a developer.<br><br>
+
+🤝 I’m looking for help with:<br>Mastering JavaScript and Linux, and exploring backend technologies as I work toward becoming a full-stack developer.<br><br>
+
+🌱 I’m currently learning:<br>JavaScript through Scrimba, data structures and algorithms using C++, and practical applications of Git and GitHub.<br><br>
+
+💬 Ask me about:<br>Hackathons, web development, gaming, and finding balance between coding, exams, and staying motivated.<br><br>
+
+⚡ Fun fact:<br>I once played PUBG Mobile for over 12 hours a day and ranked in the top 36 of the North American server—a testament to my dedication (when I’m hooked on something, I go all in)!
+
+
 
 
 ## 🌐 Socials:
