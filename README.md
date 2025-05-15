@@ -31,15 +31,25 @@ When I’m not coding, you’ll usually find me:
 
 ---
 
-## 🌍 Top 5 Anime Picks
+## 🌸 Anime I Can Rewatch Forever
 
-Here’s a list of anime I vibe with the most:
+When I’m not battling bugs or lifting weights, I’m probably binge-watching one of these gems:
 
-- **Your Name (Kimi no Na wa)** 🌿
-- **Steins;Gate** ⌛️
-- **Attack on Titan** 🔥
-- **Naruto** ☘️
-- **Death Note** ✉️
+- 🔥 **Attack on Titan** – Plot twists sharper than Levi’s blades.
+- ✉️ **Death Note** – Morally gray never looked this cool.
+- ⚔️ **Solo Leveling** – Just me imagining I’m Sung Jin-Woo at the gym.
+- 🧪 **Dr. Stone** – Science bros > Wi-Fi.
+- 🏐 **Haikyuu!!** – Pure motivation with every spike.
+- 🍥 **Naruto** – Believe it. Still hits like childhood.
+- 🔥 **Demon Slayer** – Art, emotion, and elite swordsmanship.
+- ⚽ **Blue Lock** – Soccer + ego = chaotic brilliance.
+- 🌀 **Jujutsu Kaisen** – Dark vibes + Gojo supremacy.
+- 🚪 **Suzume** – Makoto Shinkai never misses.
+- 🎓 **Classroom of the Elite** – Trust no one, but enjoy the chaos.
+- 🌸 **Hell’s Paradise** – Beautifully brutal and bizarre.
+
+No ranking here — they all hit differently depending on my mood. Got a rec? Let’s trade anime lists!
+
 
 ---
 
