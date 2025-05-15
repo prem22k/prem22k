@@ -1,4 +1,4 @@
-<img src="./banner.gif" width="100%" alt="banner gif"/>
+
 
 <h1 align="center">Hey there! I'm Prem Sai 👋</h1>
 <p align="center">
@@ -70,13 +70,24 @@ Here’s a list of anime I vibe with the most:
 
 ## 🤝 Let’s Connect!
 
+<table>
+  <tr>
+    <td valign="top">
+
 Whether it’s a collab, code review, anime recommendation, or just life talk — I'm just one ping away:
 
-- 🧑‍💼 [LinkedIn](https://linkedin.com/in/premsai22k)
-- 📷 [Instagram](https://instagram.com/iblameprems)
-- 📌 [Pinterest](https://pinterest.com/premsai22k)
-- 🧠 [Reddit](https://reddit.com/user/ShallotOk6811)
+- 🧑‍💼 [LinkedIn](https://linkedin.com/in/premsai22k)  
+- 📷 [Instagram](https://instagram.com/iblameprems)  
+- 📌 [Pinterest](https://pinterest.com/premsai22k)  
+- 🧠 [Reddit](https://reddit.com/user/ShallotOk6811)  
 - 🐦 [X / Twitter](https://x.com/premsaik22)
+
+    </td>
+    <td valign="top" width="320" style="padding-left: 20px;">
+      <img src="banner.gif" width="300" alt="Storm Apartment GIF" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -108,5 +119,9 @@ If you enjoy my work or just want to buy me a coffee to fuel more late-night com
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=prem22k&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
 </p>
+<p align="center">
+  
+</p>
+
 
 <!-- Made with ☕ & passion by Prem Sai | prem22k -->
