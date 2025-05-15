@@ -46,7 +46,8 @@ Here’s a list of anime I vibe with the most:
 ## 📻 Now Playing on Spotify
 
 <p align="center">
-  [[https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&redirect=true][https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=compact&show_offline=true&background_color=121212&interchange=false)]]
+  [![Spotify Now Playing](https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&redirect=true)
+
 </p>
 
 ---
