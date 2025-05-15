@@ -1,4 +1,4 @@
-<img src="./storm_apartment_GIF.gif" width="100%" alt="banner gif"/>
+<img src="./banner.gif" width="100%" alt="banner gif"/>
 
 <h1 align="center">Hey there! I'm Prem Sai 👋</h1>
 <p align="center">
