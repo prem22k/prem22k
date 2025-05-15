@@ -57,9 +57,10 @@ No ranking here — they all hit differently depending on my mood. Got a rec? Le
 
 <p align="center">
   <a href="https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&redirect=true">
-    <img src="https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=natemoo-re&show_offline=true&background_color=1A1B27&interchange=false&bar_color=7289DA&bar_color_cover=true" alt="Spotify Now Playing"/>
+    <img src="https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=natemoo-re&show_offline=true&background_color=1A1B27&interchange=false&bar_color=00FFFF&bar_color_cover=true" alt="Spotify Now Playing"/>
   </a>
 </p>
+
 
 ---
 
