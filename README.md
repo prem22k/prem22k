@@ -1,20 +1,22 @@
+<img src="./storm_apartment_GIF.gif" width="100%" alt="banner gif"/>
+
 <h1 align="center">Hey there! I'm Prem Sai 👋</h1>
 <p align="center">
-  🚀 Aspiring SDE • 💻 Full-Stack Learner • ⚙️ DSA Explorer • 🎧 Music Buff
+  🚀 Aspiring SDE • 💻 Full-Stack Learner • ⚙️ DSA Explorer • 🎷 Music Buff
 </p>
 
 ---
 
 ## 🧠 Who Am I?
 
-Hey! I’m a curious and caffeine-fueled B.Tech undergrad from Hyderabad 🇮🇳. Currently diving deep into the world of **web development** and **DSA**, while balancing gym life, side-projects, and the occasional existential bug. 😅
+Hey! I’m a curious and caffeine-fueled B.Tech undergrad from Hyderabad 🇧🇲. Currently diving deep into the world of **web development** and **DSA**, while balancing gym life, side-projects, and the occasional existential bug. 😅
 
 When I’m not coding, you’ll usually find me:
 - 💪 at the gym working out,
-- 🎧 vibing to music (gym, travel, or just chill),
+- 🎵 vibing to music (gym, travel, or just chill),
 - 🍳 cooking up something fun (yes, I like to cook),
 - 🌌 watching space facts or random knowledge rabbit holes on YouTube,
-- or 🌀 deep into an anime binge.
+- or 🔀 deep into an anime binge.
 
 ---
 
@@ -26,6 +28,26 @@ When I’m not coding, you’ll usually find me:
 - 🧘‍♂️ Trying to stay chill during hackathons
 - 🧠 Brushing up Git, GitHub, and Linux skills
 - 🏋️‍♂️ Lifting weights (and sometimes my spirits)
+
+---
+
+## 🌍 Top 5 Anime Picks
+
+Here’s a list of anime I vibe with the most:
+
+- **Your Name (Kimi no Na wa)** 🌿
+- **Steins;Gate** ⌛️
+- **Attack on Titan** 🔥
+- **Naruto** ☘️
+- **Death Note** ✉️
+
+---
+
+## 📻 Now Playing on Spotify
+
+<p align="center">
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true"/>
+</p>
 
 ---
 
@@ -68,14 +90,14 @@ Whether it’s a collab, code review, anime recommendation, or just life talk �
 
 ---
 
-## 🧩 Random Fact
+## 🤎 Random Fact
 
 > I once played PUBG Mobile for 12+ hours a day and reached Top 36 in NA Server.  
 > Now, I channel that same commitment to debugging and backend configs. 😅
 
 ---
 
-## 💰 Support My Coding Fuel (☕)
+## 💰 Support My Coding Fuel (coffee ☕ or protein 🤼)
 
 If you enjoy my work or just want to buy me a coffee to fuel more late-night commits:
 
