@@ -1,142 +1,95 @@
+<h1 align="center">Prem Sai Kota</h1>
 
-
-<h1 align="center">Hey there! I'm Prem Sai 👋</h1>
 <p align="center">
-  🚀 Aspiring SDE • 💻 Full-Stack Learner • ⚙️ DSA Explorer • 🎷 Music Buff
+  Full-Stack Developer • Building real-world tools for student communities and teams
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/premsai22k">LinkedIn</a> •
+  <a href="mailto:premsai224k@gmail.com">Email</a> •
+  <a href="https://github.com/prem22k">GitHub</a>
 </p>
 
 ---
 
-## 🧠 Who Am I?
+## 👋 About Me
 
-Hey! I’m a curious and caffeine-fueled B.Tech undergrad from Hyderabad 🇧🇲. Currently diving deep into the world of **web development** and **DSA**, while balancing gym life, side-projects, and the occasional existential bug. 😅
+I’m a B.Tech undergraduate at SNIST focused on **building production-ready web applications**, not just demos.
 
-When I’m not coding, you’ll usually find me:
-- 💪 at the gym working out,
-- 🎵 vibing to music (gym, travel, or just chill),
-- 🍳 cooking up something fun (yes, I like to cook),
-- 🌌 watching space facts or random knowledge rabbit holes on YouTube,
-- or 🔀 deep into an anime binge.
+I enjoy taking real problems — event coordination, communication, file handling, automation — and turning them into **usable software** with clean UI, reliable backend systems, and solid deployment.
 
 ---
 
-## 🔥 Currently Cooking
+## 🚀 Flagship Project
 
-- 🍱 Learning Full-Stack Dev: React, Node, Express, MongoDB & Firebase
-- 🧪 Practicing DSA in C++
-- 🛠 Working on open-source and club websites
-- 🧘‍♂️ Trying to stay chill during hackathons
-- 🧠 Brushing up Git, GitHub, and Linux skills
-- 🏋️‍♂️ Lifting weights (and sometimes my spirits)
+### **ToolDeck** — All-in-One Productivity Suite  
+🔗 **Live:** https://tool-deck.vercel.app  
+🔗 **Backend API:** https://tooldeck.onrender.com  
 
----
+ToolDeck is a full-stack web application used for **club and team workflows**, combining multiple productivity tools into a single platform.
 
-## 🌸 Anime I Can Rewatch Forever
+**What it does**
+- AI-powered email generation & bulk sending (Google Gemini)
+- WhatsApp message sender without saving contacts
+- QR code generator
+- Browser-based file & PDF tools (privacy-first)
+- Modern responsive UI with full dark mode
 
-When I’m not battling bugs or lifting weights, I’m probably binge-watching one of these gems:
+**Tech Stack**
+- Frontend: React, Tailwind CSS, WebGL animations
+- Backend: Node.js, Express, MongoDB
+- Integrations: Google Gemini API, Nodemailer
+- Deployment: Vercel (frontend), Render (backend)
 
-- 🔥 **Attack on Titan** – Plot twists sharper than Levi’s blades.
-- ✉️ **Death Note** – Morally gray never looked this cool.
-- ⚔️ **Solo Leveling** – Just me imagining I’m Sung Jin-Woo at the gym.
-- 🧪 **Dr. Stone** – Science bros > Wi-Fi.
-- 🏐 **Haikyuu!!** – Pure motivation with every spike.
-- 🍥 **Naruto** – Believe it. Still hits like childhood.
-- 🔥 **Demon Slayer** – Art, emotion, and elite swordsmanship.
-- ⚽ **Blue Lock** – Soccer + ego = chaotic brilliance.
-- 🌀 **Jujutsu Kaisen** – Dark vibes + Gojo supremacy.
-- 🚪 **Suzume** – Makoto Shinkai never misses.
-- 🎓 **Classroom of the Elite** – Trust no one, but enjoy the chaos.
-- 🌸 **Hell’s Paradise** – Beautifully brutal and bizarre.
-
-No ranking here — they all hit differently depending on my mood. Got a rec? Let’s trade anime lists!
-
+This project demonstrates **end-to-end ownership** — from UI to backend APIs to deployment.
 
 ---
 
-## 📻 Now Playing on Spotify
+## 🧩 Supporting Projects
 
-<p align="center">
-  <a href="https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&redirect=true">
-    <img src="https://spotify-github-profile-kappa-six.vercel.app/api/view.svg?uid=oq817rwh1oijm65d9hzti4ok2&cover_image=true&theme=natemoo-re&show_offline=false&background_color=0d1117&interchange=true&bar_color=2ea043&bar_color_cover=false" alt="Spotify Now Playing (refresh the page if you see this text)"/>
-  </a>
-</p>
+### **Cloud Community Club Website**
+Official production website for the Cloud Community Club (SNIST).
 
+- Built with Next.js, TypeScript, Tailwind CSS
+- Handles events, projects, internships, and memberships
+- Long-term maintained, deployed, and used by real users
 
-
----
-
-
-## 💻 Tech Stack
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+### **Club Backend Systems**
+- Membership application handling
+- Automated email notifications
+- PDF generation for club workflows
+- REST APIs with Express.js
 
 ---
 
-## 🤝 Let’s Connect!
+## 🛠 Skills (Backed by Projects)
 
-<table>
-  <tr>
-    <td valign="top">
+**Frontend**
+- React, Next.js, Tailwind CSS
+- Responsive UI, animations, accessibility
 
-Whether it’s a collab, code review, anime recommendation, or just life talk — I'm just one ping away:
+**Backend**
+- Node.js, Express
+- REST APIs, email automation, file handling
+- MongoDB & Mongoose
 
-- 🧑‍💼 [LinkedIn](https://linkedin.com/in/premsai22k)  
-- 📷 [Instagram](https://instagram.com/iblameprems)  
-- 📌 [Pinterest](https://pinterest.com/premsai22k)  
-- 🧠 [Reddit](https://reddit.com/user/ShallotOk6811)  
-- 🐦 [X / Twitter](https://x.com/premsaik22)
-
-    </td>
-    <td valign="top" width="320" style="padding-left: 20px;">
-      <img src="banner.gif" width="300" alt="Storm Apartment GIF" />
-    </td>
-  </tr>
-</table>
+**Dev & Deployment**
+- Git & GitHub (PRs, collaboration)
+- Vercel, Render
+- Environment configuration & production builds
 
 ---
 
-## 📊 GitHub Stats
+## 📈 GitHub Activity
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prem22k&theme=tokyonight&show_icons=true&count_private=true" alt="Prem's GitHub stats" /><br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=prem22k&theme=tokyonight" alt="GitHub Streak" /><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prem22k&theme=tokyonight&layout=compact" alt="Top Languages" />
-</p>
+I actively build, maintain, and improve real projects — not just tutorials.  
+Most of my work involves **feature development, bug fixes, and refactoring** in production repositories.
 
 ---
 
-## 🤎 Random Fact
+## 📬 Contact
 
-> I once played PUBG Mobile for 12+ hours a day and reached Top 36 in NA Server.  
-> Now, I channel that same commitment to debugging and backend configs. 😅
+- 📧 Email: premsai224k@gmail.com  
+- 💼 LinkedIn: https://linkedin.com/in/premsai22k  
 
----
-
-## 💰 Support My Coding Fuel (coffee ☕ or protein 🤼)
-
-If you enjoy my work or just want to buy me a coffee to fuel more late-night commits:
-
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://paypal.me/Prem22k)
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=prem22k&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
-</p>
-<p align="center">
-  
-</p>
-
-
-<!-- Made with ☕ & passion by Prem Sai | prem22k -->
+I’m open to **internships, collaboration, and real-world problem solving**.
