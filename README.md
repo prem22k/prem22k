@@ -21,8 +21,8 @@ I build platforms that require real-time synchronization, secure data handling, 
 **Status:** Active Development (Web + Desktop)  
 **Focus:** Hybrid database design, WebSockets, secure GitHub integration  
 
-🔗 **Repo:** https://github.com/prem22k/zync  
-🔗 **Live:** https://zync-live-link.com  
+🔗 **Repo:** https://github.com/prem22k/Zync
+🔗 **Live:** https://zync-meet.vercel.app/
 
 A unified workspace combining task management, structured workflows, and persistent communication.
 
@@ -37,8 +37,8 @@ A unified workspace combining task management, structured workflows, and persist
 **Status:** Functional  
 **Focus:** Serverless scoring logic, real-time state sync  
 
-🔗 **Repo:** https://github.com/prem22k/quizwhiz  
-🔗 **Live:** https://quizwhiz-live-link.com  
+🔗 **Repo:** https://github.com/prem22k/QuizWhiz 
+🔗 **Live:** https://quizwhiz-live.vercel.app/
 
 Interactive quiz system built for live events and learning environments.
 
@@ -53,8 +53,8 @@ Interactive quiz system built for live events and learning environments.
 **Status:** Functional  
 **Focus:** Deterministic heuristics + LLM-assisted analysis  
 
-🔗 **Repo:** https://github.com/prem22k/ai-github-auditor  
-🔗 **Live:** https://auditor-live-link.com  
+🔗 **Repo:** https://github.com/prem22k/ai-github-auditor
+🔗 **Live:** https://ai-github-auditor.vercel.app/
 
 Automated repository evaluation tool combining rule-based analysis with language models.
 
@@ -69,9 +69,9 @@ Automated repository evaluation tool combining rule-based analysis with language
 **Status:** Production (1,000+ users)  
 **Focus:** Workflow automation, resilient communication  
 
-🔗 **Repo (Frontend):** https://github.com/prem22k/ccc-frontend  
-🔗 **Repo (Backend):** https://github.com/prem22k/ccc-backend  
-🔗 **Live:** https://club-live-link.com  
+🔗 **Repo (Frontend):** https://github.com/prem22k/snist-website-fn 
+🔗 **Repo (Backend):** https://github.com/prem22k/snist-website-bn 
+🔗 **Live:** https://cloudcommunityclub-c3.vercel.app/
 
 Centralized membership and resource platform for a student technology community.
 
@@ -88,7 +88,7 @@ Centralized membership and resource platform for a student technology community.
 **Status:** Functional (AI integration in progress)  
 **Focus:** Scraping pipelines, data normalization  
 
-🔗 **Repo:** https://github.com/prem22k/hackhunt  
+🔗 **Repo:** https://github.com/prem22k/Hack-Hunt 
 
 Aggregates hackathons and competitions from fragmented sources into a unified schema using automated scraping and scheduled jobs.
 
@@ -98,7 +98,7 @@ Aggregates hackathons and competitions from fragmented sources into a unified sc
 **Status:** Early Functional  
 **Focus:** Client-side processing, secure financial parsing  
 
-🔗 **Repo:** https://github.com/prem22k/wealthfolio  
+🔗 **Repo:** https://github.com/prem22k/wealth-folio  
 
 Privacy-focused financial analysis dashboard with local PDF parsing and AI-assisted transaction categorization.
 
