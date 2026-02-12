@@ -1,130 +1,134 @@
-# Prem Sai Kota  
-**Full-Stack Developer | Building Production-Grade Web Systems**
+<h1 align="center">Prem Sai Kota</h1>
 
-[LinkedIn](https://linkedin.com/in/premsai22k) •
-[Email](mailto:premsai224k@gmail.com) •
-[Portfolio](https://premsai.vercel.app)
+<p align="center">
+  <strong>Full-Stack Developer | Building Production-Grade Web Systems</strong>
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/premsai22k">LinkedIn</a> •
+  <a href="mailto:premsai224k@gmail.com">Email</a> •
+  <a href="https://premsai.vercel.app">Portfolio</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-System%20Architecture-blue" />
+  <img src="https://img.shields.io/badge/Backend-Resilience-green" />
+  <img src="https://img.shields.io/badge/AI-Integrated-orange" />
+  <img src="https://img.shields.io/badge/Status-Actively%20Building-brightgreen" />
+</p>
 
 ---
 
-## About Me
+## 🚀 About Me
 
-I’m a software engineer focused on system architecture, backend reliability, and end-to-end product ownership.
+I’m a software engineer focused on **system architecture, backend reliability, and end-to-end product ownership**.
 
-I build platforms that require real-time synchronization, secure data handling, and resilient communication pipelines. My approach prioritizes maintainability, deterministic logic, and failure-aware system design over temporary demos.
+I build platforms that require real-time synchronization, secure data handling, and resilient communication pipelines.  
+My approach prioritizes maintainability, deterministic logic, and failure-aware design over temporary demos.
 
 ---
 
-# Core Projects
+# 🧠 Core Projects
 
-## Zync — Real-Time Collaboration Platform  
+---
+
+## 🔷 Zync — Real-Time Collaboration Platform
 **Status:** Active Development (Web + Desktop)  
 **Focus:** Hybrid database design, WebSockets, secure GitHub integration  
 
-🔗 **Repo:** https://github.com/prem22k/Zync
+🔗 **Repo:** https://github.com/prem22k/Zync  
 🔗 **Live:** https://zync-meet.vercel.app/
 
 A unified workspace combining task management, structured workflows, and persistent communication.
 
 **Engineering Highlights**
-- Webhook engine verifies GitHub commits using HMAC SHA-256 before updating task states
-- Hybrid data model: Firestore for high-frequency chat writes, MongoDB for structured metadata
-- Designed to maintain consistency between code activity and project workflow states
+- HMAC SHA-256 verified GitHub webhook engine  
+- Firestore (chat writes) + MongoDB (structured metadata) hybrid routing  
+- Designed for workflow consistency between commits and task states  
 
 ---
 
-## QuizWhiz — Real-Time Multiplayer Quiz Platform  
+## 🔷 QuizWhiz — Real-Time Multiplayer Quiz Platform
 **Status:** Functional  
-**Focus:** Serverless scoring logic, real-time state sync  
+**Focus:** Serverless scoring logic, real-time sync  
 
-🔗 **Repo:** https://github.com/prem22k/QuizWhiz 
+🔗 **Repo:** https://github.com/prem22k/QuizWhiz  
 🔗 **Live:** https://quizwhiz-live.vercel.app/
 
-Interactive quiz system built for live events and learning environments.
+Interactive quiz system built for live learning environments.
 
 **Engineering Highlights**
-- Scoring logic secured via Firebase Cloud Functions
-- Firestore snapshot listeners for low-latency synchronization
-- Designed to prevent client-side manipulation
+- Secure scoring via Firebase Cloud Functions  
+- Snapshot listeners for low-latency state sync  
+- Client-side manipulation prevention  
 
 ---
 
-## AI GitHub Auditor  
+## 🔷 AI GitHub Auditor
 **Status:** Functional  
-**Focus:** Deterministic heuristics + LLM-assisted analysis  
+**Focus:** Deterministic heuristics + LLM analysis  
 
-🔗 **Repo:** https://github.com/prem22k/ai-github-auditor
+🔗 **Repo:** https://github.com/prem22k/ai-github-auditor  
 🔗 **Live:** https://ai-github-auditor.vercel.app/
 
-Automated repository evaluation tool combining rule-based analysis with language models.
+Repository evaluation tool combining rule-based scoring with language models.
 
 **Engineering Highlights**
-- Applies deterministic repository heuristics before LLM scoring
-- Separates structured signals from generative reasoning
-- Designed to reduce false positives in technical evaluations
+- Deterministic repository heuristics before LLM scoring  
+- Structured signal separation from generative reasoning  
+- Designed to reduce false positives  
 
 ---
 
-## Cloud Community Club Platform  
+## 🔷 Cloud Community Club Platform
 **Status:** Production (1,000+ users)  
 **Focus:** Workflow automation, resilient communication  
 
-🔗 **Repo (Frontend):** https://github.com/prem22k/snist-website-fn 
-🔗 **Repo (Backend):** https://github.com/prem22k/snist-website-bn 
+🔗 **Frontend Repo:** https://github.com/prem22k/snist-website-fn  
+🔗 **Backend Repo:** https://github.com/prem22k/snist-website-bn  
 🔗 **Live:** https://cloudcommunityclub-c3.vercel.app/
 
-Centralized membership and resource platform for a student technology community.
+Centralized membership and resource platform.
 
 **Engineering Highlights**
-- Structured membership intake and automated notifications
-- SMTP fallback strategy for reliable email delivery
-- Actively maintained and used in production
+- Automated intake workflows  
+- SMTP fallback transport strategy  
+- Long-term maintained production system  
 
 ---
 
-# Supporting Projects
+# 🧩 Supporting Projects
 
-## HackHunt  
-**Status:** Functional (AI integration in progress)  
-**Focus:** Scraping pipelines, data normalization  
+### HackHunt
+🔗 https://github.com/prem22k/Hack-Hunt  
+Hackathon aggregation engine using Playwright scraping and normalized schemas.  
+AI integration in progress.
 
-🔗 **Repo:** https://github.com/prem22k/Hack-Hunt 
-
-Aggregates hackathons and competitions from fragmented sources into a unified schema using automated scraping and scheduled jobs.
-
----
-
-## WealthFolio  
-**Status:** Early Functional  
-**Focus:** Client-side processing, secure financial parsing  
-
-🔗 **Repo:** https://github.com/prem22k/wealth-folio  
-
-Privacy-focused financial analysis dashboard with local PDF parsing and AI-assisted transaction categorization.
+### WealthFolio
+🔗 https://github.com/prem22k/wealth-folio  
+Privacy-focused financial dashboard with local PDF parsing and AI-assisted categorization.
 
 ---
 
-# How I Work
+# 🛠 Technical Stack
 
-- Design systems with failure scenarios in mind  
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,mongodb,firebase,python,docker,git,github,vercel" />
+
+</p>
+
+---
+
+# ⚙️ Engineering Principles
+
+- Design for failure scenarios  
 - Separate deterministic logic from AI reasoning  
-- Prefer measurable behavior over assumptions  
+- Prefer measurable system behavior  
 - Build iteratively and refactor aggressively  
 
 ---
 
-# Technical Stack
-
-**Languages:** JavaScript, TypeScript, C++, Python, SQL  
-
-**Frontend:** React, Next.js (App Router), Tailwind CSS, Vite, Electron  
-
-**Backend:** Node.js, Express, Firebase (Auth, Firestore, Cloud Functions), MongoDB  
-
-**AI & Data:** Google Gemini API, Groq SDK (Llama 3), Genkit  
-
-**Infrastructure:** Docker, Vercel, Render, GitHub Actions  
-
----
-
-Open to internships, collaboration, and serious system-building roles.
+<p align="center">
+  Open to internships, collaboration, and serious system-building roles.
+</p>
