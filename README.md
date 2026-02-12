@@ -4,11 +4,7 @@
 
 
 
-[LinkedIn](https://linkedin.com/in/premsai22k) •
-
-[Email](mailto:premsai224k@gmail.com) •
-
-[Portfolio](https://premsai.vercel.app)
+[LinkedIn](https://linkedin.com/in/premsai22k) • [Email](mailto:premsai224k@gmail.com) • [Portfolio](https://premsai.vercel.app)
 
 
 
