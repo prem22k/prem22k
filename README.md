@@ -1,252 +1,112 @@
-# Prem Sai Kota  
+<div align="center">
+  <img src="banner.gif" alt="night sky" width="100%" />
+  <br/>
+  <br/>
+  <h1>Prem Sai Kota</h1>
 
-**Full-Stack Developer | Building Production-Grade Web Systems**
+  ### ⚡ 2026 Focus: Real-time collaborative apps, AI-native tools, and scalable backend architectures.
 
+  [![Portfolio](https://img.shields.io/badge/Portfolio-premsai.vercel.app-b30000?style=for-the-badge&logo=vercel&logoColor=white)](https://premsai.vercel.app)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-b30000?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/premsai22k)
+  [![Email](https://img.shields.io/badge/Email-premsai224k@gmail.com-b30000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:premsai224k@gmail.com)
+</div>
 
+<br />
 
-[LinkedIn](https://linkedin.com/in/premsai22k) • [Email](mailto:premsai224k@gmail.com) • [Portfolio](https://premsai.vercel.app)
+## 👨‍💻 About Me
 
+I am a product-focused full-stack engineer with production internship experience and published npm packages. I am equally comfortable architecting robust Redis-backed rate limiters as I am building pixel-perfect, accessible React design systems.
 
-
----
-
-
-
-## About Me
-
-
-
-I’m a software engineer focused on system architecture, backend reliability, and end-to-end product ownership.
-
-
-
-I build platforms that require real-time synchronization, secure data handling, and resilient communication pipelines. My approach prioritizes maintainability, deterministic logic, and failure-aware system design over temporary demos.
-
-
+- 💼 Currently working as a **Full-Stack Developer Intern @ RigorBase** & **Technical Head @ Cloud Community Club (C³)**. 
+- 🔭 Always exploring the intersection of **AI, Developer Tooling, and UI/UX**.
+- 🤝 Status: **OPEN_TO_WORK** for internships and full-time opportunities.
 
 ---
 
+## 💼 Work Experience
 
+**RigorBase** | *Full-Stack Developer Intern* (Mar 2026 – Present)
+- Built the closed beta access system end-to-end (schema design, Redis rate limiting, OAuth).
+- Led the frontend migration to the v3 design system, improving UI consistency and developer velocity.
+- Built interactive dashboards for learning metrics and gamification features like adaptive quizzes.
 
-# Core Projects
-
-
-
-## Zync — Real-Time Collaboration Platform  
-
-**Status:** Active Development (Web + Desktop)  
-
-**Focus:** Hybrid database design, WebSockets, secure GitHub integration  
-
-
-
-🔗 **Repo:** https://github.com/prem22k/Zync
-
-🔗 **Live:** https://zync-meet.vercel.app/
-
-
-
-A unified workspace combining task management, structured workflows, and persistent communication.
-
-
-
-**Engineering Highlights**
-
-- Webhook engine verifies GitHub commits using HMAC SHA-256 before updating task states
-
-- Hybrid data model: Firestore for high-frequency chat writes, MongoDB for structured metadata
-
-- Designed to maintain consistency between code activity and project workflow states
-
-
+**Cloud Community Club (C³) @ SNIST** | *Technical Head / Lead Developer* (Nov 2024 – Present)
+- Architected the club’s official platform serving 1,000+ active campus users using Next.js.
+- Built automated email notification services with retry logic and configured robust CI/CD pipelines.
 
 ---
 
+## 🛠️ Tech Stack & Arsenal
 
+<div align="center">
+  <br />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,python,java,cpp,html,css&perline=10" alt="Languages" />
+  </a>
+  <br />
+  <br />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,nodejs,express,mongodb,postgres,redis,prisma,docker&perline=10" alt="Frameworks & Databases" />
+  </a>
+  <br />
+  <br />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=githubactions,vercel,supabase,firebase,git,linux&perline=10" alt="DevOps & Tools" />
+  </a>
+  <br />
+  <br />
+</div>
 
-## QuizWhiz — Real-Time Multiplayer Quiz Platform  
-
-**Status:** Functional  
-
-**Focus:** Serverless scoring logic, real-time state sync  
-
-
-
-🔗 **Repo:** https://github.com/prem22k/QuizWhiz 
-
-🔗 **Live:** https://quizwhiz-live.vercel.app/
-
-
-
-Interactive quiz system built for live events and learning environments.
-
-
-
-**Engineering Highlights**
-
-- Scoring logic secured via Firebase Cloud Functions
-
-- Firestore snapshot listeners for low-latency synchronization
-
-- Designed to prevent client-side manipulation
-
-
+> **AI / LLMs:** RAG Pipelines, LangChain, ChromaDB, Ollama, MCP, Groq API, Gemini API
 
 ---
 
+## 🚀 Featured Projects
 
+*(Replace the placeholder images below with actual screenshots of your apps!)*
 
-## AI GitHub Auditor  
+### 📡 [ServX](https://github.com/Servx-lab/ServX) - Infrastructure Monitoring & Incident Response
+<a href="https://servx.vercel.app/">
+  <img src="servx.png" width="100%" alt="ServX Preview" style="border-radius: 8px; margin: 10px 0;" />
+</a>
 
-**Status:** Functional  
+> A full-stack monitoring platform published as an npm workspaces monorepo with pluggable database adapters and AES-256 encrypted storage. Features automated incident detection via webhooks and real-time audit streaming over Server-Sent Events. **[Live Demo](https://servx.vercel.app/)**
 
-**Focus:** Deterministic heuristics + LLM-assisted analysis  
+### ⚡ [Zync](https://github.com/zync-meet/Zync) - Real-Time Collaborative Workspace
+<a href="https://zync-meet.vercel.app/">
+  <img src="zync-meet.png" width="100%" alt="Zync Preview" style="border-radius: 8px; margin: 10px 0;" />
+</a>
 
+> Conflict-free document editing using Yjs CRDTs with live cursors and multi-namespace sync. Integrates a GitHub webhook parser for Kanban tasks and utilizes LLMs to generate architecture specs. **[Live Demo](https://zync-meet.vercel.app/)**
 
+### 🤖 [Adviser-CLI](https://github.com/prem22k/adviser-cli-tool) - Local-First RAG Pipeline & AI Assistant
+<a href="https://github.com/prem22k/adviser-cli-tool/pkgs/npm/adviser-cli">
+  <img src="adviser-cli.png" width="100%" alt="Adviser-CLI Preview" style="border-radius: 8px; margin: 10px 0;" />
+</a>
 
-🔗 **Repo:** https://github.com/prem22k/ai-github-auditor
-
-🔗 **Live:** https://ai-github-auditor.vercel.app/
-
-
-
-Automated repository evaluation tool combining rule-based analysis with language models.
-
-
-
-**Engineering Highlights**
-
-- Applies deterministic repository heuristics before LLM scoring
-
-- Separates structured signals from generative reasoning
-
-- Designed to reduce false positives in technical evaluations
-
-
+> A fully local RAG pipeline combining ChromaDB vector search with BM25 sparse retrieval. Features a VisionRAG module using ColPali patch embeddings for PDFs, published as an MCP server to npm for use with AI coding assistants. **[npm Package](https://github.com/prem22k/adviser-cli-tool/pkgs/npm/adviser-cli)**
 
 ---
 
+## 🏆 Achievements & Hackathons
 
-
-## Cloud Community Club Platform  
-
-**Status:** Production (1,000+ users)  
-
-**Focus:** Workflow automation, resilient communication  
-
-
-
-🔗 **Repo (Frontend):** https://github.com/prem22k/snist-website-fn 
-
-🔗 **Repo (Backend):** https://github.com/prem22k/snist-website-bn 
-
-🔗 **Live:** https://cloudcommunityclub-c3.vercel.app/
-
-
-
-Centralized membership and resource platform for a student technology community.
-
-
-
-**Engineering Highlights**
-
-- Structured membership intake and automated notifications
-
-- SMTP fallback strategy for reliable email delivery
-
-- Actively maintained and used in production
-
-
+- 🥇 **Brainrot Hackathon (Double Track Winner):** Outperformed 1,224 entrants to win both prize tracks for an innovative full-stack web application.
+- 🏅 **National Hackathon (5th Place):** Built and deployed an integrated hardware/software system in 48 hours out of 230+ teams at JNTUH HackFusion-2K26.
 
 ---
 
-
-
-# Supporting Projects
-
-
-
-## HackHunt  
-
-**Status:** Functional (AI integration in progress)  
-
-**Focus:** Scraping pipelines, data normalization  
-
-
-
-🔗 **Repo:** https://github.com/prem22k/Hack-Hunt 
-
-
-
-Aggregates hackathons and competitions from fragmented sources into a unified schema using automated scraping and scheduled jobs.
-
-
-
----
-
-
-
-## WealthFolio  
-
-**Status:** Early Functional  
-
-**Focus:** Client-side processing, secure financial parsing  
-
-
-
-🔗 **Repo:** https://github.com/prem22k/wealth-folio  
-
-
-
-Privacy-focused financial analysis dashboard with local PDF parsing and AI-assisted transaction categorization.
-
-
-
----
-
-
-
-# How I Work
-
-
-
-- Design systems with failure scenarios in mind  
-
-- Separate deterministic logic from AI reasoning  
-
-- Prefer measurable behavior over assumptions  
-
-- Build iteratively and refactor aggressively  
-
-
-
----
-
-
-
-# Technical Stack
-
-
-
-**Languages:** JavaScript, TypeScript, C++  
-
-
-
-**Frontend:** React, Next.js (App Router), Tailwind CSS, Vite  
-
-
-
-**Backend:** Node.js, Express, Firebase (Auth, Firestore, Cloud Functions), MongoDB  
-
-
-
-**Infrastructure:** Docker, Vercel, Render, GitHub Actions  
-
-
-
----
-
-
-
-Open to internships, collaboration, and serious system-building roles.
-
+## 📈 Contribution Graph & Activity
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=prem22k&bg_color=0D1117&color=ff4d4d&line=ff4d4d&point=ffffff&area=true&hide_border=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=prem22k&bg_color=ffffff&color=cc0000&line=cc0000&point=333333&area=true&hide_border=true">
+    <img alt="Prem's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=prem22k&bg_color=ffffff&color=cc0000&line=cc0000&point=333333&area=true&hide_border=true" width="100%">
+  </picture>
+  <br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=prem22k&layout=compact&hide_border=true&bg_color=0D1117&title_color=ff4d4d&text_color=c9d1d9">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=prem22k&layout=compact&hide_border=true&title_color=cc0000&text_color=333333&bg_color=ffffff">
+    <img alt="Prem's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=prem22k&layout=compact&hide_border=true&title_color=cc0000&text_color=333333&bg_color=ffffff">
+  </picture>
+</div>
