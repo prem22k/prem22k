@@ -17,7 +17,8 @@
 
 I am a product-focused full-stack engineer with production internship experience and published npm packages. I am equally comfortable architecting robust Redis-backed rate limiters as I am building pixel-perfect, accessible React design systems.
 
-- 💼 Currently working as a **Full-Stack Developer Intern @ RigorBase** & **Technical Head @ Cloud Community Club (C³)**. 
+- 💼 Currently working as **Technical Head @ Cloud Community Club (C³)**. 
+- 💼 Recently interned as a **Full-Stack Developer Intern @ RigorBase**.
 - 🔭 Always exploring the intersection of **AI, Developer Tooling, and UI/UX**.
 - 🤝 Status: **OPEN_TO_WORK** for internships and full-time opportunities.
 
@@ -25,7 +26,7 @@ I am a product-focused full-stack engineer with production internship experience
 
 ## 💼 Work Experience
 
-**RigorBase** | *Full-Stack Developer Intern* (Mar 2026 – Present)
+**RigorBase** | *Full-Stack Developer Intern* (Mar 2026 – Apr 2026)
 - Built the closed beta access system end-to-end (schema design, Redis rate limiting, OAuth).
 - Led the frontend migration to the v3 design system, improving UI consistency and developer velocity.
 - Built interactive dashboards for learning metrics and gamification features like adaptive quizzes.
