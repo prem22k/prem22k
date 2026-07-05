@@ -64,7 +64,6 @@ I am a product-focused full-stack engineer with production internship experience
 
 ## 🚀 Featured Projects
 
-*(Replace the placeholder images below with actual screenshots of your apps!)*
 
 ### 📡 [ServX](https://github.com/Servx-lab/ServX) - Infrastructure Monitoring & Incident Response
 <a href="https://servx.vercel.app/">
