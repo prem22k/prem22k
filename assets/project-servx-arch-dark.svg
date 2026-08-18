@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="136" viewBox="0 0 800 136" fill="none" role="img" aria-label="ServX Architecture — Incident Ingestion &amp; SSE Pipeline">
+<title>ServX Architecture — Incident Ingestion &amp; SSE Pipeline</title>
+<desc>Telemetry Ingestion -&gt; Anomaly Engine &amp; AES-256 Storage -&gt; Real-Time Server-Sent Events (SSE) Broadcast</desc>
+<rect width="800" height="136" fill="#0d1117" />
+<text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">ARCHITECTURE · TELEMETRY INGEST &amp; SSE EVENT STREAMING PIPELINE</text>
+<rect x="0" y="28" width="210" height="96" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<text x="14" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">STAGE 1 · TELEMETRY INGEST</text>
+<text x="14" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">Node Agents &amp; Webhooks</text>
+<text x="14" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Heartbeat ticks &amp; ping probes</text>
+<text x="14" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Pluggable HTTP adapter protocol</text>
+<text x="14" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· Ingest rate-limiting via Redis</text>
+<line x1="210" y1="76" x2="246" y2="76" stroke="#57534E" stroke-width="1.5" />
+<text x="228" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#F5F2EB">→</text>
+<rect x="246" y="28" width="298" height="96" fill="#161b22" stroke="#57534E" stroke-width="1" rx="0" ry="0" />
+<text x="260" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#F5F2EB">STAGE 2 · DETECTION &amp; ENCRYPTION</text>
+<text x="260" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">Anomaly Engine + AES-256-GCM</text>
+<text x="260" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Sliding-window threshold evaluation</text>
+<text x="260" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Authenticated AES-256-GCM vault</text>
+<text x="260" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· Pluggable SQL / Prisma DB adapters</text>
+<line x1="544" y1="76" x2="576" y2="76" stroke="#57534E" stroke-width="1.5" />
+<text x="560" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#F5F2EB">→</text>
+<rect x="576" y="28" width="224" height="96" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<text x="590" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">STAGE 3 · REAL-TIME BROADCAST</text>
+<text x="590" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">Server-Sent Events (SSE)</text>
+<text x="590" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Sub-100ms push to dashboards</text>
+<text x="590" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Auto-reconnecting audit stream</text>
+<text x="590" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· Webhook alert dispatch triggers</text>
+</svg>

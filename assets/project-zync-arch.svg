@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="136" viewBox="0 0 800 136" fill="none" role="img" aria-label="Zync Architecture — Multi-Client CRDT Star Topology">
+<title>Zync Architecture — Multi-Client CRDT Star Topology</title>
+<desc>Client Cluster (React 19 / Electron) &lt;-&gt; Central CRDT Broker (WebSocket / Yjs) -&gt; Persistence (MongoDB + Firestore)</desc>
+<rect width="800" height="136" fill="#0d1117" />
+<text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">ARCHITECTURE · MULTI-CLIENT CRDT SYNCHRONIZATION TOPOLOGY</text>
+<rect x="0" y="28" width="220" height="96" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<text x="14" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">CLIENT CLUSTER</text>
+<text x="14" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">Web (React 19) &amp; Desktop (Electron)</text>
+<text x="14" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Local Y.Doc state replica</text>
+<text x="14" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Awareness: Cursors &amp; presence</text>
+<text x="14" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· Zero-latency optimistic UI</text>
+<line x1="220" y1="76" x2="256" y2="76" stroke="#57534E" stroke-width="1.5" />
+<text x="238" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#F5F2EB">⇄</text>
+<rect x="256" y="28" width="288" height="96" fill="#161b22" stroke="#57534E" stroke-width="1" rx="0" ry="0" />
+<text x="270" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#F5F2EB">CENTRAL CRDT BROKER (NODE.JS)</text>
+<text x="270" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">WebSocket Multiplexer &amp; Room Sync</text>
+<text x="270" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· State vector diff exchange</text>
+<text x="270" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Conflict-free convergence logic</text>
+<text x="270" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· Isolated room namespace routing</text>
+<line x1="544" y1="76" x2="576" y2="76" stroke="#57534E" stroke-width="1.5" />
+<text x="560" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#F5F2EB">→</text>
+<rect x="576" y="28" width="224" height="96" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<text x="590" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">PERSISTENCE TIERS</text>
+<text x="590" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">MongoDB + Firestore</text>
+<text x="590" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· MongoDB: Document snapshot store</text>
+<text x="590" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#A8A29E">· Firestore: Live room auth state</text>
+<text x="590" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">· S3-compatible snapshot backups</text>
+</svg>

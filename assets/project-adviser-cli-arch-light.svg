@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="136" viewBox="0 0 800 136" fill="none" role="img" aria-label="Adviser-CLI Architecture — Hybrid RAG &amp; Vision Pipeline">
+<title>Adviser-CLI Architecture — Hybrid RAG &amp; Vision Pipeline</title>
+<desc>Multimodal Ingest -&gt; Tri-Engine Retrieval (ChromaDB + BM25 + ColPali) -&gt; Local LLM &amp; Model Context Protocol (MCP) Server</desc>
+<rect width="800" height="136" fill="#ffffff" />
+<text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">ARCHITECTURE · LOCAL-FIRST HYBRID RETRIEVAL DAG (DENSE + SPARSE + VISION)</text>
+<rect x="0" y="28" width="200" height="96" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="14" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">1 · MULTIMODAL INGEST</text>
+<text x="14" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#1c1917">PDFs, Code &amp; Prompt</text>
+<text x="14" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· AST syntax chunking</text>
+<text x="14" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· PDF raster page extractor</text>
+<text x="14" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#a8a29e">· Zero telemetry / 100% local</text>
+<line x1="200" y1="76" x2="236" y2="76" stroke="#a8a29e" stroke-width="1.5" />
+<text x="218" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#1c1917">→</text>
+<rect x="236" y="28" width="318" height="96" fill="#f6f8fa" stroke="#a8a29e" stroke-width="1" rx="0" ry="0" />
+<text x="250" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#1c1917">2 · TRI-ENGINE RETRIEVAL + RRF</text>
+<text x="250" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ChromaDB + BM25 + ColPali</text>
+<text x="250" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· Dense vector embeddings (ChromaDB)</text>
+<text x="250" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· Sparse lexical keyword search (BM25)</text>
+<text x="250" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#a8a29e">· VisionRAG multi-vector patch ranking</text>
+<line x1="554" y1="76" x2="586" y2="76" stroke="#a8a29e" stroke-width="1.5" />
+<text x="570" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" letter-spacing="0.8" text-anchor="middle" fill="#1c1917">→</text>
+<rect x="586" y="28" width="214" height="96" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="600" y="48" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">3 · MCP TOOL HARNESS</text>
+<text x="600" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="-0.2" fill="#1c1917">Local LLM + MCP Server</text>
+<text x="600" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· Local Ollama / Claude / OpenAI</text>
+<text x="600" y="102" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#57534e">· Published npm MCP package</text>
+<text x="600" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#a8a29e">· Direct IDE context injection</text>
+</svg>
