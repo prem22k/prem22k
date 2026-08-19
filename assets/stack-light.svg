@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="328" viewBox="0 0 800 328" fill="none" role="img" aria-label="Engineering Stack — Prem Sai Kota">
+<title>Engineering Stack — Prem Sai Kota</title>
+<desc>Languages, Frontend, Backend &amp; Data, AI/RAG Tooling, Realtime Systems, DevOps &amp; Infrastructure</desc>
+<rect width="800" height="328" fill="#ffffff" />
+<text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">ENGINEERING STACK · CORE DOMAINS &amp; TOOLING</text>
+<rect x="0" y="28" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="14" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">01</text>
+<text x="38" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">LANGUAGES &amp; CORE</text>
+<line x1="14" y1="66" x2="242" y2="66" stroke="#e7e5e4" stroke-width="1" />
+<text x="14" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">TypeScript</text>
+<text x="14" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">JavaScript (ESM)</text>
+<text x="14" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Python 3.11+</text>
+<text x="14" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Node.js 20+</text>
+<rect x="272" y="28" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="286" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">02</text>
+<text x="310" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">FRONTEND</text>
+<line x1="286" y1="66" x2="514" y2="66" stroke="#e7e5e4" stroke-width="1" />
+<text x="286" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">React 19</text>
+<text x="286" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Next.js App Router</text>
+<text x="286" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Tailwind CSS</text>
+<text x="286" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">HTML5 / Semantic CSS</text>
+<rect x="544" y="28" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="558" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">03</text>
+<text x="582" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">BACKEND &amp; DATA</text>
+<line x1="558" y1="66" x2="786" y2="66" stroke="#e7e5e4" stroke-width="1" />
+<text x="558" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Express.js</text>
+<text x="558" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">REST &amp; Webhooks</text>
+<text x="558" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">PostgreSQL / Prisma</text>
+<text x="558" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">MongoDB / Firestore</text>
+<rect x="0" y="175" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="14" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">04</text>
+<text x="38" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">AI, RAG &amp; TOOLING</text>
+<line x1="14" y1="213" x2="242" y2="213" stroke="#e7e5e4" stroke-width="1" />
+<text x="14" y="231" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">ChromaDB Vector</text>
+<text x="14" y="249" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">BM25 Sparse Lexical</text>
+<text x="14" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">ColPali VisionRAG</text>
+<text x="14" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Model Context Protocol (MCP)</text>
+<rect x="272" y="175" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="286" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">05</text>
+<text x="310" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">REALTIME SYSTEMS</text>
+<line x1="286" y1="213" x2="514" y2="213" stroke="#e7e5e4" stroke-width="1" />
+<text x="286" y="231" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Yjs CRDT Engine</text>
+<text x="286" y="249" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">WebSocket Multiplexing</text>
+<text x="286" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Server-Sent Events (SSE)</text>
+<text x="286" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Redis Pub/Sub &amp; Rates</text>
+<rect x="544" y="175" width="256" height="135" fill="#f6f8fa" stroke="#e7e5e4" stroke-width="1" rx="0" ry="0" />
+<text x="558" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#a8a29e">06</text>
+<text x="582" y="201" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" fill="#1c1917">DEVOPS &amp; INFRA</text>
+<line x1="558" y1="213" x2="786" y2="213" stroke="#e7e5e4" stroke-width="1" />
+<text x="558" y="231" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Docker</text>
+<text x="558" y="249" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">GitHub Actions CI/CD</text>
+<text x="558" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Linux CLI</text>
+<text x="558" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Vercel / Cloudflare</text>
+</svg>
