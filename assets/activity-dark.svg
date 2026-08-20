@@ -1,0 +1,440 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="308" viewBox="0 0 800 308" fill="none" role="img" aria-label="Contribution &amp; Activity Velocity — Prem Sai Kota">
+<title>Contribution &amp; Activity Velocity — Prem Sai Kota</title>
+<desc>Total Contributions: 5,207 | Active Days: 211/370 (57%) | Peak Month: Jan | Palette: #1A1A1A to #DCDCDC square cells</desc>
+<rect width="800" height="308" fill="#0d1117" />
+<text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">CONTRIBUTION METRICS · ANNUAL VELOCITY</text>
+<text x="800" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" text-anchor="end" fill="#78716C">370 DAYS RECORDED · MONOCHROME PALETTE</text>
+<text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">5,207</text>
+<text x="0" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">TOTAL CONTRIBUTIONS</text>
+<text x="200" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">211 / 370</text>
+<text x="200" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">ACTIVE DAYS (57%)</text>
+<text x="400" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">Jan</text>
+<text x="400" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">PEAK MONTH (1,631)</text>
+<text x="600" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">Zync</text>
+<text x="600" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">PRIMARY REPOSITORY</text>
+<line x1="0" y1="84" x2="800" y2="84" stroke="#2C2825" stroke-width="1" />
+<text x="8" y="133.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">M</text>
+<text x="8" y="160.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">W</text>
+<text x="8" y="187.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">F</text>
+<text x="32" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Aug</text>
+<rect x="32" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="32" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="32" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="32" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="32" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="32" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="32" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="45.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="45.5" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="45.5" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="45.5" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="45.5" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="45.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="45.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="59" y="112" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<text x="59" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Sep</text>
+<rect x="59" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="59" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="59" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="59" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="59" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="59" y="193" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="72.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="72.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="72.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="72.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="72.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="72.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="72.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="86" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="86" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="99.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<text x="113" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Oct</text>
+<rect x="113" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="113" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="126.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="140" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="140" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="140" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="140" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="140" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="140" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="140" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="153.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="153.5" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="153.5" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="153.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="153.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="153.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="153.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="167" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="167" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="167" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="167" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="167" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="167" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<text x="167" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Nov</text>
+<rect x="167" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="180.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="180.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="180.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="180.5" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="180.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="180.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="180.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="194" y="112" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="194" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="194" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="194" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="194" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="194" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="194" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="207.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="207.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="207.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="207.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="207.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="207.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="207.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="221" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<text x="234.5" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Dec</text>
+<rect x="234.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="234.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="248" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="248" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="261.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="261.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="275" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="275" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="275" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="275" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="275" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="275" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="275" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="288.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="288.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="288.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="288.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<text x="288.5" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Jan</text>
+<rect x="288.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="288.5" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="288.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="302" y="112" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="302" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="302" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="302" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="302" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="302" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="302" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="315.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="315.5" y="125.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="315.5" y="139" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="315.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="315.5" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="315.5" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="315.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="329" y="112" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="329" y="125.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="329" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="329" y="152.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="329" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="329" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="329" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="342.5" y="112" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="342.5" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="342.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="342.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="342.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="342.5" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="342.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<text x="356" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Feb</text>
+<rect x="356" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="356" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="356" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="356" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="356" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="356" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="356" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="369.5" y="112" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="369.5" y="125.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="369.5" y="139" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="369.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="369.5" y="166" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="369.5" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="369.5" y="193" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="383" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="383" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="383" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="383" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="383" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="383" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="383" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="396.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="396.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="396.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="396.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="396.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="396.5" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="396.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<text x="410" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Mar</text>
+<rect x="410" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="410" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="410" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="410" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="410" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="410" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="410" y="193" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="423.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="423.5" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="423.5" y="139" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="423.5" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="423.5" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="423.5" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="423.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="437" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="437" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="437" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="437" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="437" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="437" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="437" y="193" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="450.5" y="112" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="450.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="450.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="450.5" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="450.5" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="450.5" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="450.5" y="193" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="464" y="112" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="464" y="125.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="464" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<text x="464" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Apr</text>
+<rect x="464" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="464" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="464" y="179.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="464" y="193" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="477.5" y="112" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="477.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="477.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="477.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="477.5" y="166" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="477.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="477.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="491" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="491" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="491" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="491" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="491" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="491" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="491" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="504.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="504.5" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="504.5" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="504.5" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="504.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="504.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="504.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="518" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="518" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="518" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="518" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="518" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<text x="518" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">May</text>
+<rect x="518" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="518" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="531.5" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="531.5" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="545" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="558.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="558.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="558.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="558.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="558.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="558.5" y="179.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="558.5" y="193" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="572" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="572" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="572" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="572" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="572" y="166" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="572" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="572" y="193" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="585.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<text x="585.5" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Jun</text>
+<rect x="585.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="585.5" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="585.5" y="152.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="585.5" y="166" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="585.5" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="585.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="599" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="599" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="599" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="599" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="599" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="599" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="599" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="612.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="612.5" y="125.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="612.5" y="139" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="612.5" y="152.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="612.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="612.5" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="612.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="626" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="626" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="626" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="626" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="626" y="166" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="626" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="626" y="193" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="639.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="639.5" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="639.5" y="139" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<text x="639.5" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Jul</text>
+<rect x="639.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="639.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="639.5" y="179.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="639.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="653" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="653" y="125.5" width="10" height="10" fill="#DCDCDC" rx="0" ry="0" />
+<rect x="653" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="653" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="653" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="653" y="179.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="653" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="666.5" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="666.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="680" y="112" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="680" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="680" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="680" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="680" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="680" y="179.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="680" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693.5" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693.5" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="693.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693.5" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693.5" y="179.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<text x="693.5" y="104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#78716C">Aug</text>
+<rect x="693.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="707" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="707" y="125.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="707" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="707" y="152.5" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="707" y="166" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="707" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="707" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="720.5" y="112" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="720.5" y="125.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="720.5" y="139" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="720.5" y="152.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="720.5" y="166" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="720.5" y="179.5" width="10" height="10" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="720.5" y="193" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="734" y="112" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="734" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="734" y="139" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="734" y="152.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="734" y="166" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="734" y="179.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
+<text x="624" y="220.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="8.5" font-weight="400" letter-spacing="0.5" fill="#78716C">LESS</text>
+<rect x="654" y="212.5" width="9" height="9" fill="#1A1A1A" rx="0" ry="0" />
+<rect x="667" y="212.5" width="9" height="9" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="680" y="212.5" width="9" height="9" fill="#7E7E7E" rx="0" ry="0" />
+<rect x="693" y="212.5" width="9" height="9" fill="#B0B0B0" rx="0" ry="0" />
+<rect x="706" y="212.5" width="9" height="9" fill="#DCDCDC" rx="0" ry="0" />
+<text x="720" y="220.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="8.5" font-weight="400" letter-spacing="0.5" fill="#78716C">MORE</text>
+<line x1="0" y1="232" x2="800" y2="232" stroke="#2C2825" stroke-width="1" />
+<text x="0" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">WEEKDAY VELOCITY</text>
+<text x="140" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">SUN</text>
+<rect x="140" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="140" y="260" width="24" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="140" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">525</text>
+<text x="230" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">MON</text>
+<rect x="230" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="230" y="260" width="37" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="230" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">809</text>
+<text x="320" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">TUE</text>
+<rect x="320" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="320" y="260" width="31" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="320" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">673</text>
+<text x="410" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">WED</text>
+<rect x="410" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="410" y="260" width="21" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="410" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">458</text>
+<text x="500" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="600" letter-spacing="0.5" fill="#F5F2EB">THU</text>
+<rect x="500" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="500" y="260" width="54" height="5" fill="#F5F2EB" rx="0" ry="0" />
+<text x="500" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#F5F2EB">1,185</text>
+<text x="590" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">FRI</text>
+<rect x="590" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="590" y="260" width="45" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="590" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">989</text>
+<text x="680" y="252" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9.5" font-weight="400" letter-spacing="0.5" fill="#78716C">SAT</text>
+<rect x="680" y="260" width="54" height="5" fill="#161b22" stroke="#2C2825" stroke-width="1" rx="0" ry="0" />
+<rect x="680" y="260" width="26" height="5" fill="#A8A29E" rx="0" ry="0" />
+<text x="680" y="278" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="9" font-weight="400" letter-spacing="0.5" fill="#A8A29E">568</text>
+<line x1="0" y1="298" x2="800" y2="298" stroke="#2C2825" stroke-width="1" />
+</svg>
