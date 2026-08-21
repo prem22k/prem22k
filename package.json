@@ -1,0 +1,27 @@
+{
+  "name": "prem22k-profile",
+  "version": "2.0.0",
+  "description": "Production-ready editorial GitHub Profile README & automated analytics pipeline",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-data.ts",
+    "build": "node scripts/build-assets.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test scripts/test/primitives.test.ts",
+    "pipeline": "node scripts/fetch-data.ts && node scripts/build-assets.mjs && node scripts/validate.mjs && node --test scripts/test/primitives.test.ts"
+  },
+  "keywords": [
+    "github-profile",
+    "design-system",
+    "editorial",
+    "svg",
+    "automation",
+    "crdt",
+    "rag"
+  ],
+  "author": "Prem Sai Kota <premsai224k@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

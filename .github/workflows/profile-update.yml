@@ -1,0 +1,72 @@
+name: Profile Analytics & Asset Pipeline
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - 'README.md'
+      - 'package.json'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Fetch Data & Build Profile Assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Stage 1 — Fetch Real GitHub Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/fetch-data.ts
+
+      - name: Stage 2 — Generate Design System SVGs
+        run: |
+          node scripts/build-assets.mjs
+
+      - name: Stage 3 — Validate Generated Output & Constraints
+        run: |
+          node scripts/validate.mjs
+
+      - name: Stage 4 — Execute Automated Test Suite
+        run: |
+          node --test scripts/test/primitives.test.ts
+
+      - name: Stage 5 — Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Check for changes in data, assets, or README
+          if [ -n "$(git status --porcelain assets/ data/ .last-updated README.md)" ]; then
+            git add assets/ data/ .last-updated README.md
+            git commit -m "chore(profile): automated refresh of analytics & vector assets [skip ci]"
+            git push origin main
+          else
+            echo "No changes detected in generated assets."
+          fi
