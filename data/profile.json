@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-22T01:33:59.933Z",
+  "generatedAt": "2026-08-23T01:43:16.214Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
     "login": "prem22k",
-    "bio": "Systems-focused Full-Stack Engineer | Building real-time CRDT apps & AI-native tools | Intern @RigorBase & Tech Head @C³",
+    "bio": "Full-Stack Developer building realtime & collaborative systems.",
     "location": "Hyderabad",
-    "blog": "https://premsai.vercel.app/",
+    "blog": "https://premsai.dev/",
     "hireable": true,
     "createdAt": "2024-03-28T07:46:18Z",
-    "accountAgeDays": 876
+    "accountAgeDays": 877
   },
   "overview": {
     "publicRepos": 37,
@@ -18,53 +18,18 @@
     "totalForks": 1,
     "followers": 37,
     "following": 21,
-    "totalSizeKb": 282695
+    "totalSizeKb": 282700
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 4781,
-    "last12MonthsContributions": 5220,
+    "yearContributions": 4796,
+    "last12MonthsContributions": 5235,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 4781
+      "2026": 4796
     },
     "calendar": [
-      {
-        "date": "2025-08-17",
-        "count": 10,
-        "level": 1
-      },
-      {
-        "date": "2025-08-18",
-        "count": 8,
-        "level": 1
-      },
-      {
-        "date": "2025-08-19",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-08-20",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-08-21",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-08-22",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-08-23",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-08-24",
         "count": 12,
@@ -1882,8 +1847,13 @@
       },
       {
         "date": "2026-08-22",
-        "count": 0,
-        "level": 0
+        "count": 14,
+        "level": 1
+      },
+      {
+        "date": "2026-08-23",
+        "count": 1,
+        "level": 1
       }
     ]
   },
