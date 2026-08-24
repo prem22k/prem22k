@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="308" viewBox="0 0 800 308" fill="none" role="img" aria-label="Contribution &amp; Activity Velocity — Prem Sai Kota">
 <title>Contribution &amp; Activity Velocity — Prem Sai Kota</title>
-<desc>Total Contributions: 5,217 | Active Days: 217/365 (59%) | Peak Month: Jan | Palette: #1A1A1A to #DCDCDC square cells</desc>
+<desc>Total Contributions: 5,217 | Active Days: 217/366 (59%) | Peak Month: Jan | Palette: #1A1A1A to #DCDCDC square cells</desc>
 <rect width="800" height="308" fill="#0d1117" />
 <text x="0" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">CONTRIBUTION METRICS · ANNUAL VELOCITY</text>
-<text x="800" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" text-anchor="end" fill="#78716C">365 DAYS RECORDED · MONOCHROME PALETTE</text>
+<text x="800" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.8" text-anchor="end" fill="#78716C">366 DAYS RECORDED · MONOCHROME PALETTE</text>
 <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">5,217</text>
 <text x="0" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">TOTAL CONTRIBUTIONS</text>
-<text x="200" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">217 / 365</text>
+<text x="200" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">217 / 366</text>
 <text x="200" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">ACTIVE DAYS (59%)</text>
 <text x="400" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="-0.5" fill="#F5F2EB">Jan</text>
 <text x="400" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">PEAK MONTH (1,631)</text>
@@ -394,6 +394,7 @@
 <rect x="720.5" y="179.5" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
 <rect x="720.5" y="193" width="10" height="10" fill="#7E7E7E" rx="0" ry="0" />
 <rect x="734" y="112" width="10" height="10" fill="#4E4E4E" rx="0" ry="0" />
+<rect x="734" y="125.5" width="10" height="10" fill="#1A1A1A" rx="0" ry="0" />
 <text x="624" y="220.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="8.5" font-weight="400" letter-spacing="0.5" fill="#78716C">LESS</text>
 <rect x="654" y="212.5" width="9" height="9" fill="#1A1A1A" rx="0" ry="0" />
 <rect x="667" y="212.5" width="9" height="9" fill="#4E4E4E" rx="0" ry="0" />
