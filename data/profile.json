@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T03:56:58.784Z",
+  "generatedAt": "2026-09-06T18:45:39.374Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -9,7 +9,7 @@
     "blog": "https://premsai.dev/",
     "hireable": true,
     "createdAt": "2024-03-28T07:46:18Z",
-    "accountAgeDays": 891
+    "accountAgeDays": 892
   },
   "overview": {
     "publicRepos": 38,
@@ -18,7 +18,7 @@
     "totalForks": 1,
     "followers": 40,
     "following": 21,
-    "totalSizeKb": 283965
+    "totalSizeKb": 283969
   },
   "contributions": {
     "currentYear": 2026,
@@ -1858,64 +1858,122 @@
     ]
   },
   "codebase": {
-    "totalBytes": 5924649,
-    "estimatedLines": 148116,
-    "languagesCount": 11,
+    "totalBytes": 1055853,
+    "estimatedLines": 26396,
+    "languagesCount": 8,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 3693183,
-        "percentage": 62.3
-      },
-      {
-        "name": "JavaScript",
-        "bytes": 1495559,
-        "percentage": 25.2
+        "bytes": 767493,
+        "repos": 3,
+        "percentage": 72.7
       },
       {
         "name": "Python",
-        "bytes": 337921,
-        "percentage": 5.7
+        "bytes": 215708,
+        "repos": 2,
+        "percentage": 20.4
+      },
+      {
+        "name": "JavaScript",
+        "bytes": 56844,
+        "repos": 5,
+        "percentage": 5.4
       },
       {
         "name": "CSS",
-        "bytes": 258034,
-        "percentage": 4.4
+        "bytes": 4925,
+        "repos": 3,
+        "percentage": 0.5
       },
       {
-        "name": "HTML",
-        "bytes": 92039,
-        "percentage": 1.6
-      },
-      {
-        "name": "PLpgSQL",
-        "bytes": 20543,
+        "name": "PowerShell",
+        "bytes": 3455,
+        "repos": 1,
         "percentage": 0.3
       },
       {
         "name": "Shell",
-        "bytes": 15997,
+        "bytes": 3358,
+        "repos": 2,
         "percentage": 0.3
       },
       {
-        "name": "PowerShell",
-        "bytes": 7904,
-        "percentage": 0.1
+        "name": "HTML",
+        "bytes": 2092,
+        "repos": 2,
+        "percentage": 0.2
       },
       {
         "name": "Dockerfile",
-        "bytes": 2152,
-        "percentage": 0
+        "bytes": 1978,
+        "repos": 1,
+        "percentage": 0.2
+      }
+    ]
+  },
+  "recentActivity": {
+    "fetchedAt": "2026-09-06T18:45:39.374Z",
+    "events": [
+      {
+        "date": "05 SEP",
+        "rawDate": "2026-09-05T10:23:17Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "linux",
+        "repoFullName": "Engine-NEXUS/linux",
+        "repoUrl": "https://github.com/Engine-NEXUS/linux",
+        "context": "Guard set_ignore_cursor_events on unrealized GTK window"
       },
       {
-        "name": "Java",
-        "bytes": 1295,
-        "percentage": 0
+        "date": "04 SEP",
+        "rawDate": "2026-09-04T19:52:06Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "linux",
+        "repoFullName": "Engine-NEXUS/linux",
+        "repoUrl": "https://github.com/Engine-NEXUS/linux",
+        "context": "Rename artifact to ubuntu-24.04"
       },
       {
-        "name": "Procfile",
-        "bytes": 22,
-        "percentage": 0
+        "date": "02 SEP",
+        "rawDate": "2026-09-02T12:13:09Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "WINDOWS",
+        "repoFullName": "Engine-NEXUS/WINDOWS",
+        "repoUrl": "https://github.com/Engine-NEXUS/WINDOWS",
+        "context": "Remove dead sherpa-onnx and voice profile code"
+      },
+      {
+        "date": "31 AUG",
+        "rawDate": "2026-08-31T15:41:59Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "WINDOWS",
+        "repoFullName": "Engine-NEXUS/WINDOWS",
+        "repoUrl": "https://github.com/Engine-NEXUS/WINDOWS",
+        "context": "Fix rust build type mismatch on AppHandle and unused imports"
+      },
+      {
+        "date": "28 AUG",
+        "rawDate": "2026-08-28T17:20:22Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Add instant handle sync and cookie-based history import to resolve login..."
+      },
+      {
+        "date": "27 AUG",
+        "rawDate": "2026-08-27T21:15:48Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Apple Music floating dock layout — glass sidebar + pill bottom bar"
       }
     ]
   },

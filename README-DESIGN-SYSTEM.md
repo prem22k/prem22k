@@ -1,7 +1,7 @@
-# README Design System
+# README Design System Specification
 
 **Direction:** A — Portfolio-Derived Editorial  
-**Source of Truth:** [premsai.vercel.app](https://premsai.vercel.app) design system  
+**Source of Truth:** [premsai.dev](https://premsai.dev) design system  
 **Target:** GitHub profile README (`prem22k/prem22k`)  
 **Rendering Context:** GitHub Markdown (no CSS, no JS, limited HTML, SVG sandboxed inside `<img>`)
 

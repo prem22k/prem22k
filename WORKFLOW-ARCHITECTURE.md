@@ -186,7 +186,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: update profile data [skip ci]"
+          git commit -m "chore: update profile data [skip ci]" \
+                     -m "Co-authored-by: prem22k <premsai224k@gmail.com>"
           git push
 ```
 

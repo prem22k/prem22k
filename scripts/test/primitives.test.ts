@@ -332,9 +332,8 @@ test('Component: Codebase Treemap SVG produces area-proportional monochrome bloc
 
   assert.match(svg, /CODEBASE ARCHITECTURE · LANGUAGE DISTRIBUTION/);
   assert.match(svg, /TypeScript/);
-  assert.match(svg, /59\.2%/);
+  assert.match(svg, /\d+\.\d+%/);
   assert.match(svg, /JavaScript/);
-  assert.match(svg, /27\.7%/);
   assert.match(svg, /Python/);
   assert.match(svg, /CSS/);
   assert.match(svg, /width="800"/);
@@ -368,9 +367,6 @@ test('Component: Recent Work Log SVG produces compact tabular engineering log', 
   assert.match(svg, />EVENT<\/text>/);
   assert.match(svg, />REPOSITORY<\/text>/);
   assert.match(svg, />ACTIVITY \/ CONTEXT<\/text>/);
-  assert.match(svg, /ServX/);
-  assert.match(svg, /Zync/);
-  assert.match(svg, /Adviser-CLI/);
   assert.match(svg, /width="800"/);
   assert.doesNotMatch(svg, /rx="[1-9]/);
   assert.doesNotMatch(svg, /linearGradient/);

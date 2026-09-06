@@ -80,17 +80,48 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     })
   );
 
+  function formatBytes(bytes: number): string {
+    if (bytes >= 1024 * 1024) {
+      return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+    }
+    return `${Math.round(bytes / 1024)} KB`;
+  }
+
+  const langs = profile?.codebase?.languages || [];
+  const ts = langs.find((l: { name: string; bytes: number; percentage: number; repos?: number }) => l.name === 'TypeScript') || { bytes: 3693183, percentage: 62.3, repos: 11 };
+  const js = langs.find((l: { name: string; bytes: number; percentage: number; repos?: number }) => l.name === 'JavaScript') || { bytes: 1495559, percentage: 25.2, repos: 6 };
+  const py = langs.find((l: { name: string; bytes: number; percentage: number; repos?: number }) => l.name === 'Python') || { bytes: 337921, percentage: 5.7, repos: 3 };
+  const css = langs.find((l: { name: string; bytes: number; percentage: number; repos?: number }) => l.name === 'CSS') || { bytes: 258034, percentage: 4.4, repos: 4 };
+
+  const knownBytes = ts.bytes + js.bytes + py.bytes + css.bytes;
+  const otherBytes = Math.max(0, totalBytes - knownBytes);
+  const otherPct = totalBytes > 0 ? Number(((otherBytes / totalBytes) * 100).toFixed(1)) : 2.4;
+
+  const tsPctStr = `${ts.percentage.toFixed(1)}%`;
+  const jsPctStr = `${js.percentage.toFixed(1)}%`;
+  const pyPctStr = `${py.percentage.toFixed(1)}%`;
+  const cssPctStr = `${css.percentage.toFixed(1)}%`;
+  const otherPctStr = `${otherPct.toFixed(1)}%`;
+
+  const tsBytesStr = formatBytes(ts.bytes);
+  const jsBytesStr = formatBytes(js.bytes);
+  const pyBytesStr = formatBytes(py.bytes);
+  const cssBytesStr = formatBytes(css.bytes);
+
   // ── TREEMAP GEOMETRY (y: 28 to 208, total height 180) ───────────────────
   const treeY = 28;
   const treeH = 180;
-  const tsW = 473;
-  const rightW = width - tsW; // 327
-  const jsH = 108;
-  const bottomH = treeH - jsH; // 72
+  const tsRatio = totalBytes > 0 ? ts.bytes / totalBytes : 0.623;
+  const tsW = Math.max(440, Math.min(500, Math.round(width * tsRatio)));
+  const rightW = width - tsW;
+  const rightBytes = js.bytes + py.bytes + css.bytes + otherBytes;
+  const jsH = rightBytes > 0 ? Math.max(95, Math.min(120, Math.round(treeH * (js.bytes / rightBytes)))) : 108;
+  const bottomH = treeH - jsH;
 
-  const pyW = 157;
-  const cssW = 114;
-  const otherW = rightW - pyW - cssW; // 56
+  const botBytes = py.bytes + css.bytes + otherBytes;
+  const pyW = botBytes > 0 ? Math.round(rightW * (py.bytes / botBytes)) : 157;
+  const cssW = botBytes > 0 ? Math.round(rightW * (css.bytes / botBytes)) : 114;
+  const otherW = rightW - pyW - cssW;
 
   // ── BLOCK 1: TYPESCRIPT (473 × 180) ────────────────────────────────────
   elements.push(
@@ -121,7 +152,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: tsW - 18,
       y: treeY + 28,
-      content: '59.2%',
+      content: tsPctStr,
       variant: 'technicalMetadata',
       size: 13,
       color: theme.primary,
@@ -144,7 +175,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: 18,
       y: treeY + 58,
-      content: '3.18 MB SOURCE VOLUME · 11 REPOSITORIES',
+      content: `${tsBytesStr} SOURCE VOLUME${ts.repos ? ` · ${ts.repos} REPOSITORIES` : ''}`,
       variant: 'technicalMetadata',
       size: 10.5,
       color: theme.secondary,
@@ -224,7 +255,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: jsX + rightW - 16,
       y: treeY + 24,
-      content: '27.7%',
+      content: jsPctStr,
       variant: 'technicalMetadata',
       size: 12,
       color: theme.primary,
@@ -246,7 +277,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: jsX + 16,
       y: treeY + 52,
-      content: '1.48 MB · 6 REPOSITORIES · VANILLA ESM',
+      content: `${jsBytesStr}${js.repos ? ` · ${js.repos} REPOSITORIES` : ''} · VANILLA ESM`,
       variant: 'caption',
       size: 10,
       color: theme.secondary,
@@ -305,7 +336,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: pyX + pyW - 12,
       y: botY + 20,
-      content: '6.3%',
+      content: pyPctStr,
       variant: 'caption',
       color: theme.primary,
       anchor: 'end',
@@ -316,7 +347,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: pyX + 12,
       y: botY + 38,
-      content: '338 KB · 3 repos',
+      content: `${pyBytesStr}${py.repos ? ` · ${py.repos} repos` : ''}`,
       variant: 'caption',
       size: 9.5,
       color: theme.secondary,
@@ -363,7 +394,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: cssX + cssW - 10,
       y: botY + 20,
-      content: '4.6%',
+      content: cssPctStr,
       variant: 'caption',
       size: 9.5,
       color: theme.primary,
@@ -375,7 +406,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: cssX + 10,
       y: botY + 38,
-      content: '246 KB · 4 repos',
+      content: `${cssBytesStr}${css.repos ? ` · ${css.repos} repos` : ''}`,
       variant: 'caption',
       size: 9,
       color: theme.secondary,
@@ -423,7 +454,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     MonoText({
       x: otherX + otherW / 2,
       y: botY + 36,
-      content: '2.2%',
+      content: otherPctStr,
       variant: 'caption',
       size: 9,
       color: theme.secondary,
@@ -469,7 +500,7 @@ export function renderCodebaseSVG(options: CodebaseOptions = {}): string {
     width,
     height,
     title: 'Codebase Language Distribution Treemap — Prem Sai Kota',
-    description: `TypeScript: 59.2% (3.18 MB) | JavaScript: 27.7% (1.48 MB) | Python: 6.3% (338 KB) | CSS: 4.6% (246 KB) | Other: 2.2% across ${repoCount} repositories`,
+    description: `TypeScript: ${tsPctStr} (${tsBytesStr}) | JavaScript: ${jsPctStr} (${jsBytesStr}) | Python: ${pyPctStr} (${pyBytesStr}) | CSS: ${cssPctStr} (${cssBytesStr}) | Other: ${otherPctStr} across ${repoCount} repositories`,
     theme,
     content: elements.join('\n'),
   });

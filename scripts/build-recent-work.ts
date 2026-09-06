@@ -76,9 +76,25 @@ export function renderRecentWorkSVG(options: RecentWorkOptions = {}): string {
   const { mode = 'dark' } = options;
   const theme: ThemeTokens = getTheme(mode);
 
-  const events: RecentEvent[] = options.events && options.events.length > 0
-    ? options.events
-    : DEFAULT_RECENT_EVENTS;
+  let events: RecentEvent[] = options.events && options.events.length > 0 ? options.events : [];
+  if (events.length === 0 && fs.existsSync(PROFILE_JSON_PATH)) {
+    try {
+      const profile = JSON.parse(fs.readFileSync(PROFILE_JSON_PATH, 'utf8'));
+      if (profile.recentActivity?.events && Array.isArray(profile.recentActivity.events) && profile.recentActivity.events.length > 0) {
+        events = profile.recentActivity.events.map((e: { date: string; event: string; repository: string; context: string }) => ({
+          date: e.date,
+          event: e.event,
+          repository: e.repository,
+          context: e.context,
+        }));
+      }
+    } catch {
+      events = [];
+    }
+  }
+  if (events.length === 0) {
+    events = DEFAULT_RECENT_EVENTS;
+  }
 
   const width = 800;
   const rowHeight = 32;

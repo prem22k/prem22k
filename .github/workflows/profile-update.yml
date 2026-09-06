@@ -65,7 +65,8 @@ jobs:
           # Check for changes in data, assets, or README
           if [ -n "$(git status --porcelain assets/ data/ .last-updated README.md)" ]; then
             git add assets/ data/ .last-updated README.md
-            git commit -m "chore(profile): automated refresh of analytics & vector assets [skip ci]"
+            git commit -m "chore(profile): automated refresh of analytics & vector assets [skip ci]" \
+                       -m "Co-authored-by: prem22k <premsai224k@gmail.com>"
             git push origin main
           else
             echo "No changes detected in generated assets."

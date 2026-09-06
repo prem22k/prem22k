@@ -138,11 +138,12 @@ export function renderGitHubStatsSVG(options: GitHubStatsOptions = {}): string {
       color: theme.primary,
     })
   );
+  const consistency = Math.round((activeDays / 365) * 100);
   elements.push(
     Label({
       x: colWidth * 2,
       y: 78,
-      text: 'ACTIVE DAYS (58% CONSISTENCY)',
+      text: `ACTIVE DAYS (${consistency}% CONSISTENCY)`,
       color: theme.tertiary,
     })
   );

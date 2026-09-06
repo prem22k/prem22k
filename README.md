@@ -9,7 +9,7 @@
   <img src="assets/hero-light.svg" alt="Prem Sai Kota — Full-Stack Engineer" width="100%" />
 </picture>
 
-[Portfolio](https://premsai.vercel.app/) &nbsp;·&nbsp; [GitHub](https://github.com/prem22k) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/premsai22k) &nbsp;·&nbsp; [Email](mailto:premsai224k@gmail.com)
+[Portfolio](https://premsai.dev/) &nbsp;·&nbsp; [GitHub](https://github.com/prem22k) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/premsai22k) &nbsp;·&nbsp; [X](https://x.com/premsaik22) &nbsp;·&nbsp; [Threads](https://www.threads.net/@iblameprems) &nbsp;·&nbsp; [Email](mailto:premsai224k@gmail.com)
 
 ---
 
@@ -118,11 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `15 AUG` | `pushed` | [**ServX**](https://github.com/Servx-lab/ServX) | Audit streaming over SSE & AES-256-GCM encrypted persistence |
-| `15 AUG` | `pushed` | [**Zync**](https://github.com/zync-meet/Zync) | Yjs CRDT live cursors & multi-namespace sync |
-| `13 AUG` | `created` | [**skillpath**](https://github.com/prem22k/skillpath) | Interactive developer curriculum engine |
-| `19 JUL` | `pushed` | [**verion**](https://github.com/prem22k/verion) | Versioned system configuration harness |
-| `07 JUL` | `updated` | [**Adviser-CLI**](https://github.com/prem22k/adviser-cli-tool) | ChromaDB vector & ColPali VisionRAG module |
+| `05 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Guard set_ignore_cursor_events on unrealized GTK window |
+| `04 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Rename artifact to ubuntu-24.04 |
+| `02 SEP` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Remove dead sherpa-onnx and voice profile code |
+| `31 AUG` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Fix rust build type mismatch on AppHandle and unused imports |
+| `28 AUG` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Add instant handle sync and cookie-based history import to resolve login... |
+| `27 AUG` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Apple Music floating dock layout — glass sidebar + pill bottom bar |
 
 ---
 

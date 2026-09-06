@@ -57,6 +57,8 @@ const requiredSvgs = [
   'stack-light.svg',
   'activity-dark.svg',
   'activity-light.svg',
+  'recent-work-dark.svg',
+  'recent-work-light.svg',
 ];
 
 for (const svgFile of requiredSvgs) {

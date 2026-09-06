@@ -5,7 +5,7 @@
  * Reference: README-DESIGN-SYSTEM.md
  */
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -15,6 +15,7 @@ import { renderZyncArchSVG, renderServXArchSVG, renderAdviserCliArchSVG } from '
 import { renderCodebaseSVG } from './build-codebase.ts';
 import { renderStackSVG } from './build-stack.ts';
 import { renderActivitySVG } from './build-activity.ts';
+import { renderRecentWorkSVG } from './build-recent-work.ts';
 import { renderPrimitiveSpecimen } from './test/snapshots.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -33,6 +34,7 @@ const generators = [
   { name: 'codebase', fn: (m) => renderCodebaseSVG({ mode: m }) },
   { name: 'stack', fn: (m) => renderStackSVG(m) },
   { name: 'activity', fn: (m) => renderActivitySVG({ mode: m }) },
+  { name: 'recent-work', fn: (m) => renderRecentWorkSVG({ mode: m }) },
   { name: 'primitives-specimen', fn: (m) => renderPrimitiveSpecimen(m) },
 ];
 
@@ -46,6 +48,36 @@ for (const gen of generators) {
 
   console.log(`  ✔ assets/${gen.name}-dark.svg & ${gen.name}-light.svg`);
 }
+
+// Update Recent Engineering Activity table in README.md from profile.json
+function updateReadmeRecentActivity() {
+  const readmePath = resolve(ROOT_DIR, 'README.md');
+  const profilePath = resolve(ROOT_DIR, 'data/profile.json');
+  if (!existsSync(readmePath) || !existsSync(profilePath)) return;
+
+  try {
+    const profile = JSON.parse(readFileSync(profilePath, 'utf8'));
+    const events = profile.recentActivity?.events;
+    if (!Array.isArray(events) || events.length === 0) return;
+
+    const rows = events.map(e => 
+      `| \`${e.date}\` | \`${e.event}\` | [**${e.repository}**](${e.repoUrl}) | ${e.context} |`
+    ).join('\n');
+
+    let readme = readFileSync(readmePath, 'utf8');
+    const pattern = /(## Recent Engineering Activity\s*\n\n\| Date \| Event \| Repository \| Context \|\n\| :--- \| :--- \| :--- \| :--- \|\n)(?:\|[^\n]+\n)+/;
+
+    if (pattern.test(readme)) {
+      readme = readme.replace(pattern, `$1${rows}\n`);
+      writeFileSync(readmePath, readme, 'utf8');
+      console.log('✔ Updated Recent Engineering Activity table in README.md');
+    }
+  } catch (err) {
+    console.warn('Failed to update README.md recent activity table:', err);
+  }
+}
+
+updateReadmeRecentActivity();
 
 // Write .last-updated timestamp
 const timestamp = new Date().toISOString();
