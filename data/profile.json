@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T18:45:39.374Z",
+  "generatedAt": "2026-09-06T18:58:54.478Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -1858,62 +1858,80 @@
     ]
   },
   "codebase": {
-    "totalBytes": 1055853,
-    "estimatedLines": 26396,
-    "languagesCount": 8,
+    "totalBytes": 5934649,
+    "estimatedLines": 148366,
+    "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 767493,
-        "repos": 3,
-        "percentage": 72.7
-      },
-      {
-        "name": "Python",
-        "bytes": 215708,
-        "repos": 2,
-        "percentage": 20.4
+        "bytes": 3701766,
+        "repos": 14,
+        "percentage": 62.4
       },
       {
         "name": "JavaScript",
-        "bytes": 56844,
-        "repos": 5,
-        "percentage": 5.4
+        "bytes": 1496976,
+        "repos": 24,
+        "percentage": 25.2
+      },
+      {
+        "name": "Python",
+        "bytes": 337921,
+        "repos": 4,
+        "percentage": 5.7
       },
       {
         "name": "CSS",
-        "bytes": 4925,
-        "repos": 3,
-        "percentage": 0.5
+        "bytes": 258034,
+        "repos": 22,
+        "percentage": 4.3
       },
       {
-        "name": "PowerShell",
-        "bytes": 3455,
+        "name": "HTML",
+        "bytes": 92039,
+        "repos": 18,
+        "percentage": 1.6
+      },
+      {
+        "name": "PLpgSQL",
+        "bytes": 20543,
         "repos": 1,
         "percentage": 0.3
       },
       {
         "name": "Shell",
-        "bytes": 3358,
-        "repos": 2,
+        "bytes": 15997,
+        "repos": 4,
         "percentage": 0.3
       },
       {
-        "name": "HTML",
-        "bytes": 2092,
+        "name": "PowerShell",
+        "bytes": 7904,
         "repos": 2,
-        "percentage": 0.2
+        "percentage": 0.1
       },
       {
         "name": "Dockerfile",
-        "bytes": 1978,
+        "bytes": 2152,
+        "repos": 2,
+        "percentage": 0
+      },
+      {
+        "name": "Java",
+        "bytes": 1295,
         "repos": 1,
-        "percentage": 0.2
+        "percentage": 0
+      },
+      {
+        "name": "Procfile",
+        "bytes": 22,
+        "repos": 1,
+        "percentage": 0
       }
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-09-06T18:45:39.374Z",
+    "fetchedAt": "2026-09-06T18:58:54.478Z",
     "events": [
       {
         "date": "05 SEP",
