@@ -40,7 +40,7 @@ If a genuinely different pipeline emerges later (e.g., a monthly screenshot refr
 ```mermaid
 flowchart TD
     A["Trigger"] --> B{"Which trigger?"}
-    B -->|"cron: daily 00:30 UTC"| C["Checkout repo"]
+    B -->|"cron: every 6h (0 */6 * * *)"| C["Checkout repo"]
     B -->|"push to main<br/>(scripts/** or data/manual.json)"| C
     B -->|"workflow_dispatch<br/>(manual)"| C
 
@@ -94,7 +94,7 @@ name: Update Profile Data & Assets
 
 on:
   schedule:
-    - cron: '30 0 * * *'             # Daily at 00:30 UTC (06:00 IST)
+    - cron: '0 */6 * * *'             # Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
 
   push:
     branches: [main]
