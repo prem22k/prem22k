@@ -15,7 +15,7 @@
 <text x="0" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">04 SEP</text>
 <text x="90" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
 <text x="210" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">linux</text>
-<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Rename artifact to ubuntu-24.04</text>
+<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Build .deb on ubuntu-24.04, fix glibc __isoc23 link error</text>
 <line x1="0" y1="90" x2="800" y2="90" stroke="#2C2825" stroke-width="1" />
 <text x="0" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">04 SEP</text>
 <text x="90" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>

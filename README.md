@@ -119,7 +119,7 @@
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
 | `05 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Guard set_ignore_cursor_events on unrealized GTK window |
-| `04 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Rename artifact to ubuntu-24.04 |
+| `04 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Build .deb on ubuntu-24.04, fix glibc __isoc23 link error |
 | `04 SEP` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Prune non-linux files, ubuntu-only CI |
 | `02 SEP` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Remove dead sherpa-onnx and voice profile code |
 | `31 AUG` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Fix rust build type mismatch on AppHandle and unused imports |
