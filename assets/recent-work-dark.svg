@@ -7,34 +7,34 @@
 <text x="210" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">REPOSITORY</text>
 <text x="380" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#78716C">ACTIVITY / CONTEXT</text>
 <line x1="0" y1="26" x2="800" y2="26" stroke="#57534E" stroke-width="1" />
-<text x="0" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">05 SEP</text>
+<text x="0" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">07 SEP</text>
 <text x="90" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
-<text x="210" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">linux</text>
-<text x="380" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Guard set_ignore_cursor_events on unrealized GTK window</text>
+<text x="210" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">Manware-s-AI-Learning-Toolkit</text>
+<text x="380" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Pushed updates to repository</text>
 <line x1="0" y1="58" x2="800" y2="58" stroke="#2C2825" stroke-width="1" />
-<text x="0" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">04 SEP</text>
+<text x="0" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">05 SEP</text>
 <text x="90" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
 <text x="210" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">linux</text>
-<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Build .deb on ubuntu-24.04, fix glibc __isoc23 link error</text>
+<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Guard set_ignore_cursor_events on unrealized GTK window</text>
 <line x1="0" y1="90" x2="800" y2="90" stroke="#2C2825" stroke-width="1" />
 <text x="0" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">04 SEP</text>
 <text x="90" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
-<text x="210" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">WINDOWS</text>
-<text x="380" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Prune non-linux files, ubuntu-only CI</text>
+<text x="210" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">linux</text>
+<text x="380" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Build .deb on ubuntu-24.04, fix glibc __isoc23 link error</text>
 <line x1="0" y1="122" x2="800" y2="122" stroke="#2C2825" stroke-width="1" />
-<text x="0" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">02 SEP</text>
+<text x="0" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">04 SEP</text>
 <text x="90" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
 <text x="210" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">WINDOWS</text>
-<text x="380" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Remove dead sherpa-onnx and voice profile code</text>
+<text x="380" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Prune non-linux files, ubuntu-only CI</text>
 <line x1="0" y1="154" x2="800" y2="154" stroke="#2C2825" stroke-width="1" />
-<text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">31 AUG</text>
+<text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">02 SEP</text>
 <text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
 <text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">WINDOWS</text>
-<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Fix rust build type mismatch on AppHandle and unused imports</text>
+<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Remove dead sherpa-onnx and voice profile code</text>
 <line x1="0" y1="186" x2="800" y2="186" stroke="#2C2825" stroke-width="1" />
-<text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">28 AUG</text>
+<text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#A8A29E">31 AUG</text>
 <text x="90" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#78716C">pushed</text>
-<text x="210" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">mahayuddh</text>
-<text x="380" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Add instant handle sync and cookie-based history import to resolve login...</text>
+<text x="210" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#F5F2EB">WINDOWS</text>
+<text x="380" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A8A29E">Fix rust build type mismatch on AppHandle and unused imports</text>
 <line x1="0" y1="218" x2="800" y2="218" stroke="#2C2825" stroke-width="1" />
 </svg>

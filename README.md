@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `07 SEP` | `pushed` | [**Manware-s-AI-Learning-Toolkit**](https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit) | Pushed updates to repository |
 | `05 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Guard set_ignore_cursor_events on unrealized GTK window |
 | `04 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Build .deb on ubuntu-24.04, fix glibc __isoc23 link error |
 | `04 SEP` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Prune non-linux files, ubuntu-only CI |
 | `02 SEP` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Remove dead sherpa-onnx and voice profile code |
 | `31 AUG` | `pushed` | [**WINDOWS**](https://github.com/Engine-NEXUS/WINDOWS) | Fix rust build type mismatch on AppHandle and unused imports |
-| `28 AUG` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Add instant handle sync and cookie-based history import to resolve login... |
 
 ---
 
