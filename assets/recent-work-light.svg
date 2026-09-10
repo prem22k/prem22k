@@ -30,7 +30,7 @@
 <text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">08 SEP</text>
 <text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
 <text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">mahayuddh</text>
-<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Delegate profile creation and stats sync to server-side endpoints on signup</text>
+<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Improve signup error handling and profile initialization flow</text>
 <line x1="0" y1="186" x2="800" y2="186" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">07 SEP</text>
 <text x="90" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
