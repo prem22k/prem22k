@@ -118,7 +118,7 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `09 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Prem22k: fold 07 verification into 02-06 + README (nullschool/MyOcean/za... |
+| `09 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Docs/00-problem/ -> problem-statement/ |
 | `09 SEP` | `open-sourced` | [**ocean-data**](https://github.com/VMAX-OCEAN/ocean-data) | Open-sourced repository |
 | `09 SEP` | `open-sourced` | [**ocean-api**](https://github.com/VMAX-OCEAN/ocean-api) | Open-sourced repository |
 | `09 SEP` | `open-sourced` | [**ocean-web**](https://github.com/VMAX-OCEAN/ocean-web) | Open-sourced repository |
