@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `11 SEP` | `pushed` | [**ocean-web**](https://github.com/VMAX-OCEAN/ocean-web) | Base imagery GIBS BlueMarble for Esri World Imagery |
 | `09 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Shared docs layout: MILESTONES + TECH-STACK-SUMMARY moves |
 | `09 SEP` | `open-sourced` | [**ocean-data**](https://github.com/VMAX-OCEAN/ocean-data) | Open-sourced repository |
 | `09 SEP` | `open-sourced` | [**ocean-api**](https://github.com/VMAX-OCEAN/ocean-api) | Open-sourced repository |
 | `09 SEP` | `open-sourced` | [**ocean-web**](https://github.com/VMAX-OCEAN/ocean-web) | Open-sourced repository |
 | `08 SEP` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Improve signup error handling and profile initialization flow |
-| `07 SEP` | `pushed` | [**Manware-s-AI-Learning-Toolkit**](https://github.com/i-am-manware/Manware-s-AI-Learning-Toolkit) | Pushed updates to repository |
 
 ---
 

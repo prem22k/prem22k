@@ -7,34 +7,34 @@
 <text x="210" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">REPOSITORY</text>
 <text x="380" y="16" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#a8a29e">ACTIVITY / CONTEXT</text>
 <line x1="0" y1="26" x2="800" y2="26" stroke="#a8a29e" stroke-width="1" />
-<text x="0" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">09 SEP</text>
+<text x="0" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">11 SEP</text>
 <text x="90" y="46" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
-<text x="210" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-docs</text>
-<text x="380" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Shared docs layout: MILESTONES + TECH-STACK-SUMMARY moves</text>
+<text x="210" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-web</text>
+<text x="380" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Base imagery GIBS BlueMarble for Esri World Imagery</text>
 <line x1="0" y1="58" x2="800" y2="58" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">09 SEP</text>
-<text x="90" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">open-sourced</text>
-<text x="210" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-data</text>
-<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Open-sourced repository</text>
+<text x="90" y="78" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
+<text x="210" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-docs</text>
+<text x="380" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Shared docs layout: MILESTONES + TECH-STACK-SUMMARY moves</text>
 <line x1="0" y1="90" x2="800" y2="90" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">09 SEP</text>
 <text x="90" y="110" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">open-sourced</text>
-<text x="210" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-api</text>
+<text x="210" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-data</text>
 <text x="380" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Open-sourced repository</text>
 <line x1="0" y1="122" x2="800" y2="122" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">09 SEP</text>
 <text x="90" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">open-sourced</text>
-<text x="210" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-web</text>
+<text x="210" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-api</text>
 <text x="380" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Open-sourced repository</text>
 <line x1="0" y1="154" x2="800" y2="154" stroke="#e7e5e4" stroke-width="1" />
-<text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">08 SEP</text>
-<text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
-<text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">mahayuddh</text>
-<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Improve signup error handling and profile initialization flow</text>
+<text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">09 SEP</text>
+<text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">open-sourced</text>
+<text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">ocean-web</text>
+<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Open-sourced repository</text>
 <line x1="0" y1="186" x2="800" y2="186" stroke="#e7e5e4" stroke-width="1" />
-<text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">07 SEP</text>
+<text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">08 SEP</text>
 <text x="90" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
-<text x="210" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">Manware-s-AI-Learning-Toolkit</text>
-<text x="380" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Pushed updates to repository</text>
+<text x="210" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">mahayuddh</text>
+<text x="380" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Improve signup error handling and profile initialization flow</text>
 <line x1="0" y1="218" x2="800" y2="218" stroke="#e7e5e4" stroke-width="1" />
 </svg>
