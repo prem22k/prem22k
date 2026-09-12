@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `12 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Track local agent skills (.agents/) |
 | `12 SEP` | `branched` | [**ocean-api**](https://github.com/VMAX-OCEAN/ocean-api) | Created branch |
 | `12 SEP` | `branched` | [**ocean-data**](https://github.com/VMAX-OCEAN/ocean-data) | Created branch |
+| `12 SEP` | `pushed` | [**ocean-web**](https://github.com/VMAX-OCEAN/ocean-web) | Panel styles + ignore venv/zarr/dist artifacts |
 | `11 SEP` | `pushed` | [**ocean-web**](https://github.com/VMAX-OCEAN/ocean-web) | D2 bench doc: cd ocean-web first |
-| `09 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Shared docs layout: MILESTONES + TECH-STACK-SUMMARY moves |
-| `09 SEP` | `open-sourced` | [**ocean-data**](https://github.com/VMAX-OCEAN/ocean-data) | Open-sourced repository |
-| `09 SEP` | `open-sourced` | [**ocean-api**](https://github.com/VMAX-OCEAN/ocean-api) | Open-sourced repository |
+| `10 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Residual sign rewritten to canonical model-observation |
 
 ---
 
