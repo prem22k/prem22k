@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `01 OCT` | `merged PR` | [**linux**](https://github.com/Engine-NEXUS/linux) | Pull request activity |
 | `27 SEP` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | NEXUS screen agent implementation summary with measured results |
 | `27 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Screen vision feature spec + changelog + OCR accuracy harness |
 | `17 SEP` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Modal shell adoption, persist-first solves, and focus-storm fix |
 | `15 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Add SIH idea submission slides — 3 generated + 2 specs |
 | `12 SEP` | `pushed` | [**ocean-docs**](https://github.com/VMAX-OCEAN/ocean-docs) | Track local agent skills (.agents/) |
-| `12 SEP` | `branched` | [**ocean-api**](https://github.com/VMAX-OCEAN/ocean-api) | Created branch |
 
 ---
 
