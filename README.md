@@ -118,7 +118,7 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Coverage keyed by rendering engine, not by app |
+| `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Computer-control architecture audit + P0/P1 records |
 | `02 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | 2026 competitive & platform audit compendium |
 | `01 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Add missing nested esbuild@0.28.2 to worker lockfile |
 | `27 SEP` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | NEXUS screen agent implementation summary with measured results |
