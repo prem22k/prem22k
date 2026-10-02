@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:28:06.751Z",
+  "generatedAt": "2026-10-02T16:55:20.330Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -16,18 +16,18 @@
     "authoredRepos": 28,
     "totalStars": 56,
     "totalForks": 1,
-    "followers": 44,
+    "followers": 45,
     "following": 22,
-    "totalSizeKb": 284165
+    "totalSizeKb": 284181
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5456,
-    "last12MonthsContributions": 5755,
+    "yearContributions": 5466,
+    "last12MonthsContributions": 5765,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 5456
+      "2026": 5466
     },
     "calendar": [
       {
@@ -1877,7 +1877,7 @@
       },
       {
         "date": "2026-10-02",
-        "count": 16,
+        "count": 26,
         "level": 1
       }
     ]
@@ -1956,8 +1956,18 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-02T11:28:06.751Z",
+    "fetchedAt": "2026-10-02T16:55:20.330Z",
     "events": [
+      {
+        "date": "02 OCT",
+        "rawDate": "2026-10-02T12:12:26Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "linux",
+        "repoFullName": "Engine-NEXUS/linux",
+        "repoUrl": "https://github.com/Engine-NEXUS/linux",
+        "context": "Coverage keyed by rendering engine, not by app"
+      },
       {
         "date": "02 OCT",
         "rawDate": "2026-10-02T09:42:58Z",
@@ -2007,16 +2017,6 @@
         "repoFullName": "prem22k/mahayuddh",
         "repoUrl": "https://github.com/prem22k/mahayuddh",
         "context": "Modal shell adoption, persist-first solves, and focus-storm fix"
-      },
-      {
-        "date": "15 SEP",
-        "rawDate": "2026-09-15T18:48:38Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "ocean-docs",
-        "repoFullName": "VMAX-OCEAN/ocean-docs",
-        "repoUrl": "https://github.com/VMAX-OCEAN/ocean-docs",
-        "context": "Add SIH idea submission slides — 3 generated + 2 specs"
       }
     ]
   },
