@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T02:48:43.088Z",
+  "generatedAt": "2026-10-02T11:28:06.751Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -9,7 +9,7 @@
     "blog": "https://premsai.dev/",
     "hireable": true,
     "createdAt": "2024-03-28T07:46:18Z",
-    "accountAgeDays": 917
+    "accountAgeDays": 918
   },
   "overview": {
     "publicRepos": 38,
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 44,
     "following": 22,
-    "totalSizeKb": 284163
+    "totalSizeKb": 284165
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5440,
-    "last12MonthsContributions": 5739,
+    "yearContributions": 5456,
+    "last12MonthsContributions": 5755,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 5440
+      "2026": 5456
     },
     "calendar": [
       {
@@ -1877,8 +1877,8 @@
       },
       {
         "date": "2026-10-02",
-        "count": 0,
-        "level": 0
+        "count": 16,
+        "level": 1
       }
     ]
   },
@@ -1956,17 +1956,27 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-02T02:48:43.088Z",
+    "fetchedAt": "2026-10-02T11:28:06.751Z",
     "events": [
       {
+        "date": "02 OCT",
+        "rawDate": "2026-10-02T09:42:58Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "NEXUS-PAPERS",
+        "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
+        "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
+        "context": "2026 competitive & platform audit compendium"
+      },
+      {
         "date": "01 OCT",
-        "rawDate": "2026-10-01T16:44:55Z",
-        "type": "PullRequestEvent",
-        "event": "merged PR",
+        "rawDate": "2026-10-01T18:21:16Z",
+        "type": "PushEvent",
+        "event": "pushed",
         "repository": "linux",
         "repoFullName": "Engine-NEXUS/linux",
         "repoUrl": "https://github.com/Engine-NEXUS/linux",
-        "context": "Pull request activity"
+        "context": "Add missing nested esbuild@0.28.2 to worker lockfile"
       },
       {
         "date": "27 SEP",
@@ -2007,16 +2017,6 @@
         "repoFullName": "VMAX-OCEAN/ocean-docs",
         "repoUrl": "https://github.com/VMAX-OCEAN/ocean-docs",
         "context": "Add SIH idea submission slides — 3 generated + 2 specs"
-      },
-      {
-        "date": "12 SEP",
-        "rawDate": "2026-09-12T05:16:37Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "ocean-docs",
-        "repoFullName": "VMAX-OCEAN/ocean-docs",
-        "repoUrl": "https://github.com/VMAX-OCEAN/ocean-docs",
-        "context": "Track local agent skills (.agents/)"
       }
     ]
   },
