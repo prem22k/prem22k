@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `06 OCT` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Bundle atspi_server.py into production resources |
 | `02 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | 2026 competitive & platform audit compendium |
 | `01 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Add missing nested esbuild@0.28.2 to worker lockfile |
 | `27 SEP` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | NEXUS screen agent implementation summary with measured results |
 | `27 SEP` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Screen vision feature spec + changelog + OCR accuracy harness |
-| `17 SEP` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Modal shell adoption, persist-first solves, and focus-storm fix |
 
 ---
 
