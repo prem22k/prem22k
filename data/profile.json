@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T16:03:33.153Z",
+  "generatedAt": "2026-10-14T21:02:47.297Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 47,
     "following": 22,
-    "totalSizeKb": 294000
+    "totalSizeKb": 294130
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5515,
-    "last12MonthsContributions": 5814,
+    "yearContributions": 5602,
+    "last12MonthsContributions": 5888,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 5515
+      "2026": 5602
     },
     "calendar": [
       {
@@ -1802,12 +1802,12 @@
       },
       {
         "date": "2026-10-01",
-        "count": 5,
+        "count": 18,
         "level": 1
       },
       {
         "date": "2026-10-02",
-        "count": 28,
+        "count": 63,
         "level": 1
       },
       {
@@ -1822,7 +1822,7 @@
       },
       {
         "date": "2026-10-05",
-        "count": 3,
+        "count": 11,
         "level": 1
       },
       {
@@ -1832,7 +1832,7 @@
       },
       {
         "date": "2026-10-07",
-        "count": 4,
+        "count": 5,
         "level": 1
       },
       {
@@ -1862,62 +1862,62 @@
       },
       {
         "date": "2026-10-13",
-        "count": 3,
+        "count": 19,
         "level": 1
       },
       {
         "date": "2026-10-14",
-        "count": 2,
+        "count": 3,
         "level": 1
       }
     ]
   },
   "codebase": {
-    "totalBytes": 5984893,
-    "estimatedLines": 149622,
+    "totalBytes": 7646073,
+    "estimatedLines": 191152,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 3733266,
+        "bytes": 4904788,
         "repos": 14,
-        "percentage": 62.4
+        "percentage": 64.1
       },
       {
         "name": "JavaScript",
-        "bytes": 1496976,
+        "bytes": 1844332,
         "repos": 24,
-        "percentage": 25
+        "percentage": 24.1
       },
       {
         "name": "Python",
-        "bytes": 337921,
-        "repos": 4,
-        "percentage": 5.6
+        "bytes": 343275,
+        "repos": 5,
+        "percentage": 4.5
       },
       {
         "name": "CSS",
-        "bytes": 258034,
+        "bytes": 258476,
         "repos": 22,
-        "percentage": 4.3
+        "percentage": 3.4
+      },
+      {
+        "name": "PLpgSQL",
+        "bytes": 175793,
+        "repos": 1,
+        "percentage": 2.3
       },
       {
         "name": "HTML",
         "bytes": 92039,
         "repos": 18,
-        "percentage": 1.5
-      },
-      {
-        "name": "PLpgSQL",
-        "bytes": 39287,
-        "repos": 1,
-        "percentage": 0.7
+        "percentage": 1.2
       },
       {
         "name": "Shell",
         "bytes": 15997,
         "repos": 4,
-        "percentage": 0.3
+        "percentage": 0.2
       },
       {
         "name": "PowerShell",
@@ -1946,8 +1946,18 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-14T16:03:33.153Z",
+    "fetchedAt": "2026-10-14T21:02:47.297Z",
     "events": [
+      {
+        "date": "14 OCT",
+        "rawDate": "2026-10-14T18:38:23Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Production readiness — correctness, trust, perf, growth, ops"
+      },
       {
         "date": "06 OCT",
         "rawDate": "2026-10-06T19:36:42Z",
@@ -1997,16 +2007,6 @@
         "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
         "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
         "context": "NEXUS screen agent implementation summary with measured results"
-      },
-      {
-        "date": "27 SEP",
-        "rawDate": "2026-09-27T19:05:43Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "linux",
-        "repoFullName": "Engine-NEXUS/linux",
-        "repoUrl": "https://github.com/Engine-NEXUS/linux",
-        "context": "Screen vision feature spec + changelog + OCR accuracy harness"
       }
     ]
   },
