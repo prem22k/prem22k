@@ -118,7 +118,7 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Production readiness — correctness, trust, perf, growth, ops |
+| `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Public offline/sitemap/robots through auth gate |
 | `06 OCT` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Bundle atspi_server.py into production resources |
 | `02 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | 2026 competitive & platform audit compendium |
