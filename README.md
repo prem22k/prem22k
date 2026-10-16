@@ -118,7 +118,7 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Public offline/sitemap/robots through auth gate |
+| `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Bearer bypass for anonymised origins |
 | `13 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Deploy configs, CI, env template, product docs, deps |
 | `06 OCT` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Bundle atspi_server.py into production resources |
