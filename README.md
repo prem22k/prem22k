@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
+| `20 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Dompurify 3.4.14 -> 3.4.16 (two DOM-XSS advisories in IN_PLACE mode) |
+| `20 OCT` | `merged PR` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request activity |
 | `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Bearer bypass for anonymised origins |
 | `13 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Deploy configs, CI, env template, product docs, deps |
 | `06 OCT` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `02 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Bundle atspi_server.py into production resources |
-| `02 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | 2026 competitive & platform audit compendium |
-| `01 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Add missing nested esbuild@0.28.2 to worker lockfile |
 
 ---
 

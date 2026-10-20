@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:55:26.734Z",
+  "generatedAt": "2026-10-20T20:57:33.576Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,12 +18,12 @@
     "totalForks": 1,
     "followers": 45,
     "following": 22,
-    "totalSizeKb": 294114
+    "totalSizeKb": 294116
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5653,
-    "last12MonthsContributions": 5941,
+    "yearContributions": 4768,
+    "last12MonthsContributions": 5207,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
@@ -1941,8 +1941,28 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-20T15:55:26.734Z",
+    "fetchedAt": "2026-10-20T20:57:33.576Z",
     "events": [
+      {
+        "date": "20 OCT",
+        "rawDate": "2026-10-20T20:28:27Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "linux",
+        "repoFullName": "Engine-NEXUS/linux",
+        "repoUrl": "https://github.com/Engine-NEXUS/linux",
+        "context": "Dompurify 3.4.14 -> 3.4.16 (two DOM-XSS advisories in IN_PLACE mode)"
+      },
+      {
+        "date": "20 OCT",
+        "rawDate": "2026-10-20T20:18:04Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "NEXUS-PAPERS",
+        "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
+        "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
+        "context": "Pull request activity"
+      },
       {
         "date": "14 OCT",
         "rawDate": "2026-10-14T19:11:19Z",
@@ -1982,26 +2002,6 @@
         "repoFullName": "Engine-NEXUS/linux",
         "repoUrl": "https://github.com/Engine-NEXUS/linux",
         "context": "Bundle atspi_server.py into production resources"
-      },
-      {
-        "date": "02 OCT",
-        "rawDate": "2026-10-02T09:42:58Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "NEXUS-PAPERS",
-        "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
-        "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
-        "context": "2026 competitive & platform audit compendium"
-      },
-      {
-        "date": "01 OCT",
-        "rawDate": "2026-10-01T18:21:16Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "linux",
-        "repoFullName": "Engine-NEXUS/linux",
-        "repoUrl": "https://github.com/Engine-NEXUS/linux",
-        "context": "Add missing nested esbuild@0.28.2 to worker lockfile"
       }
     ]
   },
