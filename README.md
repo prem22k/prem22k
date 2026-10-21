@@ -121,8 +121,8 @@
 | `21 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Record the measured 56 px orb rim at the 80 px default |
 | `21 OCT` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request activity |
 | `21 OCT` | `merged PR` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request activity |
-| `20 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Shrink the dead-code baseline (156 items now used or gone); fix the last... |
-| `20 OCT` | `merged PR` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request activity |
+| `20 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Record the Windows CI results on Engine-NEXUS/linux#2 |
+| `20 OCT` | `branched` | [**linux**](https://github.com/Engine-NEXUS/linux) | Created branch |
 | `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Bearer bypass for anonymised origins |
 
 ---

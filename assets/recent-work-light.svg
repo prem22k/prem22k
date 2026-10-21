@@ -24,13 +24,13 @@
 <line x1="0" y1="122" x2="800" y2="122" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">20 OCT</text>
 <text x="90" y="142" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
-<text x="210" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">linux</text>
-<text x="380" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Shrink the dead-code baseline (156 items now used or gone); fix the last...</text>
+<text x="210" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">NEXUS-PAPERS</text>
+<text x="380" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Record the Windows CI results on Engine-NEXUS/linux#2</text>
 <line x1="0" y1="154" x2="800" y2="154" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">20 OCT</text>
-<text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">merged PR</text>
-<text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">NEXUS-PAPERS</text>
-<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Pull request activity</text>
+<text x="90" y="174" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">branched</text>
+<text x="210" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.2" fill="#1c1917">linux</text>
+<text x="380" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57534e">Created branch</text>
 <line x1="0" y1="186" x2="800" y2="186" stroke="#e7e5e4" stroke-width="1" />
 <text x="0" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#57534e">14 OCT</text>
 <text x="90" y="206" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.8" fill="#a8a29e">pushed</text>
