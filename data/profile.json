@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:43:36.739Z",
+  "generatedAt": "2026-10-21T16:12:26.402Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 45,
     "following": 22,
-    "totalSizeKb": 294130
+    "totalSizeKb": 294469
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5755,
-    "last12MonthsContributions": 6043,
+    "yearContributions": 5773,
+    "last12MonthsContributions": 6061,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 5755
+      "2026": 5773
     },
     "calendar": [
       {
@@ -1867,51 +1867,51 @@
       },
       {
         "date": "2026-10-21",
-        "count": 37,
+        "count": 55,
         "level": 1
       }
     ]
   },
   "codebase": {
-    "totalBytes": 7646073,
-    "estimatedLines": 191152,
+    "totalBytes": 8159966,
+    "estimatedLines": 203999,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 4904788,
+        "bytes": 5417480,
         "repos": 14,
-        "percentage": 64.1
+        "percentage": 66.4
       },
       {
         "name": "JavaScript",
         "bytes": 1844332,
         "repos": 24,
-        "percentage": 24.1
+        "percentage": 22.6
       },
       {
         "name": "Python",
         "bytes": 343275,
         "repos": 5,
-        "percentage": 4.5
+        "percentage": 4.2
       },
       {
         "name": "CSS",
-        "bytes": 258476,
+        "bytes": 259677,
         "repos": 22,
-        "percentage": 3.4
+        "percentage": 3.2
       },
       {
         "name": "PLpgSQL",
         "bytes": 175793,
         "repos": 1,
-        "percentage": 2.3
+        "percentage": 2.2
       },
       {
         "name": "HTML",
         "bytes": 92039,
         "repos": 18,
-        "percentage": 1.2
+        "percentage": 1.1
       },
       {
         "name": "Shell",
@@ -1946,26 +1946,36 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-21T10:43:36.740Z",
+    "fetchedAt": "2026-10-21T16:12:26.403Z",
     "events": [
       {
         "date": "21 OCT",
-        "rawDate": "2026-10-21T07:29:20Z",
+        "rawDate": "2026-10-21T12:02:07Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "linux",
+        "repoFullName": "Engine-NEXUS/linux",
+        "repoUrl": "https://github.com/Engine-NEXUS/linux",
+        "context": "Record the measured 56 px orb rim at the 80 px default"
+      },
+      {
+        "date": "21 OCT",
+        "rawDate": "2026-10-21T11:52:02Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Pull request activity"
+      },
+      {
+        "date": "21 OCT",
+        "rawDate": "2026-10-21T11:51:17Z",
         "type": "PullRequestEvent",
         "event": "merged PR",
         "repository": "NEXUS-PAPERS",
         "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
         "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
-        "context": "Pull request activity"
-      },
-      {
-        "date": "21 OCT",
-        "rawDate": "2026-10-21T07:29:16Z",
-        "type": "PullRequestEvent",
-        "event": "merged PR",
-        "repository": "linux",
-        "repoFullName": "Engine-NEXUS/linux",
-        "repoUrl": "https://github.com/Engine-NEXUS/linux",
         "context": "Pull request activity"
       },
       {
@@ -1997,16 +2007,6 @@
         "repoFullName": "prem22k/mahayuddh",
         "repoUrl": "https://github.com/prem22k/mahayuddh",
         "context": "Bearer bypass for anonymised origins"
-      },
-      {
-        "date": "13 OCT",
-        "rawDate": "2026-10-13T16:40:54Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "Deploy configs, CI, env template, product docs, deps"
       }
     ]
   },
