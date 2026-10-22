@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `21 OCT` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request activity |
-| `21 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request #2 from Engine-NEXUS/linux-dead-weight-2026-10 |
-| `21 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Pull request #4 from Engine-NEXUS/chore/linux-dead-weight |
-| `20 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Record the Windows CI results on Engine-NEXUS/linux#2 |
-| `20 OCT` | `branched` | [**linux**](https://github.com/Engine-NEXUS/linux) | Created branch |
-| `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Bearer bypass for anonymised origins |
+| `22 OCT` | `merged PR` | [**Adviser-CLI**](https://github.com/prem22k/adviser-cli-tool) | Pull request activity |
+| `22 OCT` | `merged PR` | [**ps_arcade**](https://github.com/prem22k/ps_arcade) | Pull request activity |
+| `22 OCT` | `merged PR` | [**ai-github-auditor**](https://github.com/prem22k/ai-github-auditor) | Pull request activity |
+| `22 OCT` | `merged PR` | [**QuizWhiz**](https://github.com/ChitkulLakshya/QuizWhiz) | Pull request activity |
+| `22 OCT` | `merged PR` | [**Hack-Hunt**](https://github.com/prem22k/Hack-Hunt) | Pull request activity |
+| `22 OCT` | `merged PR` | [**wealth-folio**](https://github.com/prem22k/wealth-folio) | Pull request activity |
 
 ---
 
