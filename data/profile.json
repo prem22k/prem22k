@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T16:10:25.798Z",
+  "generatedAt": "2026-10-22T20:55:24.166Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 45,
     "following": 22,
-    "totalSizeKb": 294623
+    "totalSizeKb": 294628
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 5778,
-    "last12MonthsContributions": 6075,
+    "yearContributions": 5829,
+    "last12MonthsContributions": 6111,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 5778
+      "2026": 5829
     },
     "calendar": [
       {
@@ -1872,19 +1872,19 @@
       },
       {
         "date": "2026-10-22",
-        "count": 11,
+        "count": 47,
         "level": 1
       }
     ]
   },
   "codebase": {
-    "totalBytes": 8159966,
-    "estimatedLines": 203999,
+    "totalBytes": 8180697,
+    "estimatedLines": 204517,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 5417480,
+        "bytes": 5429708,
         "repos": 14,
         "percentage": 66.4
       },
@@ -1892,17 +1892,17 @@
         "name": "JavaScript",
         "bytes": 1844332,
         "repos": 24,
-        "percentage": 22.6
+        "percentage": 22.5
       },
       {
         "name": "Python",
-        "bytes": 343275,
+        "bytes": 345791,
         "repos": 5,
         "percentage": 4.2
       },
       {
         "name": "CSS",
-        "bytes": 259677,
+        "bytes": 265104,
         "repos": 22,
         "percentage": 3.2
       },
@@ -1910,11 +1910,11 @@
         "name": "PLpgSQL",
         "bytes": 175793,
         "repos": 1,
-        "percentage": 2.2
+        "percentage": 2.1
       },
       {
         "name": "HTML",
-        "bytes": 92039,
+        "bytes": 92599,
         "repos": 18,
         "percentage": 1.1
       },
@@ -1951,11 +1951,21 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-10-22T16:10:25.798Z",
+    "fetchedAt": "2026-10-22T20:55:24.166Z",
     "events": [
       {
         "date": "22 OCT",
-        "rawDate": "2026-10-22T16:06:44Z",
+        "rawDate": "2026-10-22T16:13:40Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "Hack-Hunt",
+        "repoFullName": "prem22k/Hack-Hunt",
+        "repoUrl": "https://github.com/prem22k/Hack-Hunt",
+        "context": "Pull request activity"
+      },
+      {
+        "date": "22 OCT",
+        "rawDate": "2026-10-22T16:13:25Z",
         "type": "PullRequestEvent",
         "event": "merged PR",
         "repository": "Adviser-CLI",
@@ -1965,7 +1975,17 @@
       },
       {
         "date": "22 OCT",
-        "rawDate": "2026-10-22T16:06:41Z",
+        "rawDate": "2026-10-22T16:13:11Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "QuizWhiz",
+        "repoFullName": "ChitkulLakshya/QuizWhiz",
+        "repoUrl": "https://github.com/ChitkulLakshya/QuizWhiz",
+        "context": "Pull request #6 from ChitkulLakshya/fix/mobile-home-and-local-dev"
+      },
+      {
+        "date": "22 OCT",
+        "rawDate": "2026-10-22T16:12:41Z",
         "type": "PullRequestEvent",
         "event": "merged PR",
         "repository": "ps_arcade",
@@ -1981,26 +2001,6 @@
         "repository": "ai-github-auditor",
         "repoFullName": "prem22k/ai-github-auditor",
         "repoUrl": "https://github.com/prem22k/ai-github-auditor",
-        "context": "Pull request activity"
-      },
-      {
-        "date": "22 OCT",
-        "rawDate": "2026-10-22T16:06:37Z",
-        "type": "PullRequestEvent",
-        "event": "merged PR",
-        "repository": "QuizWhiz",
-        "repoFullName": "ChitkulLakshya/QuizWhiz",
-        "repoUrl": "https://github.com/ChitkulLakshya/QuizWhiz",
-        "context": "Pull request activity"
-      },
-      {
-        "date": "22 OCT",
-        "rawDate": "2026-10-22T16:06:34Z",
-        "type": "PullRequestEvent",
-        "event": "merged PR",
-        "repository": "Hack-Hunt",
-        "repoFullName": "prem22k/Hack-Hunt",
-        "repoUrl": "https://github.com/prem22k/Hack-Hunt",
         "context": "Pull request activity"
       },
       {
