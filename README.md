@@ -118,9 +118,9 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `21 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Record the measured 56 px orb rim at the 80 px default |
 | `21 OCT` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request activity |
-| `21 OCT` | `merged PR` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request activity |
+| `21 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request #2 from Engine-NEXUS/linux-dead-weight-2026-10 |
+| `21 OCT` | `pushed` | [**linux**](https://github.com/Engine-NEXUS/linux) | Pull request #4 from Engine-NEXUS/chore/linux-dead-weight |
 | `20 OCT` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Record the Windows CI results on Engine-NEXUS/linux#2 |
 | `20 OCT` | `branched` | [**linux**](https://github.com/Engine-NEXUS/linux) | Created branch |
 | `14 OCT` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Bearer bypass for anonymised origins |
