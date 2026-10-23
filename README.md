@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `22 OCT` | `merged PR` | [**Hack-Hunt**](https://github.com/prem22k/Hack-Hunt) | Pull request activity |
-| `22 OCT` | `pushed` | [**QuizWhiz**](https://github.com/ChitkulLakshya/QuizWhiz) | Pull request #6 from ChitkulLakshya/fix/mobile-home-and-local-dev |
 | `22 OCT` | `merged PR` | [**ai-github-auditor**](https://github.com/prem22k/ai-github-auditor) | Pull request activity |
-| `22 OCT` | `merged PR` | [**ServX**](https://github.com/Servx-lab/ServX) | Pull request activity |
 | `22 OCT` | `merged PR` | [**Zync**](https://github.com/zync-meet/Zync) | Pull request activity |
 | `22 OCT` | `branched` | [**Adviser-CLI**](https://github.com/prem22k/adviser-cli-tool) | Created branch |
+| `22 OCT` | `branched` | [**ps_arcade**](https://github.com/prem22k/ps_arcade) | Created branch |
+| `22 OCT` | `branched` | [**QuizWhiz**](https://github.com/ChitkulLakshya/QuizWhiz) | Created branch |
+| `22 OCT` | `branched` | [**Hack-Hunt**](https://github.com/prem22k/Hack-Hunt) | Created branch |
 
 ---
 
