@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `22 OCT` | `merged PR` | [**ai-github-auditor**](https://github.com/prem22k/ai-github-auditor) | Pull request activity |
-| `22 OCT` | `merged PR` | [**Zync**](https://github.com/zync-meet/Zync) | Pull request activity |
-| `22 OCT` | `branched` | [**Adviser-CLI**](https://github.com/prem22k/adviser-cli-tool) | Created branch |
-| `22 OCT` | `branched` | [**ps_arcade**](https://github.com/prem22k/ps_arcade) | Created branch |
-| `22 OCT` | `branched` | [**QuizWhiz**](https://github.com/ChitkulLakshya/QuizWhiz) | Created branch |
-| `22 OCT` | `branched` | [**Hack-Hunt**](https://github.com/prem22k/Hack-Hunt) | Created branch |
+| `02 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
+| `02 NOV` | `merged PR` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Pull request activity |
+| `02 NOV` | `merged PR` | [**ServX**](https://github.com/Servx-lab/ServX) | Pull request activity |
+| `02 NOV` | `merged PR` | [**Zync**](https://github.com/zync-meet/Zync) | Pull request activity |
+| `02 NOV` | `merged PR` | [**ai-github-auditor**](https://github.com/prem22k/ai-github-auditor) | Pull request activity |
+| `02 NOV` | `merged PR` | [**wealth-folio**](https://github.com/prem22k/wealth-folio) | Pull request activity |
 
 ---
 
