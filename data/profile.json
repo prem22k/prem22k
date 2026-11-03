@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:07:15.392Z",
+  "generatedAt": "2026-11-03T13:07:32.029Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -9,7 +9,7 @@
     "blog": "https://premsai.dev/",
     "hireable": true,
     "createdAt": "2024-03-28T07:46:18Z",
-    "accountAgeDays": 949
+    "accountAgeDays": 950
   },
   "overview": {
     "publicRepos": 38,
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 46,
     "following": 22,
-    "totalSizeKb": 295006
+    "totalSizeKb": 295003
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 6001,
-    "last12MonthsContributions": 6225,
+    "yearContributions": 6082,
+    "last12MonthsContributions": 6306,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 6001
+      "2026": 6082
     },
     "calendar": [
       {
@@ -1862,39 +1862,39 @@
       },
       {
         "date": "2026-11-03",
-        "count": 9,
-        "level": 1
+        "count": 90,
+        "level": 2
       }
     ]
   },
   "codebase": {
-    "totalBytes": 8435809,
-    "estimatedLines": 210895,
+    "totalBytes": 8703264,
+    "estimatedLines": 217582,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 5653390,
+        "bytes": 5849512,
         "repos": 14,
-        "percentage": 67
+        "percentage": 67.2
       },
       {
         "name": "JavaScript",
-        "bytes": 1870512,
+        "bytes": 1878416,
         "repos": 24,
-        "percentage": 22.2
+        "percentage": 21.6
       },
       {
         "name": "Python",
         "bytes": 345791,
         "repos": 5,
-        "percentage": 4.1
+        "percentage": 4
       },
       {
         "name": "CSS",
-        "bytes": 265327,
+        "bytes": 280328,
         "repos": 22,
-        "percentage": 3.1
+        "percentage": 3.2
       },
       {
         "name": "PLpgSQL",
@@ -1910,9 +1910,9 @@
       },
       {
         "name": "Shell",
-        "bytes": 15997,
-        "repos": 4,
-        "percentage": 0.2
+        "bytes": 64425,
+        "repos": 5,
+        "percentage": 0.7
       },
       {
         "name": "PowerShell",
@@ -1941,8 +1941,18 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-11-03T00:07:15.392Z",
+    "fetchedAt": "2026-11-03T13:07:32.029Z",
     "events": [
+      {
+        "date": "03 NOV",
+        "rawDate": "2026-11-03T07:50:35Z",
+        "type": "PushEvent",
+        "event": "pushed",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Pull request #26 from prem22k/fix/config-from-env"
+      },
       {
         "date": "02 NOV",
         "rawDate": "2026-11-02T20:47:05Z",
@@ -1991,16 +2001,6 @@
         "repository": "ai-github-auditor",
         "repoFullName": "prem22k/ai-github-auditor",
         "repoUrl": "https://github.com/prem22k/ai-github-auditor",
-        "context": "Pull request activity"
-      },
-      {
-        "date": "02 NOV",
-        "rawDate": "2026-11-02T17:01:08Z",
-        "type": "PullRequestEvent",
-        "event": "merged PR",
-        "repository": "wealth-folio",
-        "repoFullName": "prem22k/wealth-folio",
-        "repoUrl": "https://github.com/prem22k/wealth-folio",
         "context": "Pull request activity"
       }
     ]
