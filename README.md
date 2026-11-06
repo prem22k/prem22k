@@ -118,12 +118,12 @@
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | Voice wake word "NEXUS" via VAD + ASR + speaker verification |
+| `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | REA reverse-engineering research: Hey Siri teardown + Hitodama competito... |
+| `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | A leading "yeah" from the STT no longer hides the command |
 | `05 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `04 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `03 NOV` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request #31 from prem22k/feat/error-tracking |
 | `02 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
-| `02 NOV` | `pushed` | [**ServX**](https://github.com/Servx-lab/ServX) | Pull request #69 from Servx-lab/fix/landing-mobile-dock |
 
 ---
 
