@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T05:52:47.821Z",
+  "generatedAt": "2026-11-07T05:54:40.306Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -1888,26 +1888,26 @@
     ]
   },
   "codebase": {
-    "totalBytes": 8850437,
-    "estimatedLines": 221261,
+    "totalBytes": 8870537,
+    "estimatedLines": 221763,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 5950725,
+        "bytes": 5966951,
         "repos": 14,
-        "percentage": 67.2
+        "percentage": 67.3
       },
       {
         "name": "JavaScript",
-        "bytes": 1906741,
+        "bytes": 1906996,
         "repos": 24,
         "percentage": 21.5
       },
       {
         "name": "Python",
-        "bytes": 345791,
-        "repos": 5,
+        "bytes": 349410,
+        "repos": 6,
         "percentage": 3.9
       },
       {
@@ -1961,7 +1961,7 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-11-07T05:52:47.821Z",
+    "fetchedAt": "2026-11-07T05:54:40.306Z",
     "events": [
       {
         "date": "06 NOV",
@@ -1985,16 +1985,6 @@
       },
       {
         "date": "05 NOV",
-        "rawDate": "2026-11-05T10:08:15Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "portfolio",
-        "repoFullName": "prem22k/portfolio",
-        "repoUrl": "https://github.com/prem22k/portfolio",
-        "context": "Keep \"Get in touch\" and the email copy button on one line"
-      },
-      {
-        "date": "05 NOV",
         "rawDate": "2026-11-05T09:06:58Z",
         "type": "PushEvent",
         "event": "merged PR",
@@ -2015,13 +2005,23 @@
       },
       {
         "date": "03 NOV",
-        "rawDate": "2026-11-03T22:31:32Z",
+        "rawDate": "2026-11-03T09:53:18Z",
         "type": "PushEvent",
-        "event": "pushed",
-        "repository": "socials-manager",
-        "repoFullName": "prem22k/socials-manager",
-        "repoUrl": "https://github.com/prem22k/socials-manager",
-        "context": "2026-11-03 nightly signal"
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "PostHog error tracking (browser, boundaries, server)"
+      },
+      {
+        "date": "02 NOV",
+        "rawDate": "2026-11-02T18:53:46Z",
+        "type": "PushEvent",
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Links from other sites returned 403 Cross-origin request rejected"
       }
     ]
   },

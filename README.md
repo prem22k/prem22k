@@ -70,10 +70,10 @@
 | :--- | :--- | :--- | :--- |
 | `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Add REA reverse-engineering research: Hey Siri teardown + Hitodama compe... |
 | `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | Run on macos-latest; GitHub retired the macos-14 image |
-| `05 NOV` | `pushed` | [**portfolio**](https://github.com/prem22k/portfolio) | Keep "Get in touch" and the email copy button on one line |
 | `05 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Prove a linked handle is yours; only the server says verified |
 | `04 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Drop PostHog while error tracking is off |
-| `03 NOV` | `pushed` | [**socials-manager**](https://github.com/prem22k/socials-manager) | 2026-11-03 nightly signal |
+| `03 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | PostHog error tracking (browser, boundaries, server) |
+| `02 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Links from other sites returned 403 Cross-origin request rejected |
 
 ## Experience
 
