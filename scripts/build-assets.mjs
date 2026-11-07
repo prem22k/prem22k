@@ -9,7 +9,7 @@
  * Link buttons render 2 variants: assets/btn-<id>-{dark,light}.svg
  */
 
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, rmSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
@@ -65,22 +65,36 @@ for (const { id } of BUTTONS) {
 }
 console.log(`  ✔ assets/btn-{${BUTTONS.map((b) => b.id).join(',')}}-{dark,light}.svg`);
 
-// Version every local image URL in README.md by content hash (assets/x.svg?v=1a2b3c4d).
-// GitHub serves README images through a CDN that can keep an old copy of a same-named file
-// after a push; a new URL per content change means visitors never see a stale card.
+// Point README.md at content-hashed copies: assets/hero-dark.svg → assets/v/hero-dark.<hash>.svg.
+// GitHub serves README images from raw.githubusercontent.com, whose CDN can keep an old copy of a
+// same-named file after a push, and the /raw/ redirect drops query strings (so ?v= busting fails).
+// A new filename per content change is the only reliable cache key. Identical content is a single
+// git blob, so the copies cost no extra storage; stale copies are deleted.
 function versionReadmeImages() {
   const readmePath = resolve(ROOT_DIR, 'README.md');
   if (!existsSync(readmePath)) return;
+  const versionDir = resolve(ASSETS_DIR, 'v');
+  mkdirSync(versionDir, { recursive: true });
+  const keep = new Set();
   const readme = readFileSync(readmePath, 'utf8');
-  const next = readme.replace(/((?:src|srcset)=")((?:assets\/)?[\w./-]+\.(?:svg|gif|png|webp))(?:\?v=[0-9a-f]+)?(")/g, (m, pre, file, post) => {
-    const abs = resolve(ROOT_DIR, file);
-    if (!existsSync(abs)) return m;
-    const v = createHash('sha1').update(readFileSync(abs)).digest('hex').slice(0, 8);
-    return `${pre}${file}?v=${v}${post}`;
-  });
+  const next = readme.replace(
+    /((?:src|srcset)=")assets\/(?:v\/)?([\w-]+?)(?:\.[0-9a-f]{8})?\.svg(?:\?v=[0-9a-f]+)?(")/g,
+    (m, pre, name, post) => {
+      const source = resolve(ASSETS_DIR, `${name}.svg`);
+      if (!existsSync(source)) return m;
+      const bytes = readFileSync(source);
+      const versioned = `${name}.${createHash('sha1').update(bytes).digest('hex').slice(0, 8)}.svg`;
+      writeFileSync(resolve(versionDir, versioned), bytes);
+      keep.add(versioned);
+      return `${pre}assets/v/${versioned}${post}`;
+    }
+  );
+  for (const file of readdirSync(versionDir)) {
+    if (!keep.has(file)) rmSync(resolve(versionDir, file));
+  }
   if (next !== readme) {
     writeFileSync(readmePath, next, 'utf8');
-    console.log('✔ Versioned image URLs in README.md');
+    console.log('✔ Pointed README.md at content-hashed image copies (assets/v/)');
   }
 }
 

@@ -79,7 +79,7 @@ Each card writes `<name>-{dark,light}.svg` and `<name>-compact-{dark,light}.svg`
 - Everything sits inside one `<div align="center">`. There is no plain markdown text, so nothing breaks the glass look.
 - Each card is a pair of `<picture>` elements on one line: a desktop one, whose `(max-width: 600px)` source points at the 0×0 `assets/blank.svg`, and a phone one, whose `(min-width: 601px)` source points at the blank. Theme queries are kept on their own sources because GitHub's `<themed-picture>` script rewrites any `media` containing `prefers-color-scheme` when a user forces a theme, and that would drop a combined width condition.
 - Links are glass button images inside `<a href>`, so they stay clickable.
-- `build-assets.mjs` appends `?v=<content hash>` to every local image URL. GitHub's image CDN can keep serving an old copy of a same-named file after a push; a new URL per content change prevents stale cards.
+- `build-assets.mjs` points the README at content-hashed copies (`assets/v/<name>.<hash>.svg`). GitHub's image CDN can keep serving an old copy of a same-named file after a push, and the `/raw/` redirect drops query strings, so `?v=` cache-busting doesn't work. A new filename per content change does. Identical content is one git blob, so the copies cost no storage, and stale copies are deleted on each build.
 
 ## Rules (enforced by `scripts/validate.mjs`)
 
