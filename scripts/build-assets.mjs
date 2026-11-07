@@ -69,14 +69,16 @@ console.log(`  ✔ assets/btn-{${BUTTONS.map((b) => b.id).join(',')}}-{dark,ligh
 // GitHub serves README images from raw.githubusercontent.com, whose CDN can keep an old copy of a
 // same-named file after a push, and the /raw/ redirect drops query strings (so ?v= busting fails).
 // A new filename per content change is the only reliable cache key. Identical content is a single
-// git blob, so the copies cost no extra storage; stale copies are deleted.
+// git blob, so the copies cost no extra storage. Copies older than the previous README are deleted.
 function versionReadmeImages() {
   const readmePath = resolve(ROOT_DIR, 'README.md');
   if (!existsSync(readmePath)) return;
   const versionDir = resolve(ASSETS_DIR, 'v');
   mkdirSync(versionDir, { recursive: true });
-  const keep = new Set();
   const readme = readFileSync(readmePath, 'utf8');
+  // Keep the previous generation too: GitHub can serve a cached README for a while after a push,
+  // and deleting the copies it points at would show broken images until the cache expires.
+  const keep = new Set([...readme.matchAll(/assets\/v\/([\w.-]+\.svg)/g)].map((m) => m[1]));
   const next = readme.replace(
     /((?:src|srcset)=")assets\/(?:v\/)?([\w-]+?)(?:\.[0-9a-f]{8})?\.svg(?:\?v=[0-9a-f]+)?(")/g,
     (m, pre, name, post) => {
