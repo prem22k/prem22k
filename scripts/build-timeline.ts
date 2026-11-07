@@ -3,10 +3,10 @@
  *
  *   renderTimelineSVG({ mode: 'dark', layout: 'wide', data })  → SVG string
  *
- * One frosted panel titled "Recent activity". Each row: a tinted icon chip by event kind
- * (push ↑, merged PR, created +, open-sourced ✦, released tag), the repository in headline weight
+ * One panel titled "Recent activity". Each row: a neutral glyph tile by event kind
+ * (push ↑, merged PR, created +, open-sourced ✦, released tag, branched), the repository in headline weight
  * with the event verb, the commit message (ellipsized), and the date right-aligned ("Nov 6", UTC).
- * Chips are joined by a faint spine so the list reads as a timeline.
+ * Tiles are joined by a faint spine so the list reads as a timeline.
  *
  * Wide (800): one line of message per row. Compact (400): the message may wrap to two lines.
  * 0 events → one quiet "No recent public activity" row.
@@ -15,7 +15,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { GlassDoc, PAD, WIDTH, fmt, wrap, ellipsize, type Box, type Layout, type Mode } from './glass/index.ts';
+import { GlassDoc, PAD, WIDTH, fmt, wrap, ellipsize, glyphTile, type Box, type GlyphName, type Layout, type Mode } from './glass/index.ts';
 import type { FetchedProfileData, RecentActivityEvent } from './fetch-data.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -105,56 +105,24 @@ function toRows(events: Partial<RecentActivityEvent>[]): Row[] {
     .slice(0, MAX_ROWS);
 }
 
-// ── Icon chips ──────────────────────────────────────────────────────────────────
+// ── Icon tiles ──────────────────────────────────────────────────────────────────
 
-const KIND_ACCENT: Record<Kind, 'green' | 'purple' | 'blue' | 'teal' | 'orange' | 'indigo'> = {
-  push: 'green',
-  merge: 'purple',
-  create: 'blue',
-  public: 'teal',
-  release: 'orange',
-  branch: 'indigo',
+const KIND_GLYPH: Record<Kind, GlyphName> = {
+  push: 'arrowUp',
+  merge: 'merge',
+  create: 'plus',
+  public: 'sparkle',
+  release: 'tag',
+  branch: 'branch',
 };
 
-/** Tinted rounded tile (same recipe as the Activity tiles) with a line glyph drawn on a 30px grid. */
+/** Neutral glyph tile per event kind (the shared icon language; no colour in the timeline). */
 function chip(d: GlassDoc, x: number, y: number, size: number, kind: Kind | 'none'): void {
-  const dark = d.mode === 'dark';
-  const color = kind === 'none' ? d.t.textTertiary : d.accent(KIND_ACCENT[kind]);
-  d.add(
-    `<rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(size)}" height="${fmt(size)}" rx="${fmt(size * 0.3)}" fill="${color}" fill-opacity="${dark ? 0.24 : 0.16}"/>`
-  );
-  const s = size / 30;
-  const g = (inner: string, extra = '') =>
-    d.add(
-      `<g transform="translate(${fmt(x)} ${fmt(y)}) scale(${fmt(s)})" fill="none" stroke="${color}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"${extra}>${inner}</g>`
-    );
-  const dot = (cx: number, cy: number) => `<circle cx="${cx}" cy="${cy}" r="2.3"/>`;
-  switch (kind) {
-    case 'push':
-      g(`<path d="M15 21.5V8.8M9.8 14L15 8.8L20.2 14"/>`);
-      break;
-    case 'merge':
-      g(`${dot(10.5, 8.6)}${dot(10.5, 21.4)}${dot(19.8, 15)}<path d="M10.5 10.9V19.1M10.5 10.9C10.5 14.2 13.6 15 17.5 15"/>`);
-      break;
-    case 'branch':
-      g(`${dot(10.5, 8.6)}${dot(10.5, 21.4)}${dot(19.8, 8.6)}<path d="M10.5 10.9V19.1M19.8 10.9C19.8 15.6 10.5 14.6 10.5 19.1"/>`);
-      break;
-    case 'create':
-      g(`<path d="M15 9V21M9 15H21"/>`);
-      break;
-    case 'public':
-      // four-point sparkle + a small companion star
-      g(
-        `<path d="M13.5 7.5C14.2 11.6 15.4 12.8 19.5 13.5C15.4 14.2 14.2 15.4 13.5 19.5C12.8 15.4 11.6 14.2 7.5 13.5C11.6 12.8 12.8 11.6 13.5 7.5Z" fill="${color}" stroke-width="1.2"/>` +
-          `<path d="M20 17.6C20.3 19.3 20.8 19.8 22.5 20.1C20.8 20.4 20.3 20.9 20 22.6C19.7 20.9 19.2 20.4 17.5 20.1C19.2 19.8 19.7 19.3 20 17.6Z" fill="${color}" stroke-width="1"/>`
-      );
-      break;
-    case 'release':
-      g(`<path d="M8.5 9.6V14.4L16.2 22.1L22.1 16.2L14.4 8.5H9.6C9 8.5 8.5 9 8.5 9.6Z"/><circle cx="12.3" cy="12.3" r="1.4" fill="${color}" stroke="none"/>`);
-      break;
-    default:
-      g(`<circle cx="15" cy="15" r="6.5"/><path d="M15 11.6V15L17.4 16.4"/>`);
+  if (kind === 'none') {
+    glyphTile(d, 'calendar', { x, y, tile: size, color: d.t.textTertiary });
+    return;
   }
+  glyphTile(d, KIND_GLYPH[kind], { x, y, tile: size });
 }
 
 // ── Layout ──────────────────────────────────────────────────────────────────────

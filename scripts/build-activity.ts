@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { GlassDoc, GAP, PAD, WIDTH, fmt, formatNumber, type Box, type Layout, type Mode } from './glass/index.ts';
+import { GlassDoc, GAP, PAD, WIDTH, fmt, formatNumber, glyphTile, type Box, type GlyphName, type Layout, type Mode } from './glass/index.ts';
 import type { FetchedProfileData } from './fetch-data.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -160,36 +160,6 @@ function bar(x: number, y: number, w: number, h: number, r: number, fill: string
     `H${fmt(x + w - rr)}Q${fmt(x + w)} ${fmt(y)} ${fmt(x + w)} ${fmt(y + rr)}V${fmt(y + h - b)}` +
     `Q${fmt(x + w)} ${fmt(y + h)} ${fmt(x + w - b)} ${fmt(y + h)}H${fmt(x + b)}Q${fmt(x)} ${fmt(y + h)} ${fmt(x)} ${fmt(y + h - b)}Z`;
   return `<path d="${d}" fill="${fill}" fill-opacity="${fmt(opacity)}"/>`;
-}
-
-type Glyph = 'calendar' | 'star' | 'average';
-
-/** Apple Health-style tinted icon tile with a simple line glyph. */
-function icon(d: GlassDoc, x: number, y: number, size: number, glyph: Glyph, color: string): void {
-  const dark = d.mode === 'dark';
-  d.add(rrect(x, y, size, size, size * 0.28, color, dark ? 0.24 : 0.16));
-  const s = size / 30; // glyphs drawn on a 30px grid
-  const g = (inner: string) =>
-    d.add(`<g transform="translate(${fmt(x)} ${fmt(y)}) scale(${fmt(s)})" fill="none" stroke="${color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${inner}</g>`);
-  if (glyph === 'calendar') {
-    g(
-      `<rect x="8" y="9.5" width="14" height="12.5" rx="2.6"/><path d="M8 13.6H22"/><path d="M12 7.6V10.6M18 7.6V10.6"/>` +
-        `<circle cx="12" cy="17.6" r="0.9" fill="${color}" stroke="none"/><circle cx="15" cy="17.6" r="0.9" fill="${color}" stroke="none"/><circle cx="18" cy="17.6" r="0.9" fill="${color}" stroke="none"/>`
-    );
-  } else if (glyph === 'star') {
-    const pts: string[] = [];
-    for (let i = 0; i < 10; i++) {
-      const a = -Math.PI / 2 + (i * Math.PI) / 5;
-      const r = i % 2 === 0 ? 7.6 : 3.4;
-      pts.push(`${fmt(15 + r * Math.cos(a))},${fmt(15.6 + r * Math.sin(a))}`);
-    }
-    g(`<polygon points="${pts.join(' ')}" fill="${color}" fill-opacity="0.9" stroke-width="1.4"/>`);
-  } else {
-    g(
-      `<path d="M9.5 21.5V16.5M15 21.5V10.5M20.5 21.5V14"/>` +
-        `<path d="M7 14.4H23" stroke-width="1.3" stroke-dasharray="1.6 2" stroke-opacity="0.85"/>`
-    );
-  }
 }
 
 // ── Sections ────────────────────────────────────────────────────────────────────
@@ -406,7 +376,7 @@ function drawRhythm(d: GlassDoc, p: Box, s: Stats, layout: Layout): void {
       text: WEEKDAYS[i],
       style: 'caption',
       weight: peak ? 600 : 500,
-      color: peak ? green : t.textTertiary,
+      color: peak ? t.text : t.textTertiary,
       anchor: 'middle',
       container: p,
       maxWidth: colW,
@@ -433,7 +403,7 @@ function drawRhythm(d: GlassDoc, p: Box, s: Stats, layout: Layout): void {
 }
 
 interface TileSpec {
-  glyph: Glyph;
+  glyph: GlyphName;
   label: string;
   detail: string;
   value: string;
@@ -442,9 +412,9 @@ interface TileSpec {
 function drawTile(d: GlassDoc, p: Box, spec: TileSpec, layout: Layout): void {
   const t = d.t;
   const pad = layout === 'wide' ? 16 : 16;
-  const iconSize = 30;
+  const iconSize = 32;
   const cy = p.y + p.h / 2;
-  icon(d, p.x + pad, cy - iconSize / 2, iconSize, spec.glyph, d.accent('green'));
+  glyphTile(d, spec.glyph, { x: p.x + pad, y: cy - iconSize / 2, tile: iconSize });
   const valueW = d.measure({ text: spec.value, style: 'numberSmall', tabular: true });
   const right = p.x + p.w - pad;
   d.text({ x: right, y: cy + 8, text: spec.value, style: 'numberSmall', tabular: true, anchor: 'end', container: p, maxWidth: p.w * 0.45 });
@@ -458,7 +428,7 @@ function tiles(s: Stats): TileSpec[] {
   return [
     { glyph: 'calendar', label: 'Busiest month', detail: s.busiestMonth.label, value: formatNumber(s.busiestMonth.count) },
     { glyph: 'star', label: 'Best day', detail: shortDate(s.bestDay.ms), value: formatNumber(s.bestDay.count) },
-    { glyph: 'average', label: 'Daily average', detail: 'per active day', value: s.avgPerActiveDay.toFixed(1) },
+    { glyph: 'chart', label: 'Daily average', detail: 'per active day', value: s.avgPerActiveDay.toFixed(1) },
   ];
 }
 

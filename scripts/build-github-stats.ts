@@ -209,12 +209,9 @@ function drawBars(
   const barW = Math.min(12, Math.max(6, Math.round(pitch * 0.5)));
   const max = Math.max(1, ...months.map((m) => m.count));
   const peak = months.reduce((best, m, i) => (m.count > months[best].count ? i : best), 0);
-  const blue = d.accent('blue');
-  const teal = d.accent('teal');
-  const gid = d.id('bar');
-  d.addDef(
-    `<linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${teal}"/><stop offset="1" stop-color="${blue}"/></linearGradient>`
-  );
+  // Neutral bars with the busiest month in the heatmap's green (as in Activity's weekly rhythm).
+  const green = d.accent('green');
+  const restOpacity = d.mode === 'dark' ? 0.2 : 0.14;
   const baseY = box.y + chartH;
   // faint guide lines (top, middle, base)
   for (const f of [0, 0.5]) {
@@ -229,7 +226,7 @@ function drawBars(
     const h = m.count > 0 ? Math.max(4, (m.count / max) * (chartH - 2)) : 0;
     if (h > 0) {
       d.add(
-        `<rect x="${fmt(cx - barW / 2)}" y="${fmt(baseY - h)}" width="${barW}" height="${fmt(h)}" rx="${fmt(Math.min(barW / 2, h / 2))}" fill="url(#${gid})" fill-opacity="${i === peak ? 1 : 0.78}"/>`
+        `<rect x="${fmt(cx - barW / 2)}" y="${fmt(baseY - h)}" width="${barW}" height="${fmt(h)}" rx="${fmt(Math.min(barW / 2, h / 2))}" fill="${i === peak ? green : d.t.fill}" fill-opacity="${i === peak ? 1 : restOpacity}"/>`
       );
     } else {
       d.add(`<circle cx="${fmt(cx)}" cy="${fmt(baseY - 3)}" r="2" fill="${d.t.fill}" fill-opacity="${fmt(d.t.fillOpacity * 3)}"/>`);
@@ -240,7 +237,7 @@ function drawBars(
       text: m.label,
       style: 'caption',
       anchor: 'middle',
-      color: i === peak ? d.t.textSecondary : d.t.textTertiary,
+      color: i === peak ? d.t.text : d.t.textTertiary,
       weight: i === peak ? 600 : 500,
       maxWidth: pitch + 4,
       container,

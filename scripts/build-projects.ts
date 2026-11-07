@@ -1,10 +1,10 @@
 /**
  * Selected Work — Liquid Glass project showcase cards.
  *
- * One SVG per project, on the shared page wallpaper (plus the project's accent orb): a glass macOS
- * "app window" (toolbar with traffic lights + URL capsule, the product screenshot inset with a rounded
- * clip) and a slim info strip (index badge, name, tagline, three inline stats). The tech stack is listed
- * in the README under each card, so the SVG stays short.
+ * One SVG per project: a macOS "app window" panel (toolbar with traffic lights + URL capsule, the
+ * product screenshot inset with a rounded clip) and a slim info strip (neutral index tile, name,
+ * tagline, three inline stats). Project identity comes from the screenshot, not from colour. The tech
+ * stack is listed in the README under each card, so the SVG stays short.
  *
  * Screenshots are committed, pre-cropped (2.2:1, top-anchored) and pre-resized inputs in data/shots/
  * (<slug>.webp for wide at ~2x, <slug>-compact.webp for compact), base64-embedded so the card renders
@@ -30,13 +30,6 @@ interface Stat {
   label: string;
 }
 
-interface Identity {
-  /** Badge gradient (top → bottom) per mode; matches the hero's project icons where they overlap. */
-  badge: Record<Mode, [string, string]>;
-  /** Accent hex per mode: the wallpaper's accent orb and a faint wash on the info strip. */
-  accent: Record<Mode, string>;
-}
-
 interface Project {
   title: string;
   tagline: string;
@@ -47,7 +40,6 @@ interface Project {
   stats: [Stat, Stat, Stat];
   /** Tech stack for the README (not drawn on the card). */
   tech: string[];
-  identity: Identity;
 }
 
 export const PROJECTS: Record<ProjectSlug, Project> = {
@@ -63,10 +55,6 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
       { value: '4', label: 'Real-time channels' },
     ],
     tech: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Redis'],
-    identity: {
-      badge: { dark: ['#5AAEFF', '#0A60EE'], light: ['#4FA6FF', '#0059E0'] },
-      accent: { dark: '#0A84FF', light: '#007AFF' },
-    },
   },
   mahayuddh: {
     title: 'Mahayuddh',
@@ -80,10 +68,6 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
       { value: 'Every table', label: 'Row-level security' },
     ],
     tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
-    identity: {
-      badge: { dark: ['#FFB547', '#F2542D'], light: ['#FFAE3D', '#EE4E27'] },
-      accent: { dark: '#FF9F0A', light: '#FF9500' },
-    },
   },
   nexus: {
     title: 'NEXUS',
@@ -97,10 +81,6 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
       { value: 'Wayland & X11', label: 'Linux runtime' },
     ],
     tech: ['Rust', 'Tauri', 'React', 'TypeScript', 'Python'],
-    identity: {
-      badge: { dark: ['#8E8CFF', '#5146E5'], light: ['#8583FF', '#4B40DD'] },
-      accent: { dark: '#7D7AFF', light: '#5856D6' },
-    },
   },
   servx: {
     title: 'ServX',
@@ -114,10 +94,6 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
       { value: '92%', label: 'of Attack Paths' },
     ],
     tech: ['Next.js', 'Node.js', 'MongoDB', 'Redis', 'Socket.io'],
-    identity: {
-      badge: { dark: ['#3FDDB5', '#0B8A74'], light: ['#34D6AE', '#0A8571'] },
-      accent: { dark: '#30D1A8', light: '#14B8A6' },
-    },
   },
 };
 
@@ -178,7 +154,7 @@ const GEO: Record<Layout, Geometry> = {
     infoPad: 16,
     badge: 44,
     badgeR: 12,
-    badgeText: 17,
+    badgeText: 18,
   },
   compact: {
     pad: PAD.compact,
@@ -335,33 +311,23 @@ function appWindow(d: GlassDoc, slug: ProjectSlug, layout: Layout): Box {
   return win;
 }
 
-function indexBadge(d: GlassDoc, slug: ProjectSlug, index: number, x: number, y: number, g: Geometry, container: Box): void {
-  const [c0, c1] = PROJECTS[slug].identity.badge[d.mode];
+/** Index number on a neutral tile (same fill + hairline as icons.ts `glyphTile`). */
+function indexBadge(d: GlassDoc, index: number, x: number, y: number, g: Geometry, container: Box): void {
   const s = g.badge;
-  const grad = d.id('bg');
-  const hi = d.id('bh');
-  const blur = d.id('bs');
-  d.addDef(
-    `<linearGradient id="${grad}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${c0}"/><stop offset="1" stop-color="${c1}"/></linearGradient>` +
-      `<linearGradient id="${hi}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.18"/></linearGradient>` +
-      `<filter id="${blur}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="4"/></filter>`
-  );
-  const shadowOp = d.mode === 'dark' ? 0.4 : 0.22;
   d.add(
-    `<rect x="${fmt(x + 3)}" y="${fmt(y + 5)}" width="${fmt(s - 6)}" height="${fmt(s - 4)}" rx="${g.badgeR}" fill="${c1}" fill-opacity="${shadowOp}" filter="url(#${blur})"/>` +
-      `<rect x="${fmt(x)}" y="${fmt(y)}" width="${s}" height="${s}" rx="${g.badgeR}" fill="url(#${grad})"/>` +
-      `<rect x="${fmt(x + 0.6)}" y="${fmt(y + 0.6)}" width="${fmt(s - 1.2)}" height="${fmt(s - 1.2)}" rx="${fmt(g.badgeR - 0.6)}" fill="none" stroke="url(#${hi})" stroke-width="1.2"/>`
+    `<rect x="${fmt(x)}" y="${fmt(y)}" width="${s}" height="${s}" rx="${g.badgeR}" fill="${d.t.fill}" fill-opacity="${fmt(d.t.fillOpacity * 1.1)}"` +
+      ` stroke="${d.t.hairline}" stroke-opacity="${fmt(d.t.hairlineOpacity)}" stroke-width="1"/>`
   );
   d.text({
     x: x + s / 2,
     y: y + s / 2 + g.badgeText * 0.36,
     text: String(index).padStart(2, '0'),
     size: g.badgeText,
-    weight: 700,
+    weight: 600,
     cut: 'display',
-    ls: -0.3,
+    ls: -0.2,
     anchor: 'middle',
-    color: '#FFFFFF',
+    color: d.t.text,
     tabular: true,
     maxWidth: s - 8,
     container,
@@ -371,7 +337,7 @@ function indexBadge(d: GlassDoc, slug: ProjectSlug, index: number, x: number, y:
 /** Badge + name + tagline. Returns the right edge of the text block. */
 function identityBlock(d: GlassDoc, slug: ProjectSlug, index: number, x: number, y: number, g: Geometry, container: Box, maxRight: number): number {
   const p = PROJECTS[slug];
-  indexBadge(d, slug, index, x, y, g, container);
+  indexBadge(d, index, x, y, g, container);
   const tx = x + g.badge + 14;
   const name = d.text({ x: tx, y: y + g.badge / 2 - 1, text: p.title, style: 'title', maxWidth: maxRight - tx, container });
   const tag = d.text({
@@ -386,17 +352,9 @@ function identityBlock(d: GlassDoc, slug: ProjectSlug, index: number, x: number,
   return tx + Math.max(name.width, tag.width);
 }
 
-function infoStrip(d: GlassDoc, slug: ProjectSlug, layout: Layout, y: number): Box {
+function infoStrip(d: GlassDoc, layout: Layout, y: number): Box {
   const g = GEO[layout];
-  const p = PROJECTS[slug];
-  return d.panel({
-    x: g.pad,
-    y,
-    w: WIDTH[layout] - g.pad * 2,
-    h: infoHeight(layout),
-    wash: p.identity.accent[d.mode],
-    washOpacity: d.mode === 'dark' ? 0.06 : 0.04,
-  });
+  return d.panel({ x: g.pad, y, w: WIDTH[layout] - g.pad * 2, h: infoHeight(layout) });
 }
 
 // ── Layouts ───────────────────────────────────────────────────────────────────
@@ -407,7 +365,7 @@ function renderWide(d: GlassDoc, slug: ProjectSlug, index: number): void {
   const g = GEO.wide;
   const p = PROJECTS[slug];
   const win = appWindow(d, slug, 'wide');
-  const info = infoStrip(d, slug, 'wide', win.y + win.h + g.gap);
+  const info = infoStrip(d, 'wide', win.y + win.h + g.gap);
   const ix = info.x + g.infoPad;
   const iy = info.y + g.infoPad;
   const right = info.x + info.w - g.infoPad;
@@ -450,7 +408,7 @@ function renderCompact(d: GlassDoc, slug: ProjectSlug, index: number): void {
   const g = GEO.compact;
   const p = PROJECTS[slug];
   const win = appWindow(d, slug, 'compact');
-  const info = infoStrip(d, slug, 'compact', win.y + win.h + g.gap);
+  const info = infoStrip(d, 'compact', win.y + win.h + g.gap);
   const ix = info.x + g.infoPad;
   const iy = info.y + g.infoPad;
   const innerW = info.w - g.infoPad * 2;
@@ -512,7 +470,6 @@ export function renderProjectCardSVG({ slug, mode = 'dark', layout = 'wide' }: P
     mode,
     title: `${p.title}: ${p.tagline}`,
     desc: p.description,
-    accent: p.identity.accent[mode],
   });
   if (layout === 'wide') renderWide(d, slug, index);
   else renderCompact(d, slug, index);

@@ -3,9 +3,9 @@
  *
  *   renderJourneySVG({ mode: 'dark', layout: 'wide' })  → SVG string
  *
- * Experience: timeline entries (tinted icon tile, role in headline weight, org + dates in secondary,
+ * Experience: timeline entries (neutral glyph tile, role in headline weight, org + dates in secondary,
  * wrapped bullets), the tiles joined by a faint spine. Recognition: a trophy / medal tile, the event in
- * headline weight, the placement as a tinted gold pill next to the year, and one wrapped sentence.
+ * headline weight, the placement as a neutral pill next to the year, and one wrapped sentence.
  *
  * Both layouts stack the two panels (side by side left a tall dead block under Recognition and
  * forced short, ragged bullet wraps). Wide (800) uses the width instead: dates right-aligned on the
@@ -17,7 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { GlassDoc, GAP, PAD, WIDTH, fmt, measure, wrap, type Box, type Layout, type Mode } from './glass/index.ts';
+import { GlassDoc, GAP, PAD, WIDTH, fmt, glyphTile, measure, wrap, type Box, type GlyphName, type Layout, type Mode } from './glass/index.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
@@ -44,15 +44,13 @@ function hasGlyph(ch: string): boolean {
 }
 const C3 = hasGlyph('³') ? 'C³' : 'C3';
 
-type Glyph = 'briefcase' | 'cloud' | 'trophy' | 'medal';
-type AccentName = 'blue' | 'indigo' | 'teal' | 'yellow' | 'orange';
+type Glyph = Extract<GlyphName, 'briefcase' | 'cloud' | 'trophy' | 'medal'>;
 
 interface Job {
   role: string;
   org: string;
   dates: string;
   glyph: Glyph;
-  accent: AccentName;
   bullets: string[];
 }
 
@@ -61,7 +59,6 @@ interface Award {
   placement: string;
   year: string;
   glyph: Glyph;
-  accent: AccentName;
   text: string;
 }
 
@@ -71,7 +68,6 @@ const EXPERIENCE: Job[] = [
     org: 'RigorBase',
     dates: 'Mar 2026 – Apr 2026',
     glyph: 'briefcase',
-    accent: 'indigo',
     bullets: [
       'Built the closed-beta access system end to end: schema, OAuth 2.0, Redis rate limiting.',
       'Led the frontend migration to the v3 design system.',
@@ -83,7 +79,6 @@ const EXPERIENCE: Job[] = [
     org: `Cloud Community Club (${C3}) @ SNIST`,
     dates: 'Nov 2024 – Present',
     glyph: 'cloud',
-    accent: 'blue',
     bullets: [
       'Architected the club platform serving 1,000+ active campus users (Next.js).',
       'Automated a transactional email service with retry queues and CI/CD.',
@@ -97,7 +92,6 @@ const RECOGNITION: Award[] = [
     placement: 'Double-Track Winner',
     year: '2025',
     glyph: 'trophy',
-    accent: 'yellow',
     text: '1st place in both tracks out of 1,224 entrants, for a full-stack real-time web app.',
   },
   {
@@ -105,7 +99,6 @@ const RECOGNITION: Award[] = [
     placement: '5th Place Nationally',
     year: '2026',
     glyph: 'medal',
-    accent: 'orange',
     text: 'Built and deployed an integrated hardware/software system in 48 hours, out of 230+ teams.',
   },
 ];
@@ -260,57 +253,6 @@ function planAwards(w: number, r: Rhythm): AwardsPlan {
 
 // ── Drawing helpers ─────────────────────────────────────────────────────────────
 
-/** Tinted rounded tile with a line glyph on a 30px grid (same recipe as the Activity tiles). */
-function iconTile(d: GlassDoc, x: number, y: number, size: number, glyph: Glyph, color: string): void {
-  const dark = d.mode === 'dark';
-  const hl = d.id('ih');
-  d.addDef(
-    `<linearGradient id="${hl}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="${dark ? 0.22 : 0.6}"/><stop offset="0.6" stop-color="#fff" stop-opacity="0"/></linearGradient>`
-  );
-  const rx = size * 0.3;
-  d.add(
-    `<rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(size)}" height="${fmt(size)}" rx="${fmt(rx)}" fill="${color}" fill-opacity="${dark ? 0.24 : 0.16}"/>` +
-      `<rect x="${fmt(x + 0.5)}" y="${fmt(y + 0.5)}" width="${fmt(size - 1)}" height="${fmt(size - 1)}" rx="${fmt(rx - 0.5)}" fill="none" stroke="url(#${hl})"/>`
-  );
-  const s = size / 30;
-  const g = (inner: string) =>
-    d.add(
-      `<g transform="translate(${fmt(x)} ${fmt(y)}) scale(${fmt(s)})" fill="none" stroke="${color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${inner}</g>`
-    );
-  if (glyph === 'briefcase') {
-    g(
-      `<rect x="7.5" y="11" width="15" height="10.5" rx="2.4"/>` +
-        `<path d="M12 11V9.7C12 9 12.5 8.5 13.2 8.5H16.8C17.5 8.5 18 9 18 9.7V11"/><path d="M7.5 15.6H22.5"/>`
-    );
-  } else if (glyph === 'cloud') {
-    g(
-      `<path d="M10.4 20.6H19.9C21.9 20.6 23.5 19 23.5 17C23.5 15.2 22.1 13.7 20.3 13.5C19.8 11 17.6 9.2 15 9.2C12.6 9.2 10.6 10.7 9.9 12.9C7.9 13.2 6.5 14.9 6.5 16.8C6.5 18.9 8.2 20.6 10.4 20.6Z"/>`
-    );
-  } else if (glyph === 'trophy') {
-    g(
-      `<path d="M10.6 8.2H19.4V13.4C19.4 15.8 17.4 17.8 15 17.8C12.6 17.8 10.6 15.8 10.6 13.4Z" fill="${color}" fill-opacity="0.9"/>` +
-        `<path d="M10.6 10.2H8.4C8.4 12.8 9.3 14.2 11 14.7M19.4 10.2H21.6C21.6 12.8 20.7 14.2 19 14.7"/>` +
-        `<path d="M15 17.8V21.2M11.6 21.8H18.4"/>`
-    );
-  } else {
-    g(
-      `<path d="M11 7.5L13.4 12.6M19 7.5L16.6 12.6"/>` +
-        `<circle cx="15" cy="17.6" r="4.9"/><circle cx="15" cy="17.6" r="2" fill="${color}" stroke="none"/>`
-    );
-  }
-}
-
-/** Text colour for a tinted pill: the accent itself in dark mode, a deeper shade in light mode. */
-function pillInk(d: GlassDoc, accent: AccentName): string {
-  if (d.mode === 'dark') return d.accent(accent);
-  return accent === 'yellow' ? '#8F5F00' : accent === 'orange' ? '#A34E00' : d.accent(accent);
-}
-
-function iconColor(d: GlassDoc, accent: AccentName): string {
-  if (d.mode === 'dark') return d.accent(accent);
-  return accent === 'yellow' ? '#E09A00' : d.accent(accent);
-}
-
 function drawTitle(d: GlassDoc, p: Box, r: Rhythm, title: string): void {
   d.text({ x: p.x + r.pad, y: p.y + r.titleY, text: title, style: 'title', container: p, maxWidth: p.w - r.pad * 2 });
 }
@@ -327,7 +269,7 @@ function drawJobs(d: GlassDoc, p: Box, plan: JobsPlan, r: Rhythm): void {
     const { job } = it;
     const iconY = y + ROLE_Y - 13; // tile top aligned just above the headline cap
     tiles.push(iconY);
-    iconTile(d, ix, iconY, r.icon, job.glyph, iconColor(d, job.accent));
+    glyphTile(d, job.glyph, { x: ix, y: iconY, tile: r.icon });
     d.text({ x: tx, y: y + ROLE_Y, text: job.role, ...HEAD, color: t.text, container: p, maxWidth: textW });
     if (it.datesRight) {
       const dw = datesW(job.dates);
@@ -380,7 +322,7 @@ function drawAwards(d: GlassDoc, p: Box, plan: AwardsPlan, r: Rhythm): void {
     const ey = plan.cols === 2 ? top : y;
     const tx = ix + r.icon + r.iconGap;
     const textW = ix + plan.colW - tx;
-    iconTile(d, ix, ey + ROLE_Y - 13, r.icon, award.glyph, iconColor(d, award.accent));
+    glyphTile(d, award.glyph, { x: ix, y: ey + ROLE_Y - 13, tile: r.icon });
     d.text({ x: tx, y: ey + ROLE_Y, text: award.event, ...HEAD, color: t.text, container: p, maxWidth: textW });
     const pillY = ey + ROLE_Y + 11;
     const pw = d.pill({
@@ -388,8 +330,7 @@ function drawAwards(d: GlassDoc, p: Box, plan: AwardsPlan, r: Rhythm): void {
       y: pillY,
       h: r.pillH,
       text: award.placement,
-      tinted: iconColor(d, award.accent),
-      color: pillInk(d, award.accent),
+      color: t.textSecondary,
       size: PILL.size,
       weight: PILL.weight,
       container: p,

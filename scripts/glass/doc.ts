@@ -296,11 +296,18 @@ export class GlassDoc {
     const w = Math.ceil(tw + padX * 2 + dotW);
     const t = this.t;
     const dark = this.mode === 'dark';
-    const fill = opts.tinted ?? '#FFFFFF';
-    const fillOpacity = opts.tinted ? (dark ? 0.2 : 0.14) : dark ? 0.1 : 0.55;
-    this.add(
-      `<rect x="${fmt(opts.x)}" y="${fmt(opts.y)}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}" fill-opacity="${fmt(fillOpacity)}" stroke="${dark ? '#FFFFFF' : t.hairline}" stroke-opacity="${dark ? 0.14 : 0.08}"/>`
-    );
+    if (t.integrated && !opts.tinted) {
+      // On stone/graphite surfaces: the same neutral fill + hairline as icon tiles, visible in both themes.
+      this.add(
+        `<rect x="${fmt(opts.x)}" y="${fmt(opts.y)}" width="${w}" height="${h}" rx="${h / 2}" fill="${t.fill}" fill-opacity="${fmt(t.fillOpacity * 1.1)}" stroke="${t.hairline}" stroke-opacity="${fmt(t.hairlineOpacity)}"/>`
+      );
+    } else {
+      const fill = opts.tinted ?? '#FFFFFF';
+      const fillOpacity = opts.tinted ? (dark ? 0.2 : 0.14) : dark ? 0.1 : 0.55;
+      this.add(
+        `<rect x="${fmt(opts.x)}" y="${fmt(opts.y)}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}" fill-opacity="${fmt(fillOpacity)}" stroke="${dark ? '#FFFFFF' : t.hairline}" stroke-opacity="${dark ? 0.14 : 0.08}"/>`
+      );
+    }
     if (opts.dot) {
       this.add(`<circle cx="${fmt(opts.x + padX + 3.5)}" cy="${fmt(opts.y + h / 2)}" r="3.5" fill="${opts.dot}"/>`);
     }
