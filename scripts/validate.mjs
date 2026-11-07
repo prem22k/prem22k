@@ -44,6 +44,7 @@ if (fs.existsSync(PROFILE_JSON_PATH)) {
 const COMPONENTS = [
   { name: 'hero', budgetKb: 80 },
   { name: 'github-year', budgetKb: 80 },
+  { name: 'section-work', budgetKb: 60 },
   { name: 'project-zync', budgetKb: 280 },
   { name: 'project-mahayuddh', budgetKb: 280 },
   { name: 'project-nexus', budgetKb: 280 },
@@ -51,7 +52,10 @@ const COMPONENTS = [
   { name: 'codebase', budgetKb: 80 },
   { name: 'stack', budgetKb: 80 },
   { name: 'activity', budgetKb: 120 },
+  { name: 'timeline', budgetKb: 80 },
+  { name: 'journey', budgetKb: 80 },
 ];
+const BUTTON_IDS = ['portfolio', 'linkedin', 'x', 'threads', 'email', 'live', 'source'];
 const VARIANTS = ['dark', 'light', 'compact-dark', 'compact-light'];
 
 let svgCount = 0;
@@ -91,6 +95,21 @@ for (const { name, budgetKb } of COMPONENTS) {
     assert(!/<animate|@keyframes/i.test(content), `${svgFile} must be static (no animation)`);
   }
 }
+for (const id of BUTTON_IDS) {
+  for (const mode of ['dark', 'light']) {
+    const svgFile = `btn-${id}-${mode}.svg`;
+    const filePath = path.join(ASSETS_DIR, svgFile);
+    assert(fs.existsSync(filePath), `Asset ${svgFile} must exist`);
+    if (!fs.existsSync(filePath)) continue;
+    svgCount++;
+    const content = fs.readFileSync(filePath, 'utf8').trim();
+    assert(content.startsWith('<svg') && content.endsWith('</svg>'), `${svgFile} must be a well-formed root <svg>`);
+    assert(fs.statSync(filePath).size < 30 * 1024, `${svgFile} must be under 30KB`);
+    assert(/@font-face\{font-family:'InterGlass(Display)?';src:url\(data:font\/woff2;base64,/.test(content), `${svgFile} must embed its Inter subset`);
+    assert(!/<script|<foreignObject|@import|<animate|@keyframes/i.test(content), `${svgFile} must be static and script-free`);
+    assert(!/(?:href|src)="(?!#|data:)/i.test(content) && !/url\((?!#|data:)/i.test(content), `${svgFile} must not reference external resources`);
+  }
+}
 console.log(`  ✔ ${svgCount} SVG assets validated (structure, budget, embedded font, safety)`);
 
 // 3. README image references exist
@@ -100,7 +119,7 @@ if (fs.existsSync(readmePath)) {
   const readmeContent = fs.readFileSync(readmePath, 'utf8');
   const imgMatches = [...readmeContent.matchAll(/(?:src|srcset)="([^"]+)"/g)];
   for (const match of imgMatches) {
-    const refPath = match[1];
+    const refPath = match[1].split('?')[0];
     if (/^https?:\/\//.test(refPath)) continue;
     assert(fs.existsSync(path.join(ROOT_DIR, refPath)), `README.md image reference '${refPath}' must exist on disk`);
   }

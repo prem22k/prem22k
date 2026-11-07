@@ -12,7 +12,7 @@ The look follows Apple's Liquid Glass material (macOS Tahoe / iOS 26): every com
 
 | Layer | How it's drawn |
 |---|---|
-| **Wallpaper card** | Rounded rect (r=28) with a base colour and 4–7 colour orbs under a large Gaussian blur. The orb layout is seeded per component, so output is deterministic. |
+| **Wallpaper card** | Rounded rect (r=28) with a base colour and 5 cool colour orbs under a large Gaussian blur. **Every card uses the same composition** (scaled to its size) so the page reads as one desktop. An optional `accent` adds one soft identity-colour orb at the top right (used by project cards). |
 | **Frosted glass** | An opaque, more-blurred and more saturated copy of the wallpaper, clipped to the panel. |
 | **Tint** | Dark: `#1C1C26` at 42% (60% "strong"). Light: white at 50% (68% "strong"). An optional accent `wash`. |
 | **Sheen** | Vertical white gradient fading out over the top of the panel. |
@@ -23,7 +23,7 @@ Panel radius 20, inner elements 14, pills fully rounded.
 
 ## Colour
 
-- **Wallpaper:** dark uses deep indigo, blue, violet, teal, magenta and amber orbs on `#07080E`. Light uses pastel indigo, sky, lilac, mint, pink and peach on `#EEF0F7`.
+- **Wallpaper:** dark uses blue, violet, indigo, teal and purple orbs on `#07080E`. Light uses pastel versions of the same on `#EEF0F7`. No warm hues in the wallpaper; warmth only comes from accents.
 - **Text:** dark `#F5F5F7` / `#C7C7D1` / `#8E8E9A`. Light `#1D1D1F` / `#3C3C43` / `#6E6E78`.
 - **Accents:** Apple system colours (blue, green, indigo, orange, pink, purple, red, teal, yellow), with per-theme values in `tokens.ts`. Use them sparingly and with meaning, e.g. a project's identity colour or a highlighted data point.
 
@@ -55,13 +55,24 @@ The README picks a variant with `<picture>` sources (`media="(max-width: 600px) 
 | `codebase` | `build-codebase.ts` | language bytes |
 | `stack` | `build-stack.ts` | static |
 | `activity` | `build-activity.ts` | contribution calendar (last 365 days) |
+| `section-work` | `build-section.ts` | project count |
+| `timeline` | `build-timeline.ts` | recent engineering events |
+| `journey` | `build-journey.ts` | static experience and recognition |
+| `btn-<id>` | `build-buttons.ts` | static (link buttons, wrapped in `<a>` in the README) |
 
-Each one writes `<name>-{dark,light}.svg` and `<name>-compact-{dark,light}.svg`.
+Each card writes `<name>-{dark,light}.svg` and `<name>-compact-{dark,light}.svg`. Buttons write `btn-<id>-{dark,light}.svg` only.
+
+## README layout
+
+- Everything sits inside one `<div align="center">`. There is no plain markdown text, so nothing breaks the glass look.
+- Each card is a pair of `<picture>` elements on one line: a desktop one, whose `(max-width: 600px)` source points at the 0×0 `assets/blank.svg`, and a phone one, whose `(min-width: 601px)` source points at the blank. Theme queries are kept on their own sources because GitHub's `<themed-picture>` script rewrites any `media` containing `prefers-color-scheme` when a user forces a theme, and that would drop a combined width condition.
+- Links are glass button images inside `<a href>`, so they stay clickable.
+- `build-assets.mjs` appends `?v=<content hash>` to every local image URL. GitHub's image CDN can keep serving an old copy of a same-named file after a push; a new URL per content change prevents stale cards.
 
 ## Rules (enforced by `scripts/validate.mjs`)
 
 - Allowed: gradients, filters, clip paths, masks, rounded corners, embedded `data:` images and fonts.
 - Forbidden: `<script>`, `<foreignObject>`, `on*=` handlers, external `href`/`src`/`url()`, `@import`, animation.
-- Budgets: 80KB per component (activity 120KB, project cards 280KB).
+- Budgets: 80KB per card (section header 60KB, activity 120KB, project cards 280KB), 30KB per button.
 - Every variant must embed its Inter subset and have an accessible `<title>`.
 - Text that numbers depend on (active days etc.) always uses the last 365 calendar days, so figures agree across components.

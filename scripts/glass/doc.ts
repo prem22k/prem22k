@@ -39,9 +39,11 @@ export interface DocOptions {
   mode: Mode;
   title: string;
   desc?: string;
-  /** Seed for the default wallpaper orb layout (keep stable → deterministic output). */
+  /** Kept for API compatibility; the wallpaper is one shared composition for every card. */
   seed?: string;
-  /** Explicit orbs (overrides the seeded layout). */
+  /** Optional identity colour (e.g. a project's accent) added as one soft orb top-right. */
+  accent?: string;
+  /** Explicit orbs (overrides the shared wallpaper). Avoid: it breaks page-wide cohesion. */
   orbs?: Orb[];
   /** Outer card corner radius. */
   radius?: number;
@@ -91,23 +93,6 @@ export interface TextResult {
   text: string;
 }
 
-function mulberry32(seed: number) {
-  let a = seed >>> 0;
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function seedNumber(s: string): number {
-  let h = 2166136261;
-  for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
-  return h >>> 0;
-}
-
 export class GlassDoc {
   readonly width: number;
   readonly height: number;
@@ -133,7 +118,7 @@ export class GlassDoc {
     this.desc = opts.desc ?? opts.title;
     this.radius = opts.radius ?? RADIUS.card;
     this.wallBlur = opts.wallBlur ?? Math.round(Math.max(this.width, this.height) / 9);
-    this.orbs = opts.orbs ?? this.seededOrbs(opts.seed ?? opts.title);
+    this.orbs = opts.orbs ?? this.wallpaperOrbs(opts.accent);
   }
 
   /** Unique id for defs. */
@@ -155,21 +140,22 @@ export class GlassDoc {
     return this.t.accents[name];
   }
 
-  private seededOrbs(seed: string): Orb[] {
-    const rnd = mulberry32(seedNumber(seed));
+  /**
+   * The shared wallpaper: the same composition on every card (scaled to its size), so the README
+   * reads as one desktop rather than a patchwork. Cool hues only; identity colour comes from `accent`.
+   */
+  private wallpaperOrbs(accent?: string): Orb[] {
     const { width: W, height: H } = this;
-    const colors = this.t.wallOrbs;
-    const count = Math.max(4, Math.min(7, Math.round((W * H) / 45000) + 3));
-    const orbs: Orb[] = [];
-    for (let i = 0; i < count; i++) {
-      // Spread orbs across a loose grid so every area of the card gets colour.
-      const col = i % 3;
-      const row = Math.floor(i / 3) % 3;
-      const cx = ((col + 0.2 + rnd() * 0.6) / 3) * W;
-      const cy = ((row + 0.15 + rnd() * 0.7) / Math.max(1, Math.ceil(count / 3))) * H;
-      const r = (0.28 + rnd() * 0.22) * Math.max(Math.min(W, H) * 1.1, Math.max(W, H) * 0.45);
-      orbs.push({ cx, cy, r, color: colors[(i + Math.floor(rnd() * colors.length)) % colors.length] });
-    }
+    const c = this.t.wallOrbs;
+    const R = Math.hypot(W, H) / 2;
+    const orbs: Orb[] = [
+      { cx: 0.02 * W, cy: 0.0 * H, r: 0.62 * R, color: c[0] },
+      { cx: 0.98 * W, cy: 0.04 * H, r: 0.58 * R, color: c[1] },
+      { cx: 0.5 * W, cy: 0.55 * H, r: 0.45 * R, color: c[2], opacity: this.t.wallOrbOpacity * 0.7 },
+      { cx: 0.04 * W, cy: 1.0 * H, r: 0.55 * R, color: c[3] },
+      { cx: 0.96 * W, cy: 0.98 * H, r: 0.6 * R, color: c[4] },
+    ];
+    if (accent) orbs.push({ cx: 0.88 * W, cy: 0.12 * H, r: 0.4 * R, color: accent, opacity: this.mode === 'dark' ? 0.5 : 0.45 });
     return orbs;
   }
 

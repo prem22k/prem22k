@@ -1,20 +1,21 @@
 /**
  * Selected Work — Liquid Glass project showcase cards.
  *
- * One SVG per project: a glass macOS "app window" (toolbar with traffic lights + URL capsule, the
- * product screenshot inset with a rounded clip) floating on an accent-tinted wallpaper, and an info
- * glass panel (index badge, name, tagline, stat tiles, tech capsules).
+ * One SVG per project, on the shared page wallpaper (plus the project's accent orb): a glass macOS
+ * "app window" (toolbar with traffic lights + URL capsule, the product screenshot inset with a rounded
+ * clip) and a slim info strip (index badge, name, tagline, three inline stats). The tech stack is listed
+ * in the README under each card, so the SVG stays short.
  *
- * Screenshots are committed, pre-resized inputs in data/shots/ (<slug>.webp for wide at ~2x,
- * <slug>-compact.webp for compact) and are base64-embedded so the card renders inside GitHub's <img>.
- * Project facts are copied (tightened, never invented) from the portfolio's content/projects.json so the
- * build has no dependency on the portfolio folder.
+ * Screenshots are committed, pre-cropped (2.2:1, top-anchored) and pre-resized inputs in data/shots/
+ * (<slug>.webp for wide at ~2x, <slug>-compact.webp for compact), base64-embedded so the card renders
+ * inside GitHub's <img>. Project facts are copied (tightened, never invented) from the portfolio's
+ * content/projects.json so the build has no dependency on the portfolio folder.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { GlassDoc, WIDTH, PAD, GAP, fmt, type Box, type Layout, type Mode, type Orb } from './glass/index.ts';
+import { GlassDoc, WIDTH, PAD, GAP, fmt, type Box, type Layout, type Mode } from './glass/index.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
@@ -30,13 +31,10 @@ interface Stat {
 }
 
 interface Identity {
-  /** Badge gradient (top → bottom) and the numeral colour on it. */
-  badge: [string, string];
-  badgeText: string;
-  /** Panel wash per mode. */
-  wash: Record<Mode, string>;
-  /** Wallpaper orb colours per mode; the first is the dominant hue. */
-  orbs: Record<Mode, [string, string, string, string]>;
+  /** Badge gradient (top → bottom) per mode; matches the hero's project icons where they overlap. */
+  badge: Record<Mode, [string, string]>;
+  /** Accent hex per mode: the wallpaper's accent orb and a faint wash on the info strip. */
+  accent: Record<Mode, string>;
 }
 
 interface Project {
@@ -47,7 +45,7 @@ interface Project {
   /** Shown in the URL capsule; null → native app window title instead. */
   domain: string | null;
   stats: [Stat, Stat, Stat];
-  /** In priority order; the layout shows as many as fit (3–5 wide, 2–4 compact). */
+  /** Tech stack for the README (not drawn on the card). */
   tech: string[];
   identity: Identity;
 }
@@ -66,13 +64,8 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
     ],
     tech: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Redis'],
     identity: {
-      badge: ['#5AAEFF', '#0A60EE'],
-      badgeText: '#FFFFFF',
-      wash: { dark: '#0A84FF', light: '#007AFF' },
-      orbs: {
-        dark: ['#0A5CFF', '#3B2FD0', '#0FA3B8', '#5E5CE6'],
-        light: ['#93C5FD', '#A5B4FC', '#A5F3FC', '#BFDBFE'],
-      },
+      badge: { dark: ['#5AAEFF', '#0A60EE'], light: ['#4FA6FF', '#0059E0'] },
+      accent: { dark: '#0A84FF', light: '#007AFF' },
     },
   },
   mahayuddh: {
@@ -88,13 +81,8 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
     ],
     tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
     identity: {
-      badge: ['#FFDA55', '#F0A30A'],
-      badgeText: '#1D1D1F',
-      wash: { dark: '#FFB800', light: '#F2A900' },
-      orbs: {
-        dark: ['#F5A300', '#FF5E1A', '#B0123F', '#4A1FB0'],
-        light: ['#FDE68A', '#FED7AA', '#FCD34D', '#FBCFE8'],
-      },
+      badge: { dark: ['#FFB547', '#F2542D'], light: ['#FFAE3D', '#EE4E27'] },
+      accent: { dark: '#FF9F0A', light: '#FF9500' },
     },
   },
   nexus: {
@@ -110,13 +98,8 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
     ],
     tech: ['Rust', 'Tauri', 'React', 'TypeScript', 'Python'],
     identity: {
-      badge: ['#CB86FF', '#8B3FE0'],
-      badgeText: '#FFFFFF',
-      wash: { dark: '#BF5AF2', light: '#AF52DE' },
-      orbs: {
-        dark: ['#8E3FD9', '#4B2FD0', '#C2367A', '#0A5CFF'],
-        light: ['#D8B4FE', '#C4B5FD', '#F9A8D4', '#A5B4FC'],
-      },
+      badge: { dark: ['#8E8CFF', '#5146E5'], light: ['#8583FF', '#4B40DD'] },
+      accent: { dark: '#7D7AFF', light: '#5856D6' },
     },
   },
   servx: {
@@ -126,24 +109,22 @@ export const PROJECTS: Record<ProjectSlug, Project> = {
       'An infrastructure monitoring and incident-response suite (web app, CLI, and React SDK) for deployment monitoring, incident detection, and real-time telemetry.',
     domain: 'servx.vercel.app',
     stats: [
-      { value: 'Web + CLI + SDK', label: 'Product suite' },
-      { value: 'SSE & WebSockets', label: 'Real-time telemetry' },
-      { value: '92%', label: 'Attack Paths contribution' },
+      { value: 'Web · CLI · SDK', label: 'Product suite' },
+      { value: 'Real-time', label: 'SSE & WebSockets' },
+      { value: '92%', label: 'of Attack Paths' },
     ],
     tech: ['Next.js', 'Node.js', 'MongoDB', 'Redis', 'Socket.io'],
     identity: {
-      badge: ['#34D6AE', '#0B8A74'],
-      badgeText: '#FFFFFF',
-      wash: { dark: '#30D1A8', light: '#0FA58A' },
-      orbs: {
-        dark: ['#0E9F86', '#0FA3B8', '#0A5CFF', '#17B26A'],
-        light: ['#99F6E4', '#A7F3D0', '#93C5FD', '#BAE6FD'],
-      },
+      badge: { dark: ['#3FDDB5', '#0B8A74'], light: ['#34D6AE', '#0A8571'] },
+      accent: { dark: '#30D1A8', light: '#14B8A6' },
     },
   },
 };
 
 // ── Assets ────────────────────────────────────────────────────────────────────
+
+/** Aspect of the committed, pre-cropped screenshots (width / height). */
+const SHOT_ASPECT = 2.2;
 
 const shotCache = new Map<string, string>();
 
@@ -174,7 +155,7 @@ interface Geometry {
   capsuleH: number;
   capsuleMinW: number;
   capsuleText: number;
-  /** Info panel. */
+  /** Info strip. */
   infoPad: number;
   badge: number;
   badgeR: number;
@@ -185,24 +166,24 @@ const GEO: Record<Layout, Geometry> = {
   wide: {
     pad: PAD.wide,
     gap: GAP.wide,
-    toolbar: 42,
+    toolbar: 36,
     inset: 8,
-    winR: 22,
+    winR: 20,
     lightR: 6,
     lightGap: 20,
-    lightX: 22,
-    capsuleH: 26,
-    capsuleMinW: 300,
+    lightX: 21,
+    capsuleH: 24,
+    capsuleMinW: 280,
     capsuleText: 13,
-    infoPad: 22,
-    badge: 48,
-    badgeR: 13,
-    badgeText: 19,
+    infoPad: 16,
+    badge: 44,
+    badgeR: 12,
+    badgeText: 17,
   },
   compact: {
     pad: PAD.compact,
     gap: GAP.compact,
-    toolbar: 34,
+    toolbar: 32,
     inset: 6,
     winR: 18,
     lightR: 5,
@@ -211,59 +192,45 @@ const GEO: Record<Layout, Geometry> = {
     capsuleH: 22,
     capsuleMinW: 168,
     capsuleText: 12,
-    infoPad: 18,
-    badge: 44,
-    badgeR: 12,
-    badgeText: 17,
+    infoPad: 16,
+    badge: 40,
+    badgeR: 11,
+    badgeText: 16,
   },
 };
 
-const PILL_H = 26;
-const PILL_GAP = 6;
-const PILL_PADX = 11;
+/** Compact stat list row height. */
+const ROW_H = 36;
 
-function pillWidth(d: GlassDoc, text: string): number {
-  return Math.ceil(d.measure({ text, size: 12, weight: 600, cut: 'text', ls: 0 }) + PILL_PADX * 2);
+function shotHeight(layout: Layout): number {
+  const g = GEO[layout];
+  return Math.round((WIDTH[layout] - g.pad * 2 - g.inset * 2) / SHOT_ASPECT);
 }
 
-/** Pick tech pills in priority order while they fit in maxWidth. */
-function fitPills(d: GlassDoc, tech: string[], maxWidth: number, max: number): { items: string[]; width: number } {
-  const items: string[] = [];
-  let width = 0;
-  for (const t of tech) {
-    if (items.length >= max) break;
-    const w = pillWidth(d, t);
-    const next = items.length ? width + PILL_GAP + w : w;
-    if (next > maxWidth) break;
-    items.push(t);
-    width = next;
-  }
-  return { items, width };
+function windowHeight(layout: Layout): number {
+  const g = GEO[layout];
+  return g.toolbar + shotHeight(layout) + g.inset;
+}
+
+function infoHeight(layout: Layout): number {
+  const g = GEO[layout];
+  return layout === 'wide' ? g.infoPad * 2 + g.badge : g.infoPad * 2 + g.badge + 12 + ROW_H * 3;
+}
+
+function cardHeight(layout: Layout): number {
+  const g = GEO[layout];
+  return g.pad + windowHeight(layout) + g.gap + infoHeight(layout) + g.pad;
 }
 
 // ── Pieces ────────────────────────────────────────────────────────────────────
 
-function wallpaper(slug: ProjectSlug, mode: Mode, W: number, H: number): Orb[] {
-  const [a, b, c, e] = PROJECTS[slug].identity.orbs[mode];
-  const s = Math.max(W, H);
-  return [
-    { cx: W * 0.06, cy: H * 0.08, r: s * 0.46, color: a },
-    { cx: W * 0.96, cy: H * 0.2, r: s * 0.4, color: b },
-    { cx: W * 0.55, cy: H * 0.5, r: s * 0.26, color: e, opacity: mode === 'dark' ? 0.4 : 0.6 },
-    { cx: W * 0.1, cy: H * 0.94, r: s * 0.42, color: c },
-    { cx: W * 0.92, cy: H * 0.96, r: s * 0.44, color: a },
-  ];
-}
-
 function trafficLights(d: GlassDoc, win: Box, g: Geometry): void {
   const cy = win.y + g.toolbar / 2;
-  const colors = ['#FF5F57', '#FEBC2E', '#28C840'];
-  const ring = '#000000';
-  colors.forEach((c, i) => {
+  ['#FF5F57', '#FEBC2E', '#28C840'].forEach((c, i) => {
     const cx = win.x + g.lightX + i * g.lightGap;
     d.add(
       `<circle cx="${fmt(cx)}" cy="${fmt(cy)}" r="${g.lightR}" fill="${c}"/>` +
-        `<circle cx="${fmt(cx)}" cy="${fmt(cy)}" r="${fmt(g.lightR - 0.35)}" fill="none" stroke="${ring}" stroke-opacity="0.14" stroke-width="0.7"/>`
+        `<circle cx="${fmt(cx)}" cy="${fmt(cy)}" r="${fmt(g.lightR - 0.35)}" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="0.7"/>`
     );
   });
 }
@@ -279,7 +246,6 @@ function navChevrons(d: GlassDoc, win: Box, g: Geometry): void {
 }
 
 function lockGlyph(x: number, cy: number, color: string, s: number): string {
-  // 8×10 padlock at scale s, top-left at (x, cy - 5s).
   const top = cy - 5.2 * s;
   const bodyY = top + 4.2 * s;
   return (
@@ -339,13 +305,15 @@ function toolbarCenter(d: GlassDoc, win: Box, g: Geometry, p: Project, layout: L
 }
 
 /** Glass window with toolbar and the inset screenshot. Returns the window box. */
-function appWindow(d: GlassDoc, slug: ProjectSlug, layout: Layout, x: number, y: number, w: number): Box {
+function appWindow(d: GlassDoc, slug: ProjectSlug, layout: Layout): Box {
   const g = GEO[layout];
   const p = PROJECTS[slug];
+  const x = g.pad;
+  const y = g.pad;
+  const w = WIDTH[layout] - g.pad * 2;
   const shotW = w - g.inset * 2;
-  const shotH = Math.round((shotW * 9) / 16);
-  const h = g.toolbar + shotH + g.inset;
-  const win = d.panel({ x, y, w, h, r: g.winR, wash: p.identity.wash[d.mode], washOpacity: d.mode === 'dark' ? 0.05 : 0.04 });
+  const shotH = shotHeight(layout);
+  const win = d.panel({ x, y, w, h: windowHeight(layout), r: g.winR });
 
   trafficLights(d, win, g);
   if (p.domain && layout === 'wide') navChevrons(d, win, g);
@@ -357,7 +325,7 @@ function appWindow(d: GlassDoc, slug: ProjectSlug, layout: Layout, x: number, y:
   const clip = d.id('shot');
   d.addDef(`<clipPath id="${clip}"><rect x="${fmt(sx)}" y="${fmt(sy)}" width="${fmt(shotW)}" height="${fmt(shotH)}" rx="${fmt(r)}"/></clipPath>`);
   d.add(
-    `<image x="${fmt(sx)}" y="${fmt(sy)}" width="${fmt(shotW)}" height="${fmt(shotH)}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${clip})" href="${shotDataUri(slug, layout)}"/>`
+    `<image x="${fmt(sx)}" y="${fmt(sy)}" width="${fmt(shotW)}" height="${fmt(shotH)}" preserveAspectRatio="xMidYMin slice" clip-path="url(#${clip})" href="${shotDataUri(slug, layout)}"/>`
   );
   const dark = d.mode === 'dark';
   d.add(
@@ -368,19 +336,19 @@ function appWindow(d: GlassDoc, slug: ProjectSlug, layout: Layout, x: number, y:
 }
 
 function indexBadge(d: GlassDoc, slug: ProjectSlug, index: number, x: number, y: number, g: Geometry, container: Box): void {
-  const { badge, badgeText } = PROJECTS[slug].identity;
+  const [c0, c1] = PROJECTS[slug].identity.badge[d.mode];
   const s = g.badge;
   const grad = d.id('bg');
   const hi = d.id('bh');
+  const blur = d.id('bs');
   d.addDef(
-    `<linearGradient id="${grad}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${badge[0]}"/><stop offset="1" stop-color="${badge[1]}"/></linearGradient>` +
-      `<linearGradient id="${hi}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.2"/></linearGradient>`
+    `<linearGradient id="${grad}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${c0}"/><stop offset="1" stop-color="${c1}"/></linearGradient>` +
+      `<linearGradient id="${hi}" x1="0" y1="${fmt(y)}" x2="0" y2="${fmt(y + s)}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.18"/></linearGradient>` +
+      `<filter id="${blur}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="4"/></filter>`
   );
   const shadowOp = d.mode === 'dark' ? 0.4 : 0.22;
-  const blur = d.id('bs');
-  d.addDef(`<filter id="${blur}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="4"/></filter>`);
   d.add(
-    `<rect x="${fmt(x + 3)}" y="${fmt(y + 5)}" width="${fmt(s - 6)}" height="${fmt(s - 4)}" rx="${g.badgeR}" fill="${badge[1]}" fill-opacity="${shadowOp}" filter="url(#${blur})"/>` +
+    `<rect x="${fmt(x + 3)}" y="${fmt(y + 5)}" width="${fmt(s - 6)}" height="${fmt(s - 4)}" rx="${g.badgeR}" fill="${c1}" fill-opacity="${shadowOp}" filter="url(#${blur})"/>` +
       `<rect x="${fmt(x)}" y="${fmt(y)}" width="${s}" height="${s}" rx="${g.badgeR}" fill="url(#${grad})"/>` +
       `<rect x="${fmt(x + 0.6)}" y="${fmt(y + 0.6)}" width="${fmt(s - 1.2)}" height="${fmt(s - 1.2)}" rx="${fmt(g.badgeR - 0.6)}" fill="none" stroke="url(#${hi})" stroke-width="1.2"/>`
   );
@@ -393,7 +361,7 @@ function indexBadge(d: GlassDoc, slug: ProjectSlug, index: number, x: number, y:
     cut: 'display',
     ls: -0.3,
     anchor: 'middle',
-    color: badgeText,
+    color: '#FFFFFF',
     tabular: true,
     maxWidth: s - 8,
     container,
@@ -405,17 +373,10 @@ function identityBlock(d: GlassDoc, slug: ProjectSlug, index: number, x: number,
   const p = PROJECTS[slug];
   indexBadge(d, slug, index, x, y, g, container);
   const tx = x + g.badge + 14;
-  const name = d.text({
-    x: tx,
-    y: y + g.badge / 2 - 2,
-    text: p.title,
-    style: 'title',
-    maxWidth: maxRight - tx,
-    container,
-  });
+  const name = d.text({ x: tx, y: y + g.badge / 2 - 1, text: p.title, style: 'title', maxWidth: maxRight - tx, container });
   const tag = d.text({
     x: tx,
-    y: y + g.badge / 2 + 19,
+    y: y + g.badge / 2 + 18,
     text: p.tagline,
     style: 'body',
     color: d.t.textSecondary,
@@ -425,113 +386,71 @@ function identityBlock(d: GlassDoc, slug: ProjectSlug, index: number, x: number,
   return tx + Math.max(name.width, tag.width);
 }
 
-function pillsRow(d: GlassDoc, items: string[], x: number, y: number, container: Box): void {
-  let px = x;
-  for (const t of items) {
-    px += d.pill({ x: px, y, text: t, h: PILL_H, padX: PILL_PADX, container }) + PILL_GAP;
-  }
-}
-
-function innerFill(d: GlassDoc, x: number, y: number, w: number, h: number, r: number): void {
-  const dark = d.mode === 'dark';
-  d.add(
-    `<rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(w)}" height="${fmt(h)}" rx="${r}" fill="${d.t.fill}" fill-opacity="${dark ? 0.07 : 0.045}" ` +
-      `stroke="${dark ? '#FFFFFF' : '#0B1020'}" stroke-opacity="${dark ? 0.06 : 0.05}"/>`
-  );
+function infoStrip(d: GlassDoc, slug: ProjectSlug, layout: Layout, y: number): Box {
+  const g = GEO[layout];
+  const p = PROJECTS[slug];
+  return d.panel({
+    x: g.pad,
+    y,
+    w: WIDTH[layout] - g.pad * 2,
+    h: infoHeight(layout),
+    wash: p.identity.accent[d.mode],
+    washOpacity: d.mode === 'dark' ? 0.06 : 0.04,
+  });
 }
 
 // ── Layouts ───────────────────────────────────────────────────────────────────
 
-function wideHeight(): number {
-  const g = GEO.wide;
-  const winW = WIDTH.wide - g.pad * 2;
-  const shotH = Math.round(((winW - g.inset * 2) * 9) / 16);
-  const winH = g.toolbar + shotH + g.inset;
-  return g.pad + winH + g.gap + WIDE_INFO_H + g.pad;
-}
-
-const TILE_H = 74;
-const WIDE_INFO_H = GEO.wide.infoPad * 2 + GEO.wide.badge + 18 + TILE_H;
-
-const ROW_H = 42;
-const COMPACT_INFO_H = GEO.compact.infoPad * 2 + GEO.compact.badge + 16 + ROW_H * 3 + 14 + PILL_H;
-
-function compactHeight(): number {
-  const g = GEO.compact;
-  const winW = WIDTH.compact - g.pad * 2;
-  const shotH = Math.round(((winW - g.inset * 2) * 9) / 16);
-  const winH = g.toolbar + shotH + g.inset;
-  return g.pad + winH + g.gap + COMPACT_INFO_H + g.pad;
-}
+const STAT_LABEL = { size: 12, weight: 500, cut: 'text', ls: 0.1 } as const;
 
 function renderWide(d: GlassDoc, slug: ProjectSlug, index: number): void {
   const g = GEO.wide;
   const p = PROJECTS[slug];
-  const W = WIDTH.wide;
-  const win = appWindow(d, slug, 'wide', g.pad, g.pad, W - g.pad * 2);
-
-  const info = d.panel({
-    x: g.pad,
-    y: win.y + win.h + g.gap,
-    w: W - g.pad * 2,
-    h: WIDE_INFO_H,
-    wash: p.identity.wash[d.mode],
-    washOpacity: d.mode === 'dark' ? 0.1 : 0.07,
-  });
+  const win = appWindow(d, slug, 'wide');
+  const info = infoStrip(d, slug, 'wide', win.y + win.h + g.gap);
   const ix = info.x + g.infoPad;
   const iy = info.y + g.infoPad;
-  const innerW = info.w - g.infoPad * 2;
-  const right = ix + innerW;
+  const right = info.x + info.w - g.infoPad;
 
-  // Row A: identity left, tech capsules right (vertically centred on the badge).
-  const textRight = identityBlock(d, slug, index, ix, iy, g, info, right - 200);
-  const pills = fitPills(d, p.tech, right - (textRight + 28), 5);
-  if (pills.items.length < 3) throw new Error(`[projects] only ${pills.items.length} pills fit for ${slug} (wide)`);
-  pillsRow(d, pills.items, right - pills.width, iy + (g.badge - PILL_H) / 2, info);
+  // Left: identity. Right: three inline stats separated by hairlines.
+  const textRight = identityBlock(d, slug, index, ix, iy, g, info, right - 300);
+  const avail = right - (textRight + 28);
+  const colGap = 16;
+  const measureCols = (size: number) =>
+    p.stats.map((s) =>
+      Math.ceil(
+        Math.max(
+          d.measure({ text: s.value, size, weight: 700, cut: 'display', ls: -0.4 }),
+          d.measure({ text: s.label, ...STAT_LABEL })
+        )
+      )
+    );
+  let valueSize = 20;
+  let cols = measureCols(valueSize);
+  const total = () => cols.reduce((a, b) => a + b, 0) + colGap * 2 * (cols.length - 1);
+  while (total() > avail && valueSize > 16) {
+    valueSize -= 1;
+    cols = measureCols(valueSize);
+  }
+  if (total() > avail) throw new Error(`[projects] stats do not fit for ${slug} (wide): ${total()} > ${avail}`);
 
-  // Row B: three stat tiles.
-  const ty = iy + g.badge + 18;
-  const tGap = 10;
-  const tw = (innerW - tGap * 2) / 3;
+  let cx = right - total();
   p.stats.forEach((s, i) => {
-    const tx = ix + i * (tw + tGap);
-    innerFill(d, tx, ty, tw, TILE_H, 14);
-    d.text({
-      x: tx + 16,
-      y: ty + 34,
-      text: s.value,
-      style: 'numberSmall',
-      maxWidth: tw - 32,
-      overflow: 'shrink',
-      minSize: 18,
-      container: info,
-    });
-    d.text({
-      x: tx + 16,
-      y: ty + 56,
-      text: s.label,
-      style: 'caption',
-      color: d.t.textSecondary,
-      maxWidth: tw - 32,
-      container: info,
-    });
+    if (i > 0) {
+      const sepX = cx - colGap;
+      d.separator(sepX, iy + 4, sepX, iy + g.badge - 4);
+    }
+    d.text({ x: cx, y: iy + 19, text: s.value, size: valueSize, weight: 700, cut: 'display', ls: -0.4, maxWidth: cols[i], container: info });
+    d.text({ x: cx, y: iy + 39, text: s.label, ...STAT_LABEL, color: d.t.textSecondary, maxWidth: cols[i], container: info });
+    cx += cols[i] + colGap * 2;
   });
 }
 
 function renderCompact(d: GlassDoc, slug: ProjectSlug, index: number): void {
   const g = GEO.compact;
   const p = PROJECTS[slug];
-  const W = WIDTH.compact;
-  const win = appWindow(d, slug, 'compact', g.pad, g.pad, W - g.pad * 2);
-
-  const info = d.panel({
-    x: g.pad,
-    y: win.y + win.h + g.gap,
-    w: W - g.pad * 2,
-    h: COMPACT_INFO_H,
-    wash: p.identity.wash[d.mode],
-    washOpacity: d.mode === 'dark' ? 0.1 : 0.07,
-  });
+  const win = appWindow(d, slug, 'compact');
+  const info = infoStrip(d, slug, 'compact', win.y + win.h + g.gap);
   const ix = info.x + g.infoPad;
   const iy = info.y + g.infoPad;
   const innerW = info.w - g.infoPad * 2;
@@ -540,8 +459,12 @@ function renderCompact(d: GlassDoc, slug: ProjectSlug, index: number): void {
   identityBlock(d, slug, index, ix, iy, g, info, right);
 
   // Stats: an inset grouped list (label left, value right).
-  const ly = iy + g.badge + 16;
-  innerFill(d, ix, ly, innerW, ROW_H * 3, 14);
+  const ly = iy + g.badge + 12;
+  const dark = d.mode === 'dark';
+  d.add(
+    `<rect x="${fmt(ix)}" y="${fmt(ly)}" width="${fmt(innerW)}" height="${ROW_H * 3}" rx="12" fill="${d.t.fill}" fill-opacity="${dark ? 0.07 : 0.045}" ` +
+      `stroke="${dark ? '#FFFFFF' : '#0B1020'}" stroke-opacity="${dark ? 0.06 : 0.05}"/>`
+  );
   p.stats.forEach((s, i) => {
     const ry = ly + i * ROW_H;
     if (i > 0) d.separator(ix + 14, ry, right - 14, ry);
@@ -556,23 +479,19 @@ function renderCompact(d: GlassDoc, slug: ProjectSlug, index: number): void {
     });
     d.text({
       x: right - 14,
-      y: ry + ROW_H / 2 + 6.5,
+      y: ry + ROW_H / 2 + 6,
       text: s.value,
-      size: 18,
+      size: 17,
       weight: 700,
       cut: 'display',
       ls: -0.3,
       anchor: 'end',
       maxWidth: innerW - 28 - label.width - 16,
       overflow: 'shrink',
-      minSize: 15,
+      minSize: 14,
       container: info,
     });
   });
-
-  const pills = fitPills(d, p.tech, innerW, 4);
-  if (pills.items.length < 2) throw new Error(`[projects] only ${pills.items.length} pills fit for ${slug} (compact)`);
-  pillsRow(d, pills.items, ix, ly + ROW_H * 3 + 14, info);
 }
 
 // ── Public API ────────────────────────────────────────────────────────────────
@@ -587,15 +506,13 @@ export function renderProjectCardSVG({ slug, mode = 'dark', layout = 'wide' }: P
   const p = PROJECTS[slug];
   if (!p) throw new Error(`[projects] unknown project slug "${slug}"`);
   const index = PROJECT_SLUGS.indexOf(slug) + 1;
-  const W = WIDTH[layout];
-  const H = layout === 'wide' ? wideHeight() : compactHeight();
   const d = new GlassDoc({
-    width: W,
-    height: H,
+    width: WIDTH[layout],
+    height: cardHeight(layout),
     mode,
     title: `${p.title}: ${p.tagline}`,
     desc: p.description,
-    orbs: wallpaper(slug, mode, W, H),
+    accent: p.identity.accent[mode],
   });
   if (layout === 'wide') renderWide(d, slug, index);
   else renderCompact(d, slug, index);
@@ -610,7 +527,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         const name = layout === 'wide' ? `project-${slug}-${mode}.svg` : `project-${slug}-compact-${mode}.svg`;
         const svg = renderProjectCardSVG({ slug, mode, layout });
         fs.writeFileSync(path.join(ASSETS_DIR, name), svg);
-        console.log(`✓ assets/${name} (${(Buffer.byteLength(svg) / 1024).toFixed(1)} KB)`);
+        console.log(`✓ assets/${name} ${WIDTH[layout]}×${cardHeight(layout)} (${(Buffer.byteLength(svg) / 1024).toFixed(1)} KB)`);
       }
     }
   }

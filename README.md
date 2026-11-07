@@ -1,92 +1,37 @@
 <div align="center">
-  <img src="banner.gif" alt="Mario coding at a computer terminal" width="100%" />
+<img src="banner.gif?v=e68f8e49" alt="Mario coding at a computer terminal" width="100%" />
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=0c6199e8" /><img src="assets/hero-light.svg?v=3d8859c2" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. I build real-time, collaborative products and the tooling behind them. Now building NEXUS and Mahayuddh." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-compact-dark.svg?v=2ae6479e" /><img src="assets/hero-compact-light.svg?v=62bed7cd" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. I build real-time, collaborative products and the tooling behind them. Now building NEXUS and Mahayuddh." /></picture>
+<br /><br />
+<a href="https://premsai.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg?v=a085967c" /><img src="assets/btn-portfolio-light.svg?v=72c5ab97" alt="Portfolio" /></picture></a> <a href="https://linkedin.com/in/premsai22k"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg?v=17e27a6f" /><img src="assets/btn-linkedin-light.svg?v=e2f4f742" alt="LinkedIn" /></picture></a> <a href="https://x.com/premsaik22"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-x-dark.svg?v=bdae3e71" /><img src="assets/btn-x-light.svg?v=db1b7bf9" alt="X" /></picture></a> <a href="https://www.threads.net/@iblameprems"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-threads-dark.svg?v=ddb39840" /><img src="assets/btn-threads-light.svg?v=dd9988df" alt="Threads" /></picture></a> <a href="mailto:premsai224k@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg?v=3d576f7c" /><img src="assets/btn-email-light.svg?v=475578fa" alt="Email" /></picture></a>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-dark.svg?v=00c11a76" /><img src="assets/github-year-light.svg?v=6504985d" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-compact-dark.svg?v=a8aca22d" /><img src="assets/github-year-compact-light.svg?v=806f7d7b" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/section-work-dark.svg?v=e45ca2aa" /><img src="assets/section-work-light.svg?v=e4aa1c6a" alt="Selected work: things I've built, 4 featured projects" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/section-work-compact-dark.svg?v=b1cb2e02" /><img src="assets/section-work-compact-light.svg?v=edcd8967" alt="Selected work: things I've built, 4 featured projects" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-dark.svg?v=1d96c65c" /><img src="assets/project-zync-light.svg?v=59e4a5de" alt="Zync: a collaborative workspace that brings project planning, chat, GitHub activity, notes, tasks and meetings into one place for distributed teams; notes sync in real time on Yjs CRDTs." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-compact-dark.svg?v=0ce7abdc" /><img src="assets/project-zync-compact-light.svg?v=937f9db6" alt="Zync: a collaborative workspace that brings project planning, chat, GitHub activity, notes, tasks and meetings into one place for distributed teams; notes sync in real time on Yjs CRDTs." /></picture>
+<br />
+<a href="https://zync-meet.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-live-dark.svg?v=11ae1674" /><img src="assets/btn-live-light.svg?v=8badab39" alt="Live demo" /></picture></a> <a href="https://github.com/zync-meet/Zync"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-source-dark.svg?v=7cb39e55" /><img src="assets/btn-source-light.svg?v=9418e4a3" alt="Source" /></picture></a>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-dark.svg?v=a63e4222" /><img src="assets/project-mahayuddh-light.svg?v=91c7397c" alt="Mahayuddh: a social practice arena for LeetCode with daily timed battles, squad accountability and verified progress; event-sourced PostgreSQL with row-level security on every table and 324 automated tests." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-compact-dark.svg?v=735af177" /><img src="assets/project-mahayuddh-compact-light.svg?v=8f1d2d3c" alt="Mahayuddh: a social practice arena for LeetCode with daily timed battles, squad accountability and verified progress; event-sourced PostgreSQL with row-level security on every table and 324 automated tests." /></picture>
+<br />
+<a href="https://mahayuddh.vercel.app/welcome"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-live-dark.svg?v=11ae1674" /><img src="assets/btn-live-light.svg?v=8badab39" alt="Live demo" /></picture></a> <a href="https://github.com/prem22k/mahayuddh"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-source-dark.svg?v=7cb39e55" /><img src="assets/btn-source-light.svg?v=9418e4a3" alt="Source" /></picture></a>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-dark.svg?v=e0d795e3" /><img src="assets/project-nexus-light.svg?v=42015784" alt="NEXUS: a voice-first desktop companion built in Rust and Tauri that runs local speech models for code navigation and system automation; ported to Linux (Wayland and X11) with wake-word latency cut from 106 ms to 8.4 ms." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-compact-dark.svg?v=9b4bf8d4" /><img src="assets/project-nexus-compact-light.svg?v=ec3aec97" alt="NEXUS: a voice-first desktop companion built in Rust and Tauri that runs local speech models for code navigation and system automation; ported to Linux (Wayland and X11) with wake-word latency cut from 106 ms to 8.4 ms." /></picture>
+<br />
+<a href="https://github.com/Engine-NEXUS/linux"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-source-dark.svg?v=7cb39e55" /><img src="assets/btn-source-light.svg?v=9418e4a3" alt="Source" /></picture></a>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-dark.svg?v=011160e0" /><img src="assets/project-servx-light.svg?v=f7e9b709" alt="ServX: an infrastructure monitoring and incident-response suite (web app, CLI and React SDK) with real-time audit streams over Server-Sent Events and WebSockets." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-compact-dark.svg?v=4ae12805" /><img src="assets/project-servx-compact-light.svg?v=05c39476" alt="ServX: an infrastructure monitoring and incident-response suite (web app, CLI and React SDK) with real-time audit streams over Server-Sent Events and WebSockets." /></picture>
+<br />
+<a href="https://servx.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-live-dark.svg?v=11ae1674" /><img src="assets/btn-live-light.svg?v=8badab39" alt="Live demo" /></picture></a> <a href="https://github.com/Servx-lab/ServX"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-source-dark.svg?v=7cb39e55" /><img src="assets/btn-source-light.svg?v=9418e4a3" alt="Source" /></picture></a>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-dark.svg?v=61ddb99f" /><img src="assets/codebase-light.svg?v=3971bf05" alt="Languages across authored repositories, by share of source bytes" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-compact-dark.svg?v=98a70440" /><img src="assets/codebase-compact-light.svg?v=b22c2668" alt="Languages across authored repositories, by share of source bytes" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg?v=bcce303d" /><img src="assets/stack-light.svg?v=3cd5d6c1" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-compact-dark.svg?v=6d5b4de2" /><img src="assets/stack-compact-light.svg?v=6120acb0" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg?v=ac2164bd" /><img src="assets/activity-light.svg?v=0d44bc7e" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-compact-dark.svg?v=9beb249b" /><img src="assets/activity-compact-light.svg?v=ed9501d3" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg?v=666972d1" /><img src="assets/timeline-light.svg?v=9c33c491" alt="Recent activity: latest pushes and merged pull requests" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/timeline-compact-dark.svg?v=97c312e0" /><img src="assets/timeline-compact-light.svg?v=9670fdad" alt="Recent activity: latest pushes and merged pull requests" /></picture>
+<br /><br />
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg?v=eb401e57" /><img src="assets/journey-light.svg?v=7868b3c9" alt="Experience: RigorBase full-stack intern (2026), C3 at SNIST technical head (2024 to present). Recognition: Brainrot Hackathon double-track winner (2025), JNTUH HackFusion-2K26 5th place nationally (2026)." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg?v=f5ac3ad7" /><source media="(prefers-color-scheme: dark)" srcset="assets/journey-compact-dark.svg?v=94102b93" /><img src="assets/journey-compact-light.svg?v=78d8027b" alt="Experience: RigorBase full-stack intern (2026), C3 at SNIST technical head (2024 to present). Recognition: Brainrot Hackathon double-track winner (2025), JNTUH HackFusion-2K26 5th place nationally (2026)." /></picture>
 </div>
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" /><img src="assets/hero-light.svg" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. Now building NEXUS and Mahayuddh." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-compact-dark.svg" /><img src="assets/hero-compact-light.svg" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. Now building NEXUS and Mahayuddh." /></picture>
-
-<p>
-  <a href="https://premsai.dev/">Portfolio</a> &nbsp;·&nbsp;
-  <a href="https://linkedin.com/in/premsai22k">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://x.com/premsaik22">X</a> &nbsp;·&nbsp;
-  <a href="https://www.threads.net/@iblameprems">Threads</a> &nbsp;·&nbsp;
-  <a href="mailto:premsai224k@gmail.com">Email</a>
-</p>
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-dark.svg" /><img src="assets/github-year-light.svg" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-compact-dark.svg" /><img src="assets/github-year-compact-light.svg" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture>
-
-<br />
-
-## Selected work
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-dark.svg" /><img src="assets/project-zync-light.svg" alt="Zync: real-time collaborative workspace" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-compact-dark.svg" /><img src="assets/project-zync-compact-light.svg" alt="Zync: real-time collaborative workspace" /></picture>
-
-**Zync**: A collaborative workspace that brings project planning, chat, GitHub activity, notes, tasks and meetings into one place for distributed teams. Notes sync in real time on **Yjs CRDTs**, with offline-friendly IndexedDB persistence.
-
-[Live ↗](https://zync-meet.vercel.app) &nbsp;·&nbsp; [Source ↗](https://github.com/zync-meet/Zync)
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-dark.svg" /><img src="assets/project-mahayuddh-light.svg" alt="Mahayuddh: DSA practice arena" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-compact-dark.svg" /><img src="assets/project-mahayuddh-compact-light.svg" alt="Mahayuddh: DSA practice arena" /></picture>
-
-**Mahayuddh**: A social practice arena for LeetCode: daily timed battles, squad accountability and verified progress. Event-sourced **PostgreSQL** with row-level security on every table, backed by 324 automated tests.
-
-[Live ↗](https://mahayuddh.vercel.app/welcome) &nbsp;·&nbsp; [Source ↗](https://github.com/prem22k/mahayuddh)
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-dark.svg" /><img src="assets/project-nexus-light.svg" alt="NEXUS: voice-first desktop companion" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-compact-dark.svg" /><img src="assets/project-nexus-compact-light.svg" alt="NEXUS: voice-first desktop companion" /></picture>
-
-**NEXUS**: A voice-first desktop companion built in **Rust** and **Tauri** that runs local speech models for code navigation and system automation. I ported the core to Linux (Wayland and X11) and cut wake-word latency from 106 ms to 8.4 ms.
-
-[Source ↗](https://github.com/Engine-NEXUS/linux)
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-dark.svg" /><img src="assets/project-servx-light.svg" alt="ServX: infrastructure command center" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-compact-dark.svg" /><img src="assets/project-servx-compact-light.svg" alt="ServX: infrastructure command center" /></picture>
-
-**ServX**: An infrastructure monitoring and incident-response suite, shipped as a web app, CLI and React SDK, with real-time audit streams over **Server-Sent Events** and WebSockets.
-
-[Live ↗](https://servx.vercel.app) &nbsp;·&nbsp; [Source ↗](https://github.com/Servx-lab/ServX)
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-dark.svg" /><img src="assets/codebase-light.svg" alt="Languages across authored repositories, by share of source bytes" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-compact-dark.svg" /><img src="assets/codebase-compact-light.svg" alt="Languages across authored repositories, by share of source bytes" /></picture>
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" /><img src="assets/stack-light.svg" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-compact-dark.svg" /><img src="assets/stack-compact-light.svg" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture>
-
-<br />
-
-<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" /><img src="assets/activity-light.svg" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-compact-dark.svg" /><img src="assets/activity-compact-light.svg" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture>
-
-## Recent activity
-
-| Date | Event | Repository | Context |
-| :--- | :--- | :--- | :--- |
-| `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Add REA reverse-engineering research: Hey Siri teardown + Hitodama compe... |
-| `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | Run on macos-latest; GitHub retired the macos-14 image |
-| `05 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Prove a linked handle is yours; only the server says verified |
-| `04 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Drop PostHog while error tracking is off |
-| `03 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | PostHog error tracking (browser, boundaries, server) |
-| `02 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Links from other sites returned 403 Cross-origin request rejected |
-
-## Experience
-
-**RigorBase**, Full-Stack Developer Intern &nbsp;·&nbsp; *Mar 2026 – Apr 2026*
-- Built the closed-beta access system end to end: schema design, OAuth 2.0 and Redis rate limiting.
-- Led the frontend migration to the v3 design system, improving developer experience and UI consistency across teams.
-- Shipped interactive learning-metric dashboards and adaptive quiz gamification.
-
-**Cloud Community Club (C³) @ SNIST**, Technical Head / Lead Developer &nbsp;·&nbsp; *Nov 2024 – Present*
-- Architected the official club platform serving 1,000+ active campus users ([Next.js](https://nextjs.org)).
-- Automated a transactional email notification service with retry queues and CI/CD pipelines.
-
-## Recognition
-
-- **Brainrot Hackathon**, Double-Track Winner *(2025)*: 1st place in both competitive tracks for a full-stack real-time web app, out of 1,224 entrants.
-- **JNTUH HackFusion-2K26**, 5th Place Nationally *(2026)*: built and deployed an integrated hardware/software system in 48 hours, out of 230+ national teams.

@@ -8,6 +8,10 @@ import { renderProjectCardSVG, PROJECT_SLUGS } from '../build-projects.ts';
 import { renderCodebaseSVG } from '../build-codebase.ts';
 import { renderStackSVG } from '../build-stack.ts';
 import { renderActivitySVG } from '../build-activity.ts';
+import { renderSectionHeaderSVG } from '../build-section.ts';
+import { renderTimelineSVG } from '../build-timeline.ts';
+import { renderJourneySVG } from '../build-journey.ts';
+import { renderButtonSVG, BUTTONS } from '../build-buttons.ts';
 
 test('util: escapeXml and fmt', () => {
   assert.equal(escapeXml('A & B < C > "D" \'E\''), 'A &amp; B &lt; C &gt; &quot;D&quot; &apos;E&apos;');
@@ -68,7 +72,26 @@ const builders: Array<[string, (o: { mode: 'dark' | 'light'; layout: 'wide' | 'c
   ['codebase', (o) => renderCodebaseSVG(o)],
   ['stack', (o) => renderStackSVG(o)],
   ['activity', (o) => renderActivitySVG(o)],
+  ['section-work', (o) => renderSectionHeaderSVG({ ...o, id: 'work' })],
+  ['timeline', (o) => renderTimelineSVG(o)],
+  ['journey', (o) => renderJourneySVG(o)],
 ];
+
+test('timeline renders with no events', () => {
+  const svg = renderTimelineSVG({ mode: 'dark', layout: 'wide', data: { recentActivity: { fetchedAt: '', events: [] } } as never });
+  assert.match(svg, /^<svg/);
+});
+
+test('buttons: every button renders in both themes, self-contained and deterministic', () => {
+  for (const { id } of BUTTONS) {
+    for (const mode of ['dark', 'light'] as const) {
+      const svg = renderButtonSVG({ id, mode });
+      assert.match(svg, /^<svg/);
+      assert.doesNotMatch(svg, /(?:href|src)="(?!#|data:)/);
+      assert.equal(renderButtonSVG({ id, mode }), svg);
+    }
+  }
+});
 
 for (const [name, render] of builders) {
   test(`builder ${name}: 4 variants, correct width, deterministic, self-contained`, () => {

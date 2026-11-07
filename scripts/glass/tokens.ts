@@ -70,7 +70,7 @@ export interface Theme {
 export const DARK: Theme = {
   mode: 'dark',
   wallBase: '#07080E',
-  wallOrbs: ['#3B2FD0', '#0A5CFF', '#9B3FD9', '#0FA3B8', '#D13A7A', '#FF8A3D'],
+  wallOrbs: ['#2459F5', '#6A3BE0', '#3B2FD0', '#0C86A8', '#5328C2'],
   wallOrbOpacity: 0.62,
   glassTint: '#1C1C26',
   glassTintOpacity: 0.42,
@@ -109,7 +109,7 @@ export const DARK: Theme = {
 export const LIGHT: Theme = {
   mode: 'light',
   wallBase: '#EEF0F7',
-  wallOrbs: ['#A5B4FC', '#93C5FD', '#C4B5FD', '#99F6E4', '#F9A8D4', '#FED7AA'],
+  wallOrbs: ['#9DB6FF', '#C8B4FF', '#B6C0FF', '#A3E2EE', '#D3BFFF'],
   wallOrbOpacity: 0.85,
   glassTint: '#FFFFFF',
   glassTintOpacity: 0.5,
