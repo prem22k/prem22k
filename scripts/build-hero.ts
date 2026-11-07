@@ -272,7 +272,7 @@ function drawWidget(d: GlassDoc, box: Box, latest: Latest | null) {
   let y = p.y + (p.h - content) / 2;
 
   // Header: small accent label like an iOS widget's app name
-  d.text({ x, y: y + 12, text: 'Now building', style: 'callout', weight: 600, color: d.mode === 'dark' ? '#A9A7FF' : '#4B40DD', maxWidth: inner, container: p });
+  d.text({ x, y: y + 12, text: 'Now building', style: 'callout', weight: 600, color: d.t.integrated ? d.t.textSecondary : d.mode === 'dark' ? '#A9A7FF' : '#4B40DD', maxWidth: inner, container: p });
   const count = `${PROJECTS.length} projects`;
   d.text({ x: x + inner, y: y + 12, text: count, style: 'caption', anchor: 'end', color: d.t.textTertiary, maxWidth: 90, container: p });
   y += 16 + 18;

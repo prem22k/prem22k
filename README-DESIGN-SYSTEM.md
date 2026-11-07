@@ -1,14 +1,26 @@
-# README Design System: Liquid Glass (v3)
+# README Design System: Stone Glass (v3.1)
 
 **Target:** GitHub profile README (`prem22k/prem22k`)
 **Engine:** [`scripts/glass/`](scripts/glass/)
 **Rendering context:** GitHub Markdown. Each SVG is shown inside an `<img>`, so no scripts and no external resources load; fonts and screenshots are embedded as `data:` URIs.
 
-The look follows Apple's Liquid Glass material (macOS Tahoe / iOS 26): every component is a rounded card with a soft colour wallpaper, frosted glass panels float on top, and the type is SF-like.
+The look takes Apple's material language (rounded glass surfaces, specular rims, SF-like type, widget layouts) and dresses it in **premsai.dev's warm stone palette**, so the README feels like part of the portfolio rather than a generic gradient UI.
+
+**Material: `stone` (default).** Every SVG has a transparent canvas, and the panels sit directly on GitHub's page background like native surfaces, so the README reads as one page instead of stacked image slabs. Two other materials exist behind `GLASS_MATERIAL`: `graphite` (Apple neutral greys) and `wallpaper` (the v3.0 blue/violet wallpaper slabs, retired because the glowing indigo gradient read as generic "AI" styling).
+
+| Token | Dark | Light | premsai.dev source |
+|---|---|---|---|
+| Surface | `#171616` | `#F8F7F5` | `--color-bg-soft` |
+| Hairline / separators | `#2C2825` | `#E7E5E4` | `--color-border-subtle` |
+| Text | `#F5F2EB` | `#1C1917` | `--color-text-primary` |
+| Secondary | `#A8A29E` | `#57534E` | `--color-text-secondary` |
+| Tertiary | `#78716C` | `#78716C` | `--color-text-tertiary` (dark value used in light for contrast) |
+
+Colour appears only where it carries meaning: data (language bars, the activity heatmap), app icons, project badges, and the two "action/status" accents ("Open to roles", "Live demo").
 
 ---
 
-## Material
+## Material (wallpaper mode, `GLASS_MATERIAL=wallpaper`)
 
 | Layer | How it's drawn |
 |---|---|

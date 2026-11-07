@@ -188,13 +188,19 @@ export class GlassDoc {
       `<rect x="${fmt(x + inset)}" y="${fmt(y + inset)}" width="${fmt(w - inset * 2)}" height="${fmt(h - inset * 2)}" rx="${fmt(Math.max(0, r - inset))}" ${extra}/>`;
 
     const parts: string[] = [`<g data-panel="${pid}" data-box="${fmt(x)},${fmt(y)},${fmt(w)},${fmt(h)}">`];
-    if (!opts.flat) {
+    if (!opts.flat && t.integrated) {
+      parts.push(
+        `<rect x="${fmt(x + 1)}" y="${fmt(y + 3)}" width="${fmt(w - 2)}" height="${fmt(h - 2)}" rx="${fmt(r)}" fill="${t.shadow}" fill-opacity="${t.shadowOpacity}" filter="url(#gShadow)"/>`
+      );
+    } else if (!opts.flat) {
       parts.push(
         `<rect x="${fmt(x + 2)}" y="${fmt(y + 10)}" width="${fmt(w - 4)}" height="${fmt(h - 6)}" rx="${fmt(r)}" fill="${t.shadow}" fill-opacity="${t.shadowOpacity}" filter="url(#gShadow)"/>`
       );
     }
     // Frosted wallpaper: an opaque, more-blurred copy of the wallpaper clipped to the panel.
-    parts.push(`<g clip-path="url(#${clip})"><rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(w)}" height="${fmt(h)}" fill="${t.wallBase}"/><use href="#gOrbs" filter="url(#gFrost)"/></g>`);
+    if (!t.integrated) {
+      parts.push(`<g clip-path="url(#${clip})"><rect x="${fmt(x)}" y="${fmt(y)}" width="${fmt(w)}" height="${fmt(h)}" fill="${t.wallBase}"/><use href="#gOrbs" filter="url(#gFrost)"/></g>`);
+    }
     parts.push(rect(`fill="${t.glassTint}" fill-opacity="${opts.strong ? t.glassStrongTintOpacity : t.glassTintOpacity}"`));
     if (opts.wash) parts.push(rect(`fill="${opts.wash}" fill-opacity="${opts.washOpacity ?? 0.12}"`));
     parts.push(rect(`fill="url(#${sheen})"`));
@@ -335,7 +341,7 @@ export class GlassDoc {
       `<clipPath id="gCard"><rect width="${W}" height="${H}" rx="${R}"/></clipPath>`,
       `<filter id="gWall" x="0" y="0" width="${W}" height="${H}" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="${blur}"/></filter>`,
       `<filter id="gFrost" x="0" y="0" width="${W}" height="${H}" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="${blur + frostBlur}"/><feColorMatrix type="saturate" values="${sat}"/></filter>`,
-      `<filter id="gShadow" x="0" y="0" width="${W}" height="${H}" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="${this.mode === 'dark' ? 12 : 14}"/></filter>`,
+      `<filter id="gShadow" x="0" y="0" width="${W}" height="${H}" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="${t.integrated ? 5 : this.mode === 'dark' ? 12 : 14}"/></filter>`,
       `<g id="gOrbs">${orbs}</g>`,
       ...this.defs,
     ];
@@ -345,12 +351,16 @@ export class GlassDoc {
       `<desc>${escapeXml(this.desc)}</desc>`,
       style ? `<style>${style}</style>` : '',
       `<defs>${defs.join('')}</defs>`,
-      `<g clip-path="url(#gCard)">`,
-      `<rect width="${W}" height="${H}" fill="${t.wallBase}"/>`,
-      `<use href="#gOrbs" filter="url(#gWall)"/>`,
-      ...this.body,
-      `</g>`,
-      `<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="${R - 0.5}" fill="none" stroke="${t.cardStroke}" stroke-opacity="${t.cardStrokeOpacity}"/>`,
+      ...(t.integrated
+        ? this.body
+        : [
+            `<g clip-path="url(#gCard)">`,
+            `<rect width="${W}" height="${H}" fill="${t.wallBase}"/>`,
+            `<use href="#gOrbs" filter="url(#gWall)"/>`,
+            ...this.body,
+            `</g>`,
+            `<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="${R - 0.5}" fill="none" stroke="${t.cardStroke}" stroke-opacity="${t.cardStrokeOpacity}"/>`,
+          ]),
       `</svg>`,
     ]
       .filter(Boolean)

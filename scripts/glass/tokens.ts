@@ -9,8 +9,18 @@ export type Layout = 'wide' | 'compact';
 /** Canvas widths. Wide renders 1:1 on desktop GitHub; compact renders ~1:1 on phones. */
 export const WIDTH: Record<Layout, number> = { wide: 800, compact: 400 };
 
-/** Outer padding of the wallpaper card and gap between panels. */
-export const PAD: Record<Layout, number> = { wide: 24, compact: 16 };
+/**
+ * Material:
+ *  - 'wallpaper': each card is a rounded wallpaper slab with frosted panels (v3.0).
+ *  - 'graphite' / 'stone': page-integrated: transparent canvas, panels sit directly on GitHub's
+ *    background like native surfaces. Graphite = Apple neutral greys; stone = premsai.dev's warm neutrals.
+ */
+export type Material = 'wallpaper' | 'graphite' | 'stone';
+export const MATERIAL: Material = (process.env.GLASS_MATERIAL as Material) || 'stone';
+const INTEGRATED = MATERIAL !== 'wallpaper';
+
+/** Outer padding of the canvas (room for panel shadows when integrated) and gap between panels. */
+export const PAD: Record<Layout, number> = INTEGRATED ? { wide: 12, compact: 10 } : { wide: 24, compact: 16 };
 export const GAP: Record<Layout, number> = { wide: 16, compact: 12 };
 
 export const RADIUS = {
@@ -35,6 +45,8 @@ export interface Accents {
 
 export interface Theme {
   mode: Mode;
+  /** Panels sit on the page (no wallpaper, no frost, transparent canvas). */
+  integrated: boolean;
   /** Wallpaper base colour, painted under the blurred orbs. */
   wallBase: string;
   /** Orb colours for the wallpaper, in paint order. */
@@ -67,8 +79,9 @@ export interface Theme {
   accents: Accents;
 }
 
-export const DARK: Theme = {
+const WALL_DARK: Theme = {
   mode: 'dark',
+  integrated: false,
   wallBase: '#07080E',
   wallOrbs: ['#2459F5', '#6A3BE0', '#3B2FD0', '#0C86A8', '#5328C2'],
   wallOrbOpacity: 0.62,
@@ -106,8 +119,9 @@ export const DARK: Theme = {
   },
 };
 
-export const LIGHT: Theme = {
+const WALL_LIGHT: Theme = {
   mode: 'light',
+  integrated: false,
   wallBase: '#EEF0F7',
   wallOrbs: ['#9DB6FF', '#C8B4FF', '#B6C0FF', '#A3E2EE', '#D3BFFF'],
   wallOrbOpacity: 0.85,
@@ -144,6 +158,92 @@ export const LIGHT: Theme = {
     gray: '#8E8E93',
   },
 };
+
+const GRAPHITE_DARK: Theme = {
+  ...WALL_DARK,
+  integrated: true,
+  glassTint: '#1C1C1E',
+  glassTintOpacity: 1,
+  glassStrongTintOpacity: 1,
+  rimTop: 0.16,
+  rimMid: 0.04,
+  rimBottom: 0.06,
+  sheen: 0.045,
+  hairline: '#FFFFFF',
+  hairlineOpacity: 0.09,
+  shadow: '#000000',
+  shadowOpacity: 0.35,
+  text: '#F5F5F7',
+  textSecondary: '#AEAEB2',
+  textTertiary: '#8E8E93',
+  fill: '#FFFFFF',
+  fillOpacity: 0.07,
+  separator: '#FFFFFF',
+  separatorOpacity: 0.09,
+};
+
+const GRAPHITE_LIGHT: Theme = {
+  ...WALL_LIGHT,
+  integrated: true,
+  glassTint: '#F5F5F7',
+  glassTintOpacity: 1,
+  glassStrongTintOpacity: 1,
+  rimTop: 0.95,
+  rimMid: 0.5,
+  rimBottom: 0.3,
+  sheen: 0.55,
+  hairline: '#000000',
+  hairlineOpacity: 0.08,
+  shadow: '#000000',
+  shadowOpacity: 0.07,
+  text: '#1D1D1F',
+  textSecondary: '#515154',
+  textTertiary: '#86868B',
+  fill: '#000000',
+  fillOpacity: 0.06,
+  separator: '#000000',
+  separatorOpacity: 0.08,
+};
+
+/** premsai.dev tokens (app/globals.css): bg-soft surfaces, stone text, stone borders. */
+const STONE_DARK: Theme = {
+  ...GRAPHITE_DARK,
+  glassTint: '#171616',
+  rimTop: 0.12,
+  sheen: 0.035,
+  hairline: '#2C2825',
+  hairlineOpacity: 1,
+  text: '#F5F2EB',
+  textSecondary: '#A8A29E',
+  textTertiary: '#78716C',
+  fill: '#F5F2EB',
+  fillOpacity: 0.07,
+  separator: '#2C2825',
+  separatorOpacity: 1,
+};
+
+const STONE_LIGHT: Theme = {
+  ...GRAPHITE_LIGHT,
+  glassTint: '#F8F7F5',
+  hairline: '#E7E5E4',
+  hairlineOpacity: 1,
+  text: '#1C1917',
+  textSecondary: '#57534E',
+  textTertiary: '#78716C',
+  fill: '#1C1917',
+  fillOpacity: 0.06,
+  separator: '#E7E5E4',
+  separatorOpacity: 1,
+};
+
+const THEMES: Record<Material, Record<Mode, Theme>> = {
+  wallpaper: { dark: WALL_DARK, light: WALL_LIGHT },
+  graphite: { dark: GRAPHITE_DARK, light: GRAPHITE_LIGHT },
+  stone: { dark: STONE_DARK, light: STONE_LIGHT },
+};
+
+export const DARK: Theme = THEMES[MATERIAL].dark;
+export const LIGHT: Theme = THEMES[MATERIAL].light;
 
 export function theme(mode: Mode): Theme {
   return mode === 'light' ? LIGHT : DARK;

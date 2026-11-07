@@ -114,7 +114,9 @@ function colorsFor(d: GlassDoc, spec: ButtonSpec): ButtonColors {
       washOpacity: dark ? 0.24 : 0.14,
     };
   }
-  // The hero's "Now building" indigo: one shared accent for every icon keeps the row calm.
+  // Page-integrated materials stay neutral (icons in the secondary text colour); the wallpaper
+  // material keeps the hero's indigo so the row matches its tinted glass.
+  if (d.t.integrated) return { label: d.t.text, icon: d.t.textSecondary };
   return { label: d.t.text, icon: dark ? '#B4B2FF' : '#4B40DD' };
 }
 
@@ -151,6 +153,16 @@ function glassCapsule(d: GlassDoc, w: number, h: number, colors: ButtonColors): 
   const rect = (extra: string, inset = 0) =>
     `<rect x="${fmt(inset)}" y="${fmt(inset)}" width="${fmt(w - inset * 2)}" height="${fmt(h - inset * 2)}" rx="${fmt(r - inset)}" ${extra}/>`;
   const parts = [`<g data-panel="b" data-box="0,0,${fmt(w)},${fmt(h)}">`];
+  if (d.t.integrated) {
+    // On the page itself: an opaque surface like the cards, with the same hairline and a soft sheen.
+    parts.push(rect(`fill="${d.t.glassTint}"`));
+    if (colors.wash) parts.push(rect(`fill="${colors.wash}" fill-opacity="${fmt(colors.washOpacity ?? 0.15)}"`));
+    parts.push(rect(`fill="url(#${sheen})" fill-opacity="${dark ? 0.4 : 1}"`));
+    parts.push(rect(`fill="none" stroke="${d.t.hairline}" stroke-opacity="${d.t.hairlineOpacity}" stroke-width="1"`, 0.5));
+    parts.push('</g>');
+    d.add(parts.join(''));
+    return;
+  }
   parts.push(rect(`fill="${d.t.glassTint}" fill-opacity="${dark ? 0.34 : 0.4}"`));
   if (colors.wash) parts.push(rect(`fill="${colors.wash}" fill-opacity="${fmt(colors.washOpacity ?? 0.15)}"`));
   parts.push(rect(`fill="url(#${sheen})"`));
