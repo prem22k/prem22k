@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
- * Output Validation Script for prem22k's Profile Pipeline
- * Stage 3 in WORKFLOW-ARCHITECTURE.md
+ * Output validation for prem22k's profile pipeline (Stage 3 in WORKFLOW-ARCHITECTURE.md).
+ * Checks data shape, every generated SVG variant (structure, safety, budget, embedded font),
+ * and that every image the README references exists.
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const ASSETS_DIR = path.join(ROOT_DIR, 'assets');
 const PROFILE_JSON_PATH = path.join(ROOT_DIR, 'data/profile.json');
@@ -25,7 +25,7 @@ function assert(condition, message) {
   }
 }
 
-// 1. Validate data/profile.json
+// 1. data/profile.json
 assert(fs.existsSync(PROFILE_JSON_PATH), 'data/profile.json must exist');
 if (fs.existsSync(PROFILE_JSON_PATH)) {
   try {
@@ -33,67 +33,67 @@ if (fs.existsSync(PROFILE_JSON_PATH)) {
     assert(data.identity && data.identity.name, 'profile.json must contain identity.name');
     assert(data.overview && typeof data.overview.publicRepos === 'number', 'profile.json must contain overview.publicRepos');
     assert(data.contributions && data.contributions.currentYear, 'profile.json must contain contributions.currentYear');
+    assert(Array.isArray(data.contributions?.calendar) && data.contributions.calendar.length >= 365, 'profile.json must contain a 365-day calendar');
     console.log('  ✔ data/profile.json is valid');
   } catch (err) {
     assert(false, `data/profile.json is invalid JSON: ${err.message}`);
   }
 }
 
-// 2. Validate all generated SVGs
-const requiredSvgs = [
-  'hero-dark.svg',
-  'hero-light.svg',
-  'github-year-dark.svg',
-  'github-year-light.svg',
-  'project-zync-arch-dark.svg',
-  'project-zync-arch-light.svg',
-  'project-servx-arch-dark.svg',
-  'project-servx-arch-light.svg',
-  'project-adviser-cli-arch-dark.svg',
-  'project-adviser-cli-arch-light.svg',
-  'codebase-dark.svg',
-  'codebase-light.svg',
-  'stack-dark.svg',
-  'stack-light.svg',
-  'activity-dark.svg',
-  'activity-light.svg',
-  'recent-work-dark.svg',
-  'recent-work-light.svg',
+// 2. Generated SVGs: 4 variants per component
+const COMPONENTS = [
+  { name: 'hero', budgetKb: 80 },
+  { name: 'github-year', budgetKb: 80 },
+  { name: 'project-zync', budgetKb: 280 },
+  { name: 'project-mahayuddh', budgetKb: 280 },
+  { name: 'project-nexus', budgetKb: 280 },
+  { name: 'project-servx', budgetKb: 280 },
+  { name: 'codebase', budgetKb: 80 },
+  { name: 'stack', budgetKb: 80 },
+  { name: 'activity', budgetKb: 120 },
 ];
+const VARIANTS = ['dark', 'light', 'compact-dark', 'compact-light'];
 
-for (const svgFile of requiredSvgs) {
-  const filePath = path.join(ASSETS_DIR, svgFile);
-  assert(fs.existsSync(filePath), `Asset ${svgFile} must exist`);
+let svgCount = 0;
+for (const { name, budgetKb } of COMPONENTS) {
+  for (const variant of VARIANTS) {
+    const svgFile = `${name}-${variant}.svg`;
+    const filePath = path.join(ASSETS_DIR, svgFile);
+    assert(fs.existsSync(filePath), `Asset ${svgFile} must exist`);
+    if (!fs.existsSync(filePath)) continue;
+    svgCount++;
 
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = fs.readFileSync(filePath, 'utf8').trim();
     const size = fs.statSync(filePath).size;
+    const expectedWidth = variant.startsWith('compact') ? 400 : 800;
 
-    // Syntax & Structure
-    assert(content.startsWith('<svg') && content.endsWith('</svg>'), `${svgFile} must be well-formed root <svg>`);
-    assert(content.includes('width="800"') || content.includes('width='), `${svgFile} must specify explicit width`);
-    assert(content.includes('height='), `${svgFile} must specify explicit height`);
-    assert(content.includes('viewBox='), `${svgFile} must specify viewBox`);
+    // Structure
+    assert(content.startsWith('<svg') && content.endsWith('</svg>'), `${svgFile} must be a well-formed root <svg>`);
+    const root = content.slice(0, content.indexOf('>'));
+    assert(new RegExp(`\\bwidth="${expectedWidth}"`).test(root), `${svgFile} must be ${expectedWidth}px wide`);
+    assert(/\bheight="\d+(\.\d+)?"/.test(root), `${svgFile} must specify an explicit height`);
+    assert(/viewBox="0 0 /.test(root), `${svgFile} must specify a viewBox`);
+    assert(/<title>[^<]+<\/title>/.test(content), `${svgFile} must have an accessible <title>`);
 
     // Budget
-    assert(size < 100 * 1024, `${svgFile} size (${Math.round(size / 1024)}KB) must be under 100KB budget`);
+    assert(size < budgetKb * 1024, `${svgFile} size (${Math.round(size / 1024)}KB) must be under ${budgetKb}KB`);
 
-    // Prohibited patterns & security
-    assert(!/linearGradient/i.test(content), `${svgFile} must not contain linear gradients`);
-    assert(!/radialGradient/i.test(content), `${svgFile} must not contain radial gradients`);
-    assert(!/feGaussianBlur/i.test(content), `${svgFile} must not contain blur filters`);
-    assert(!/rx="[1-9]/.test(content), `${svgFile} must strictly enforce 0 border radius`);
-    assert(!/<script/i.test(content), `${svgFile} must not contain <script> tags`);
-    assert(!/on\w+="[^"]*"/i.test(content), `${svgFile} must not contain inline event handlers`);
+    // Embedded font (text must render identically everywhere)
+    assert(/@font-face\{font-family:'InterGlass(Display)?';src:url\(data:font\/woff2;base64,/.test(content), `${svgFile} must embed its Inter subset`);
+
+    // Safety: GitHub renders these in <img>, so anything external or executable is dead weight or worse
+    assert(!/<script/i.test(content), `${svgFile} must not contain <script>`);
+    assert(!/\son[a-z]+\s*=/i.test(content), `${svgFile} must not contain inline event handlers`);
     assert(!/<foreignObject/i.test(content), `${svgFile} must not contain <foreignObject>`);
-    assert(!/@import/i.test(content), `${svgFile} must not contain external font @import`);
-    assert(!/<link/i.test(content), `${svgFile} must not contain external <link> elements`);
+    assert(!/@import/i.test(content), `${svgFile} must not contain @import`);
+    assert(!/(?:href|src)="(?!#|data:)/i.test(content), `${svgFile} must not reference external resources`);
+    assert(!/url\((?!#|data:)/i.test(content), `${svgFile} must not reference external URLs in CSS`);
+    assert(!/<animate|@keyframes/i.test(content), `${svgFile} must be static (no animation)`);
   }
 }
+console.log(`  ✔ ${svgCount} SVG assets validated (structure, budget, embedded font, safety)`);
 
-console.log(`  ✔ All ${requiredSvgs.length} SVG assets validated against security, size, and design tokens`);
-
-// 3. Validate referenced images in README.md exist on disk
+// 3. README image references exist
 const readmePath = path.join(ROOT_DIR, 'README.md');
 assert(fs.existsSync(readmePath), 'README.md must exist');
 if (fs.existsSync(readmePath)) {
@@ -101,16 +101,13 @@ if (fs.existsSync(readmePath)) {
   const imgMatches = [...readmeContent.matchAll(/(?:src|srcset)="([^"]+)"/g)];
   for (const match of imgMatches) {
     const refPath = match[1];
-    if (refPath.startsWith('http://') || refPath.startsWith('https://')) {
-      continue; // remote link
-    }
-    const resolvedPath = path.join(ROOT_DIR, refPath);
-    assert(fs.existsSync(resolvedPath), `README.md image reference '${refPath}' must exist on disk`);
+    if (/^https?:\/\//.test(refPath)) continue;
+    assert(fs.existsSync(path.join(ROOT_DIR, refPath)), `README.md image reference '${refPath}' must exist on disk`);
   }
   console.log(`  ✔ All ${imgMatches.length} image references in README.md verified on disk`);
 }
 
-// 4. Validate timestamp
+// 4. Timestamp
 assert(fs.existsSync(path.join(ROOT_DIR, '.last-updated')), '.last-updated file must exist');
 
 if (errorCount > 0) {

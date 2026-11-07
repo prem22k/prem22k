@@ -88,9 +88,17 @@ function formatEventContext(rawMsg: string, eventType: string, refType?: string)
     if (eventType === 'PullRequestEvent') return 'Pull request activity';
     return 'Pushed updates to repository';
   }
-  let cleaned = rawMsg.trim().split('\n')[0];
+  const lines = rawMsg.trim().split('\n').map((l) => l.trim()).filter(Boolean);
+  let cleaned = lines[0] || '';
+  // Merge commits carry the PR title on a later line: "Merge pull request #31 from a/b\n\nfeat: add x"
+  const mergeMatch = cleaned.match(/^Merge pull request #(\d+)/i);
+  if (mergeMatch) {
+    cleaned = lines[1] || `Merged pull request #${mergeMatch[1]}`;
+  }
   cleaned = cleaned.replace(/\s*\(#[0-9]+\)$/, '');
-  const match = cleaned.match(/^[a-z]+(?:\([^\)]+\))?!?:?\s+(.*)$/i);
+  // Strip a Conventional Commits prefix ("feat(scope)!: ") — the colon is required, so plain
+  // messages like "Add instant handle sync" keep their first word.
+  const match = cleaned.match(/^[a-z]+(?:\([^)]+\))?!?:\s+(.*)$/i);
   if (match && match[1]) {
     cleaned = match[1];
   }
@@ -146,10 +154,26 @@ export async function fetchProfileData(username: string = 'prem22k'): Promise<Fe
   const languageReposMap: Record<string, number> = {};
   let totalBytes = 0;
 
+  // GitHub's languages endpoint occasionally fails or returns {} while it recomputes stats.
+  // Retry, and treat {} as a failure for any repo that reports a primary language.
+  const fetchRepoLanguages = async (repo: GhRepo): Promise<Record<string, number> | null> => {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const langs = await fetchJson<Record<string, number>>(repo.languages_url, authHeader);
+      if (langs && (Object.keys(langs).length > 0 || !repo.language)) return langs;
+      await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+    }
+    return null;
+  };
+
   let successfulRepoLangsCount = 0;
+  let failedRepoLangsCount = 0;
   for (const repo of nonForkRepos) {
     if (!repo.languages_url) continue;
-    const repoLangs = await fetchJson<Record<string, number>>(repo.languages_url, authHeader);
+    const repoLangs = await fetchRepoLanguages(repo);
+    if (!repoLangs) {
+      failedRepoLangsCount++;
+      console.warn(`[fetch-data] Warning: no language data for ${repo.name} after retries`);
+    }
     if (repoLangs) {
       successfulRepoLangsCount++;
       for (const [lang, bytes] of Object.entries(repoLangs)) {
@@ -178,9 +202,10 @@ export async function fetchProfileData(username: string = 'prem22k'): Promise<Fe
   const contribData = await fetchJson<ContribApiResponse>(`https://github-contributions-api.jogruber.de/v4/${username}`);
   const yearlyTotals = contribData?.total || {};
   const currentYear = new Date().getUTCFullYear();
-  const yearContributions = yearlyTotals[String(currentYear)] || 4768;
+  // No invented fallbacks here: a failed request yields 0 and the cached value below takes over.
+  const yearContributions = yearlyTotals[String(currentYear)] || 0;
   const last12MonthsData = await fetchJson<ContribApiResponse>(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
-  const last12MonthsContributions = last12MonthsData?.total?.lastYear || 5207;
+  const last12MonthsContributions = last12MonthsData?.total?.lastYear || 0;
   const calendarDays = last12MonthsData?.contributions || contribData?.contributions || [];
 
   // 5. Fetch recent events
@@ -203,7 +228,10 @@ export async function fetchProfileData(username: string = 'prem22k'): Promise<Fe
   const rawEvents = (await fetchJson<GhEvent[]>(`https://api.github.com/users/${username}/events?per_page=100`, authHeader)) || [];
   const filteredEvents = rawEvents.filter(e => {
     if (!e || !e.repo || !e.created_at) return false;
-    if (e.type === 'DeleteEvent') return false;
+    // Engineering events only: issues, stars, forks, comments etc. aren't shipped work.
+    if (!['PushEvent', 'PullRequestEvent', 'CreateEvent', 'PublicEvent', 'ReleaseEvent'].includes(e.type)) return false;
+    // Branch/tag creation is noise in an activity feed; repository creation is kept.
+    if (e.type === 'CreateEvent' && e.payload?.ref_type !== 'repository') return false;
     if (e.repo.name === `${username}/${username}`) return false;
     return true;
   });
@@ -277,7 +305,7 @@ export async function fetchProfileData(username: string = 'prem22k'): Promise<Fe
       eventVerb = 'open-sourced';
     } else if (item.type === 'ReleaseEvent') {
       eventVerb = 'released';
-    } else if (item.type === 'PullRequestEvent') {
+    } else if (item.type === 'PullRequestEvent' || /^Merge pull request #\d+/i.test(context)) {
       eventVerb = 'merged PR';
     }
 
@@ -332,7 +360,9 @@ export async function fetchProfileData(username: string = 'prem22k'): Promise<Fe
   const final12MonthContribs = last12MonthsContributions || previousData.contributions?.last12MonthsContributions || 5207;
   const finalCalendar = calendarDays.length > 0 ? calendarDays : (previousData.contributions?.calendar || []);
 
-  const isLanguageDataComplete = nonForkRepos.length === 0 || successfulRepoLangsCount >= Math.floor(nonForkRepos.length * 0.7);
+  // One missing repo can remove megabytes (and whole languages), so any failure means
+  // "keep the last good totals" rather than publishing a partial picture.
+  const isLanguageDataComplete = failedRepoLangsCount === 0 && successfulRepoLangsCount > 0;
 
   const finalTotalBytes = (isLanguageDataComplete && totalBytes > 0)
     ? totalBytes

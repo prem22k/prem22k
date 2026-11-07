@@ -34,10 +34,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js 22
+      - name: Setup Node.js 24
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup font subsetting (fonttools)
+        run: |
+          python -m pip install --quiet --disable-pip-version-check fonttools==4.68.0 brotli==1.2.1
 
       - name: Stage 1 — Fetch Real GitHub Data
         env:
@@ -45,7 +54,7 @@ jobs:
         run: |
           node scripts/fetch-data.ts
 
-      - name: Stage 2 — Generate Design System SVGs
+      - name: Stage 2 — Generate Liquid Glass SVGs
         run: |
           node scripts/build-assets.mjs
 
@@ -55,15 +64,16 @@ jobs:
 
       - name: Stage 4 — Execute Automated Test Suite
         run: |
-          node --test scripts/test/primitives.test.ts
+          node --test scripts/test/glass.test.ts
 
       - name: Stage 5 — Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Check for changes in data, assets, or README
-          if [ -n "$(git status --porcelain assets/ data/ .last-updated README.md)" ]; then
+          # Commit only when something visible changed (rendered assets or README).
+          # profile.json timestamps change on every run, so they alone never trigger a commit.
+          if [ -n "$(git status --porcelain assets/ README.md)" ]; then
             git add assets/ data/ .last-updated README.md
             git commit -m "chore(profile): automated refresh of analytics & vector assets [skip ci]" \
                        -m "Co-authored-by: prem22k <premsai224k@gmail.com>"

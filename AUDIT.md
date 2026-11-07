@@ -1,5 +1,7 @@
 # GitHub Profile README Audit: `prem22k/prem22k`
 
+> **Status:** planning document from the v2 rebuild (Aug 2026). The pipeline has since moved to the Liquid Glass design system (v3): see [README-DESIGN-SYSTEM.md](README-DESIGN-SYSTEM.md). Where this document disagrees with the code, `.github/workflows/profile-update.yml` and `scripts/` are the source of truth.
+
 **Date:** August 2026  
 **Repository:** `prem22k/prem22k`  
 **Current State:** Uncommitted exploratory custom SVG generator + hybrid legacy README

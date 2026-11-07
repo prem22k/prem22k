@@ -1,7 +1,9 @@
 # Information Architecture & Content Model
 
+> **Status:** planning document from the v2 rebuild (Aug 2026). The pipeline has since moved to the Liquid Glass design system (v3): see [README-DESIGN-SYSTEM.md](README-DESIGN-SYSTEM.md). Where this document disagrees with the code, `.github/workflows/profile-update.yml` and `scripts/` are the source of truth.
+
 **Design System:** Direction A — Portfolio-Derived Editorial  
-**Visual Contract:** [README-DESIGN-SYSTEM.md](file:///home/premsaik/Desktop/Projects/prem22k/README-DESIGN-SYSTEM.md)
+**Visual Contract:** [README-DESIGN-SYSTEM.md](README-DESIGN-SYSTEM.md)
 
 ---
 

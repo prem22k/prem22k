@@ -1,7 +1,9 @@
 # Data Specification
 
+> **Status:** planning document from the v2 rebuild (Aug 2026). The pipeline has since moved to the Liquid Glass design system (v3): see [README-DESIGN-SYSTEM.md](README-DESIGN-SYSTEM.md). Where this document disagrees with the code, `.github/workflows/profile-update.yml` and `scripts/` are the source of truth.
+
 **Pipeline:** GitHub Actions → GitHub API → normalize → serialize → SVG render → commit  
-**Schedule:** Daily at 00:30 UTC + on push to `main`  
+**Schedule:** Every 6 hours (`0 */6 * * *`) + on push to `main` + manual dispatch  
 **Auth:** `GITHUB_TOKEN` (automatic in Actions, scoped to public data)
 
 ---

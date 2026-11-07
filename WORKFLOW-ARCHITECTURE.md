@@ -1,8 +1,10 @@
 # Workflow Architecture
 
+> **Status:** planning document from the v2 rebuild (Aug 2026). The pipeline has since moved to the Liquid Glass design system (v3): see [README-DESIGN-SYSTEM.md](README-DESIGN-SYSTEM.md). Where this document disagrees with the code, `.github/workflows/profile-update.yml` and `scripts/` are the source of truth.
+
 **Repository:** `prem22k/prem22k`  
-**Runtime:** GitHub Actions (ubuntu-latest, Node.js 20)  
-**Data Contract:** [DATA-SPEC.md](file:///home/premsaik/Desktop/Projects/prem22k/DATA-SPEC.md)
+**Runtime:** GitHub Actions (ubuntu-latest, Node.js 24, Python 3.12 for font subsetting)  
+**Data Contract:** [DATA-SPEC.md](DATA-SPEC.md)
 
 ---
 

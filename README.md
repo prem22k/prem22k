@@ -4,148 +4,89 @@
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
-  <img src="assets/hero-light.svg" alt="Prem Sai Kota — Full-Stack Engineer" width="100%" />
-</picture>
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" /><img src="assets/hero-light.svg" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. Now building NEXUS and Mahayuddh." /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/hero-compact-dark.svg" /><img src="assets/hero-compact-light.svg" alt="Prem Sai Kota, Full-Stack Engineer in Hyderabad. Now building NEXUS and Mahayuddh." /></picture>
 
-[Portfolio](https://premsai.dev/) &nbsp;·&nbsp; [GitHub](https://github.com/prem22k) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/premsai22k) &nbsp;·&nbsp; [X](https://x.com/premsaik22) &nbsp;·&nbsp; [Threads](https://www.threads.net/@iblameprems) &nbsp;·&nbsp; [Email](mailto:premsai224k@gmail.com)
-
----
-
-## System Metrics
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/github-year-dark.svg" />
-  <img src="assets/github-year-light.svg" alt="Engineering Volume & Velocity — Repositories, Contributions, Consistency, Source Lines, Byte Volume, Languages" width="100%" />
-</picture>
-
----
-
-## Selected Work
-
-### 01 · Zync — Real-Time Collaborative Workspace
-
-<a href="https://zync-meet.vercel.app/">
-  <img src="zync-meet.png" alt="Zync interface preview" width="100%" />
-</a>
+<p>
+  <a href="https://premsai.dev/">Portfolio</a> &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/premsai22k">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://x.com/premsaik22">X</a> &nbsp;·&nbsp;
+  <a href="https://www.threads.net/@iblameprems">Threads</a> &nbsp;·&nbsp;
+  <a href="mailto:premsai224k@gmail.com">Email</a>
+</p>
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-arch-dark.svg" />
-  <img src="assets/project-zync-arch-light.svg" alt="Zync Multi-Client CRDT Star Topology" width="100%" />
-</picture>
-
-> Distributed real-time workspace featuring conflict-free collaborative document editing powered by **Yjs CRDTs** with live cursor awareness and multi-namespace state synchronization. Packaged for web and desktop with Electron; persists document archives to **MongoDB** and live room session metadata to **Firestore**.
-
-`TypeScript` · `Yjs CRDTs` · `WebSockets` · `React 19` · `Electron` · `MongoDB` · `Firestore`
-
-[Live Platform ↗](https://zync-meet.vercel.app/) &nbsp;·&nbsp; [Source Code ↗](https://github.com/zync-meet/Zync)
-
----
-
-### 02 · ServX — Infrastructure Monitoring & Incident Response
-
-<a href="https://servx.vercel.app/">
-  <img src="servx.png" alt="ServX interface preview" width="100%" />
-</a>
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-dark.svg" /><img src="assets/github-year-light.svg" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/github-year-compact-dark.svg" /><img src="assets/github-year-compact-light.svg" alt="At a glance: contributions in the last 12 months, active days, streaks, repositories, stars and languages" /></picture>
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-arch-dark.svg" />
-  <img src="assets/project-servx-arch-light.svg" alt="ServX Incident Ingestion & SSE Streaming Pipeline" width="100%" />
-</picture>
+## Selected work
 
-> Production-grade full-stack infrastructure monitoring platform engineered as an npm workspaces monorepo. Implements automated telemetry ingest and incident anomaly detection with **AES-256-GCM encrypted persistence** and zero-polling real-time audit streams delivered via **Server-Sent Events (SSE)**.
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-dark.svg" /><img src="assets/project-zync-light.svg" alt="Zync: real-time collaborative workspace" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-zync-compact-dark.svg" /><img src="assets/project-zync-compact-light.svg" alt="Zync: real-time collaborative workspace" /></picture>
 
-`TypeScript` · `Node.js` · `Server-Sent Events` · `AES-256-GCM` · `Webhooks` · `Next.js` · `Redis`
+**Zync**: A collaborative workspace that brings project planning, chat, GitHub activity, notes, tasks and meetings into one place for distributed teams. Notes sync in real time on **Yjs CRDTs**, with offline-friendly IndexedDB persistence.
 
-[Live Platform ↗](https://servx.vercel.app/) &nbsp;·&nbsp; [Source Code ↗](https://github.com/Servx-lab/ServX)
-
----
-
-### 03 · Adviser-CLI — Local-First Hybrid RAG & AI Hub
-
-<a href="https://github.com/prem22k/adviser-cli-tool/pkgs/npm/adviser-cli">
-  <img src="adviser-cli.png" alt="Adviser-CLI interface preview" width="100%" />
-</a>
+[Live ↗](https://zync-meet.vercel.app) &nbsp;·&nbsp; [Source ↗](https://github.com/zync-meet/Zync)
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-adviser-cli-arch-dark.svg" />
-  <img src="assets/project-adviser-cli-arch-light.svg" alt="Adviser-CLI Hybrid RAG & VisionRAG DAG Architecture" width="100%" />
-</picture>
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-dark.svg" /><img src="assets/project-mahayuddh-light.svg" alt="Mahayuddh: DSA practice arena" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-mahayuddh-compact-dark.svg" /><img src="assets/project-mahayuddh-compact-light.svg" alt="Mahayuddh: DSA practice arena" /></picture>
 
-> Zero-infrastructure local RAG developer intelligence tool fusing **ChromaDB dense vector embeddings** with **BM25 sparse keyword retrieval**. Features a **VisionRAG** engine using ColPali multi-vector patch embeddings for multimodal document reasoning, published to npm as an official **Model Context Protocol (MCP)** server.
+**Mahayuddh**: A social practice arena for LeetCode: daily timed battles, squad accountability and verified progress. Event-sourced **PostgreSQL** with row-level security on every table, backed by 324 automated tests.
 
-`Python 3.11` · `ChromaDB` · `BM25` · `ColPali VisionRAG` · `Model Context Protocol (MCP)` · `Ollama / OpenAI`
+[Live ↗](https://mahayuddh.vercel.app/welcome) &nbsp;·&nbsp; [Source ↗](https://github.com/prem22k/mahayuddh)
 
-[npm Package ↗](https://github.com/prem22k/adviser-cli-tool/pkgs/npm/adviser-cli) &nbsp;·&nbsp; [Source Code ↗](https://github.com/prem22k/adviser-cli-tool)
+<br />
 
----
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-dark.svg" /><img src="assets/project-nexus-light.svg" alt="NEXUS: voice-first desktop companion" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexus-compact-dark.svg" /><img src="assets/project-nexus-compact-light.svg" alt="NEXUS: voice-first desktop companion" /></picture>
 
-## Codebase Architecture
+**NEXUS**: A voice-first desktop companion built in **Rust** and **Tauri** that runs local speech models for code navigation and system automation. I ported the core to Linux (Wayland and X11) and cut wake-word latency from 106 ms to 8.4 ms.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/codebase-dark.svg" />
-  <img src="assets/codebase-light.svg" alt="Codebase Language Architecture & Proportional Distribution" width="100%" />
-</picture>
+[Source ↗](https://github.com/Engine-NEXUS/linux)
 
----
+<br />
 
-## Engineering Stack
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-dark.svg" /><img src="assets/project-servx-light.svg" alt="ServX: infrastructure command center" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-servx-compact-dark.svg" /><img src="assets/project-servx-compact-light.svg" alt="ServX: infrastructure command center" /></picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
-  <img src="assets/stack-light.svg" alt="Engineering Stack — Languages, Frontend, Backend, AI/RAG, Realtime Systems, DevOps" width="100%" />
-</picture>
+**ServX**: An infrastructure monitoring and incident-response suite, shipped as a web app, CLI and React SDK, with real-time audit streams over **Server-Sent Events** and WebSockets.
 
----
+[Live ↗](https://servx.vercel.app) &nbsp;·&nbsp; [Source ↗](https://github.com/Servx-lab/ServX)
 
-## Contribution Velocity
+<br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
-  <img src="assets/activity-light.svg" alt="Contribution & Activity Velocity — Monochromatic 365-day calendar & weekday velocity" width="100%" />
-</picture>
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-dark.svg" /><img src="assets/codebase-light.svg" alt="Languages across authored repositories, by share of source bytes" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/codebase-compact-dark.svg" /><img src="assets/codebase-compact-light.svg" alt="Languages across authored repositories, by share of source bytes" /></picture>
 
----
+<br />
 
-## Recent Engineering Activity
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" /><img src="assets/stack-light.svg" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/stack-compact-dark.svg" /><img src="assets/stack-compact-light.svg" alt="Toolbox: languages, frontend, backend and data, real-time, AI and retrieval, desktop and infra" /></picture>
+
+<br />
+
+<picture><source media="(max-width: 600px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" /><img src="assets/activity-light.svg" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture><picture><source media="(min-width: 601px)" srcset="assets/blank.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/activity-compact-dark.svg" /><img src="assets/activity-compact-light.svg" alt="Activity: contribution heatmap, weekly rhythm and busiest periods" /></picture>
+
+## Recent activity
 
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
-| `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | REA reverse-engineering research: Hey Siri teardown + Hitodama competito... |
+| `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | Add REA reverse-engineering research: Hey Siri teardown + Hitodama compe... |
 | `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | Run on macos-latest; GitHub retired the macos-14 image |
-| `05 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
-| `04 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
-| `03 NOV` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request #31 from prem22k/feat/error-tracking |
-| `02 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
-
----
+| `05 NOV` | `pushed` | [**portfolio**](https://github.com/prem22k/portfolio) | Keep "Get in touch" and the email copy button on one line |
+| `05 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Prove a linked handle is yours; only the server says verified |
+| `04 NOV` | `merged PR` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Drop PostHog while error tracking is off |
+| `03 NOV` | `pushed` | [**socials-manager**](https://github.com/prem22k/socials-manager) | 2026-11-03 nightly signal |
 
 ## Experience
 
-**RigorBase** — `Full-Stack Developer Intern` &nbsp;·&nbsp; **Mar 2026 – Apr 2026**
-- Built closed beta access system end-to-end: schema design, OAuth 2.0, and Redis rate limiting.
-- Led frontend migration to v3 design system — improved DX and UI consistency across teams.
+**RigorBase**, Full-Stack Developer Intern &nbsp;·&nbsp; *Mar 2026 – Apr 2026*
+- Built the closed-beta access system end to end: schema design, OAuth 2.0 and Redis rate limiting.
+- Led the frontend migration to the v3 design system, improving developer experience and UI consistency across teams.
 - Shipped interactive learning-metric dashboards and adaptive quiz gamification.
 
-<br />
-
-**Cloud Community Club (C³) @ SNIST** — `Technical Head / Lead Developer` &nbsp;·&nbsp; **Nov 2024 – Present**
-- Architected official club platform serving 1,000+ active campus users ([Next.js](https://nextjs.org)).
-- Automated transactional email notification microservice with retry queues and CI/CD pipelines.
-
----
+**Cloud Community Club (C³) @ SNIST**, Technical Head / Lead Developer &nbsp;·&nbsp; *Nov 2024 – Present*
+- Architected the official club platform serving 1,000+ active campus users ([Next.js](https://nextjs.org)).
+- Automated a transactional email notification service with retry queues and CI/CD pipelines.
 
 ## Recognition
 
-- **Brainrot Hackathon** &nbsp;·&nbsp; `Double-Track Winner` *(2025)*  
-  *Awarded 1st place across both competitive tracks for full-stack real-time web application architecture out of 1,224 entrants.*
-
-- **JNTUH HackFusion-2K26** &nbsp;·&nbsp; `5th Place Nationally` *(2026)*  
-  *Built and deployed an integrated hardware/software system in 48 hours out of 230+ national teams.*
+- **Brainrot Hackathon**, Double-Track Winner *(2025)*: 1st place in both competitive tracks for a full-stack real-time web app, out of 1,224 entrants.
+- **JNTUH HackFusion-2K26**, 5th Place Nationally *(2026)*: built and deployed an integrated hardware/software system in 48 hours, out of 230+ national teams.
