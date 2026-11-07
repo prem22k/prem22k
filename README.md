@@ -119,7 +119,7 @@
 | Date | Event | Repository | Context |
 | :--- | :--- | :--- | :--- |
 | `06 NOV` | `pushed` | [**NEXUS-PAPERS**](https://github.com/Engine-NEXUS/NEXUS-PAPERS) | REA reverse-engineering research: Hey Siri teardown + Hitodama competito... |
-| `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | A leading "yeah" from the STT no longer hides the command |
+| `06 NOV` | `pushed` | [**macos**](https://github.com/Engine-NEXUS/macos) | Run on macos-latest; GitHub retired the macos-14 image |
 | `05 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `04 NOV` | `branched` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Created branch |
 | `03 NOV` | `pushed` | [**mahayuddh**](https://github.com/prem22k/mahayuddh) | Pull request #31 from prem22k/feat/error-tracking |
