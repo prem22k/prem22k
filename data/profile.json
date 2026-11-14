@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T12:37:04.837Z",
+  "generatedAt": "2026-11-14T21:45:00.080Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 46,
     "following": 22,
-    "totalSizeKb": 299809
+    "totalSizeKb": 300346
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 6335,
-    "last12MonthsContributions": 6519,
+    "yearContributions": 6435,
+    "last12MonthsContributions": 6553,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 6335
+      "2026": 6435
     },
     "calendar": [
       {
@@ -1882,27 +1882,27 @@
       },
       {
         "date": "2026-11-14",
-        "count": 1,
+        "count": 35,
         "level": 1
       }
     ]
   },
   "codebase": {
-    "totalBytes": 8912083,
-    "estimatedLines": 222802,
+    "totalBytes": 8980861,
+    "estimatedLines": 224522,
     "languagesCount": 11,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 6004160,
+        "bytes": 6015728,
         "repos": 14,
-        "percentage": 67.4
+        "percentage": 67
       },
       {
         "name": "JavaScript",
-        "bytes": 1911333,
+        "bytes": 1957431,
         "repos": 24,
-        "percentage": 21.4
+        "percentage": 21.8
       },
       {
         "name": "Python",
@@ -1918,9 +1918,9 @@
       },
       {
         "name": "PLpgSQL",
-        "bytes": 197905,
+        "bytes": 209017,
         "repos": 1,
-        "percentage": 2.2
+        "percentage": 2.3
       },
       {
         "name": "HTML",
@@ -1961,8 +1961,18 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-11-14T12:37:04.837Z",
+    "fetchedAt": "2026-11-14T21:45:00.080Z",
     "events": [
+      {
+        "date": "14 NOV",
+        "rawDate": "2026-11-14T19:25:17Z",
+        "type": "PushEvent",
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Every pattern on the roadmap, unread first, read next, mastered last"
+      },
       {
         "date": "06 NOV",
         "rawDate": "2026-11-06T15:01:09Z",
@@ -1972,56 +1982,6 @@
         "repoFullName": "Engine-NEXUS/NEXUS-PAPERS",
         "repoUrl": "https://github.com/Engine-NEXUS/NEXUS-PAPERS",
         "context": "Add REA reverse-engineering research: Hey Siri teardown + Hitodama compe..."
-      },
-      {
-        "date": "06 NOV",
-        "rawDate": "2026-11-06T12:50:18Z",
-        "type": "PushEvent",
-        "event": "pushed",
-        "repository": "macos",
-        "repoFullName": "Engine-NEXUS/macos",
-        "repoUrl": "https://github.com/Engine-NEXUS/macos",
-        "context": "Run on macos-latest; GitHub retired the macos-14 image"
-      },
-      {
-        "date": "05 NOV",
-        "rawDate": "2026-11-05T09:06:58Z",
-        "type": "PushEvent",
-        "event": "merged PR",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "Prove a linked handle is yours; only the server says verified"
-      },
-      {
-        "date": "04 NOV",
-        "rawDate": "2026-11-04T04:48:33Z",
-        "type": "PushEvent",
-        "event": "merged PR",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "Drop PostHog while error tracking is off"
-      },
-      {
-        "date": "03 NOV",
-        "rawDate": "2026-11-03T09:53:18Z",
-        "type": "PushEvent",
-        "event": "merged PR",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "PostHog error tracking (browser, boundaries, server)"
-      },
-      {
-        "date": "02 NOV",
-        "rawDate": "2026-11-02T18:53:46Z",
-        "type": "PushEvent",
-        "event": "merged PR",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "Links from other sites returned 403 Cross-origin request rejected"
       }
     ]
   },
