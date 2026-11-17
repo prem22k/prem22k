@@ -64,6 +64,16 @@ interface Award {
 
 const EXPERIENCE: Job[] = [
   {
+    role: 'Software Developer',
+    org: 'ElevateBox',
+    dates: 'Oct 2026 – Present',
+    glyph: 'briefcase',
+    bullets: [
+      'Delivered TRH360, a healthcare app for patients, doctors, care guides, pharmacies and labs.',
+      'Shipped separate Android apps per role and in-app payments with Razorpay.',
+    ],
+  },
+  {
     role: 'Full-Stack Developer Intern',
     org: 'RigorBase',
     dates: 'Mar 2026 – Apr 2026',
