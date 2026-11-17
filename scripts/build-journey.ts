@@ -100,7 +100,7 @@ const RECOGNITION: Award[] = [
   {
     event: 'Brainrot Hackathon',
     placement: 'Double-Track Winner',
-    year: '2025',
+    year: '2024',
     glyph: 'trophy',
     text: '1st place in both tracks out of 1,224 entrants, for a full-stack real-time web app.',
   },
