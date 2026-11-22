@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:41:22.021Z",
+  "generatedAt": "2026-11-22T22:53:53.084Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 46,
     "following": 22,
-    "totalSizeKb": 300526
+    "totalSizeKb": 300528
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 6514,
-    "last12MonthsContributions": 6679,
+    "yearContributions": 6517,
+    "last12MonthsContributions": 6680,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 6514
+      "2026": 6517
     },
     "calendar": [
       {
@@ -1852,7 +1852,7 @@
       },
       {
         "date": "2026-11-22",
-        "count": 1,
+        "count": 2,
         "level": 1
       }
     ]
@@ -1937,8 +1937,28 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-11-22T13:41:22.021Z",
+    "fetchedAt": "2026-11-22T22:53:53.084Z",
     "events": [
+      {
+        "date": "22 NOV",
+        "rawDate": "2026-11-22T19:17:32Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "Zync",
+        "repoFullName": "zync-meet/Zync",
+        "repoUrl": "https://github.com/zync-meet/Zync",
+        "context": "Pull request activity"
+      },
+      {
+        "date": "22 NOV",
+        "rawDate": "2026-11-22T19:17:13Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Pull request activity"
+      },
       {
         "date": "16 NOV",
         "rawDate": "2026-11-16T19:33:34Z",
@@ -1948,16 +1968,6 @@
         "repoFullName": "prem22k/mahayuddh",
         "repoUrl": "https://github.com/prem22k/mahayuddh",
         "context": "One server-ranked board for both tabs, remembered filters"
-      },
-      {
-        "date": "15 NOV",
-        "rawDate": "2026-11-15T05:08:33Z",
-        "type": "PushEvent",
-        "event": "merged PR",
-        "repository": "mahayuddh",
-        "repoFullName": "prem22k/mahayuddh",
-        "repoUrl": "https://github.com/prem22k/mahayuddh",
-        "context": "Syntax-coloured code in C++, Java and Python"
       },
       {
         "date": "14 NOV",
