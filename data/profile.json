@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T04:21:59.400Z",
+  "generatedAt": "2026-11-23T16:40:17.260Z",
   "username": "prem22k",
   "identity": {
     "name": "Prem Sai Kota",
@@ -9,7 +9,7 @@
     "blog": "https://premsai.dev/",
     "hireable": true,
     "createdAt": "2024-03-28T07:46:18Z",
-    "accountAgeDays": 969
+    "accountAgeDays": 970
   },
   "overview": {
     "publicRepos": 38,
@@ -18,16 +18,16 @@
     "totalForks": 1,
     "followers": 46,
     "following": 22,
-    "totalSizeKb": 300658
+    "totalSizeKb": 300720
   },
   "contributions": {
     "currentYear": 2026,
-    "yearContributions": 6518,
-    "last12MonthsContributions": 6672,
+    "yearContributions": 6532,
+    "last12MonthsContributions": 6686,
     "yearlyTotals": {
       "2024": 276,
       "2025": 1445,
-      "2026": 6518
+      "2026": 6532
     },
     "calendar": [
       {
@@ -1852,32 +1852,32 @@
       },
       {
         "date": "2026-11-22",
-        "count": 3,
+        "count": 15,
         "level": 1
       },
       {
         "date": "2026-11-23",
-        "count": 2,
+        "count": 4,
         "level": 1
       }
     ]
   },
   "codebase": {
-    "totalBytes": 9750189,
-    "estimatedLines": 243755,
+    "totalBytes": 9759932,
+    "estimatedLines": 243998,
     "languagesCount": 12,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 6256930,
+        "bytes": 6258035,
         "repos": 14,
-        "percentage": 64.2
+        "percentage": 64.1
       },
       {
         "name": "JavaScript",
-        "bytes": 2011194,
+        "bytes": 2018863,
         "repos": 24,
-        "percentage": 20.6
+        "percentage": 20.7
       },
       {
         "name": "Python",
@@ -1893,7 +1893,7 @@
       },
       {
         "name": "PLpgSQL",
-        "bytes": 246322,
+        "bytes": 247291,
         "repos": 1,
         "percentage": 2.5
       },
@@ -1942,8 +1942,28 @@
     ]
   },
   "recentActivity": {
-    "fetchedAt": "2026-11-23T04:21:59.400Z",
+    "fetchedAt": "2026-11-23T16:40:17.260Z",
     "events": [
+      {
+        "date": "23 NOV",
+        "rawDate": "2026-11-23T14:26:38Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "Zync",
+        "repoFullName": "zync-meet/Zync",
+        "repoUrl": "https://github.com/zync-meet/Zync",
+        "context": "Pull request activity"
+      },
+      {
+        "date": "23 NOV",
+        "rawDate": "2026-11-23T14:26:07Z",
+        "type": "PullRequestEvent",
+        "event": "merged PR",
+        "repository": "mahayuddh",
+        "repoFullName": "prem22k/mahayuddh",
+        "repoUrl": "https://github.com/prem22k/mahayuddh",
+        "context": "Pull request activity"
+      },
       {
         "date": "22 NOV",
         "rawDate": "2026-11-22T19:17:32Z",
